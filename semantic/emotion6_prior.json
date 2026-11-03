@@ -1,0 +1,349 @@
+{
+  "document_title": "Emotion6 Emotion Archetypes for SLR-C",
+  "class_order_source": "Emotion6 official seven-emotion order",
+  "emotions": [
+    {
+      "id": 1,
+      "emotion_name": "anger",
+      "definition": "Strong displeasure, irritation, rage, resentment, or hostility.",
+      "archetypes": [
+        {
+          "archetype_id": 1,
+          "name": "Riot and Protest",
+          "core_difference": "Focuses on collective, outdoor socio-political rage rather than individual frustration, distinguishing it from fear by the presence of active, forward-moving confrontation rather than retreat.",
+          "visual_elements": "aggressive crowd, clenched fists, shouting faces, smoke, barricade, gritty lighting",
+          "text_query": "A volatile street protest captured with gritty high-contrast lighting, where an aggressive crowd of demonstrators with clenched fists and shouting faces confronts a barricade amidst smoke and chaotic urban debris."
+        },
+        {
+          "archetype_id": 2,
+          "name": "Domestic Argument",
+          "core_difference": "Highlights intense interpersonal hostility in an intimate setting, differing from sadness by featuring tense, outward aggression rather than withdrawn sorrow.",
+          "visual_elements": "dim kitchen, pointing fingers, glaring, furrowed brows, scattered papers, tense posture",
+          "text_query": "Shot from a low angle in a dimly lit kitchen, two people stand with tense body language, pointing fingers and glaring at each other with furrowed brows during a heated domestic dispute over scattered papers."
+        },
+        {
+          "archetype_id": 3,
+          "name": "Sports Frustration",
+          "core_difference": "Isolates explosive physical frustration related to competition and failure, separating it from the biological repulsion of disgust.",
+          "visual_elements": "stadium grass, scowling athlete, rigid muscles, slamming equipment, daylight",
+          "text_query": "An athlete kneels on the brightly lit stadium grass, slamming a piece of sports equipment onto the ground with a scowling face and rigid muscles after a devastating referee call interrupts the daytime game."
+        },
+        {
+          "archetype_id": 4,
+          "name": "Road Rage",
+          "core_difference": "Captures enclosed, situational irritation behind a barrier, distinct from neutral commuting scenes through visible facial flushing and aggressive yelling.",
+          "visual_elements": "rain-streaked windshield, red face, gripping steering wheel, shouting, brake lights, traffic",
+          "text_query": "Framed closely through a rain-streaked windshield, a highly frustrated driver grips the steering wheel tightly, yelling aggressively with a red face at the standstill traffic gridlock illuminated by harsh brake lights."
+        },
+        {
+          "archetype_id": 5,
+          "name": "Evoked Vandalism",
+          "core_difference": "Presents scene-level evidence of hostility without human subjects present, evoking anger through destruction rather than the melancholy decay found in sadness.",
+          "visual_elements": "defaced monument, red graffiti, broken glass, public plaza, flat lighting",
+          "text_query": "Captured in a flat documentary style, a public monument stands defaced with aggressive red graffiti and broken glass strewn across the surrounding plaza, evoking a strong sense of hostility and senseless destruction."
+        },
+        {
+          "archetype_id": 6,
+          "name": "Animal Aggression",
+          "core_difference": "Shows territorial instinct and biological threat displays in wildlife, distinguished from fear by mutual offensive posturing rather than one-sided fleeing.",
+          "visual_elements": "bared teeth, flattened ears, raised hackles, savanna, dominant predators, midday sun",
+          "text_query": "A close-up wildlife photograph captures two dominant predators in a dry savanna environment, showing bared teeth, flattened ears, and raised hackles as they aggressively dispute territory under the blazing midday sun."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "emotion_name": "disgust",
+      "definition": "Revulsion, aversion, contamination response, or strong dislike.",
+      "archetypes": [
+        {
+          "archetype_id": 1,
+          "name": "Rotting Food",
+          "core_difference": "Emphasizes biological decay and contamination at a macro scale, lacking the active interpersonal hostility of anger or the dread of fear.",
+          "visual_elements": "decaying fruit, green mold, fruit flies, cracked table, harsh overhead lighting",
+          "text_query": "A macro photograph reveals a bowl of severely decaying fruit covered in thick green mold and swarming fruit flies, sitting neglected on a cracked wooden table under harsh fluorescent overhead lighting."
+        },
+        {
+          "archetype_id": 2,
+          "name": "Environmental Pollution",
+          "core_difference": "Evokes widespread, scene-level aversion through industrial toxicity, contrasting with the melancholic atmosphere of sadness by emphasizing chemical blight and sludge.",
+          "visual_elements": "toxic river, plastic waste, chemical foam, dead fish, muddy banks, overcast sky",
+          "text_query": "A wide-angle landscape shot depicts a stagnant, toxic river choked with plastic waste, industrial chemical foam, and dead fish floating along the muddy banks under a gloomy, overcast grey sky."
+        },
+        {
+          "archetype_id": 3,
+          "name": "Facial Revulsion",
+          "core_difference": "Captures the classic human micro-expression of recoil and nose-pinching, differentiating it from surprise by the clear negative valence and avoidance behavior.",
+          "visual_elements": "bathroom mirror, pinched nose, pulled back lips, grimace, soiled clothing",
+          "text_query": "In a brightly lit bathroom mirror reflection, a person pinches their nose and pulls their lips back in a distinct grimace of revulsion while holding up a heavily soiled, unidentifiable piece of discarded clothing."
+        },
+        {
+          "archetype_id": 4,
+          "name": "Vermin Infestation",
+          "core_difference": "Focuses on the visceral aversion to pests and urban filth, distinct from neutral street photography due to the concentrated presence of sludge and insects.",
+          "visual_elements": "cockroaches, rodents, overflowing dumpster, dark sludge, stark flash, urban alleyway",
+          "text_query": "Captured with stark flash photography in a dark urban alleyway, a swarm of large cockroaches and rodents scavenges through an overflowing, severely stained garbage dumpster leaking dark sludge onto the pavement."
+        },
+        {
+          "archetype_id": 5,
+          "name": "Medical Gore",
+          "core_difference": "Highlights bodily contamination and infection in a clinical setting, separated from fear by the focus on the wound itself rather than a threatening medical instrument.",
+          "visual_elements": "festering wound, yellow discharge, surgical lights, clinical close-up, sterile environment",
+          "text_query": "A clinical close-up framed under sterile surgical lights focuses on a deeply infected, festering skin wound with yellow discharge, evoking an immediate visceral response of bodily contamination and biological aversion."
+        },
+        {
+          "archetype_id": 6,
+          "name": "Unsanitary Living",
+          "core_difference": "Displays extreme domestic neglect and filth, distinct from sadness (which might show tidy poverty) by emphasizing feces, hoarding, and gross contamination.",
+          "visual_elements": "hoarding debris, stained carpets, peeling wallpaper, cobwebs, dusty sunlight, boarded windows",
+          "text_query": "A wide interior shot shows an abandoned, deeply unsanitary living room filled with hoarding debris, feces-stained carpets, peeling wallpaper, and cobwebs, illuminated by weak shafts of dusty sunlight filtering through boarded windows."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "emotion_name": "fear",
+      "definition": "Alarm, anxiety, perceived danger, threat, horror, or vulnerability.",
+      "archetypes": [
+        {
+          "archetype_id": 1,
+          "name": "Intruding Threat",
+          "core_difference": "Highlights immediate physical danger and hiding behavior, fundamentally distinct from surprise by the sustained, agonizing dread of an approaching predator or attacker.",
+          "visual_elements": "blue moonlight, crouched homeowner, trembling hands, wide eyes, shadowed silhouette, bedroom door",
+          "text_query": "Illuminated only by the eerie blue glow of moonlight, a terrified homeowner hides crouched behind a bedroom door, eyes wide and hands trembling, while a shadowed silhouette stands menacingly in the hallway."
+        },
+        {
+          "archetype_id": 2,
+          "name": "Immense Natural Disaster",
+          "core_difference": "Portrays overwhelming environmental danger triggering mass panic, separating it from the sadness of post-disaster ruins by showing the threat actively unfolding.",
+          "visual_elements": "massive tornado, abandoned vehicles, desperate panic, rural highway, ominous green storm sky",
+          "text_query": "A dramatic wide shot captures a massive, dark tornado tearing across a rural highway, while drivers abandon their vehicles in a desperate panic against the backdrop of an ominous, green-tinted storm sky."
+        },
+        {
+          "archetype_id": 3,
+          "name": "Acrophobia",
+          "core_difference": "Induces visceral dread via a point-of-view perspective of a lethal drop, uniquely utilizing depth and height to convey vulnerability without a living antagonist.",
+          "visual_elements": "downward perspective, glass-bottomed deck, trembling feet, precipitous drop, vertigo",
+          "text_query": "Shot from a dizzying, downward-facing perspective on a glass-bottomed observation deck, trembling feet stand hesitantly at the edge of a precipitous drop, vividly conveying a visceral sense of vertigo and acute vulnerability."
+        },
+        {
+          "archetype_id": 4,
+          "name": "Predator Pursuit",
+          "core_difference": "Captures the frantic anxiety of the hunted in nature, distinct from animal anger by highlighting flight, desperation, and defensive vulnerability.",
+          "visual_elements": "sprinting deer, stalking wolf, motion blur, dense shadowy forest, underbrush",
+          "text_query": "A motion-blurred action photograph in a dense, shadowy forest shows a frantic deer sprinting desperately through the underbrush, closely pursued by a stalking wolf with locked gaze and predatory intent."
+        },
+        {
+          "archetype_id": 5,
+          "name": "Eerie Atmosphere",
+          "core_difference": "Evokes horror and foreboding purely through scene composition and lighting, contrasting with disgust by focusing on the supernatural and the unseen rather than biological decay.",
+          "visual_elements": "fog-shrouded cemetery, crooked headstones, skeletal trees, dark figure, monochrome, mist",
+          "text_query": "A desolate, fog-shrouded cemetery is captured in monochrome, featuring crooked headstones, withered skeletal trees, and a mysterious dark figure barely visible in the mist, projecting a deep atmosphere of dread and foreboding."
+        },
+        {
+          "archetype_id": 6,
+          "name": "Medical Anxiety",
+          "core_difference": "Demonstrates anticipatory anxiety and phobia in a clinical setting, differentiated from sadness by the child's alarmed, wide-eyed focus on an impending noxious stimulus.",
+          "visual_elements": "tearful child, shrinking back, wide eyes, large needle, pale face, sterile white room",
+          "text_query": "In a sterile white clinical room, a tearful child shrinks back into a medical chair with a pale, alarmed face, staring with wide eyes at the large vaccination needle held by an approaching nurse."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "emotion_name": "joy",
+      "definition": "Happiness, delight, pleasure, playful enjoyment, or celebration.",
+      "archetypes": [
+        {
+          "archetype_id": 1,
+          "name": "Grand Celebration",
+          "core_difference": "Features high-arousal mass euphoria and festivity, distinct from the sudden jolt of surprise by the sustained, communal nature of the positive affect.",
+          "visual_elements": "cheering crowd, raised hands, beaming smiles, fireworks display, dark sky, vibrant festival",
+          "text_query": "A vibrant nighttime festival is bursting with energy, as a massive crowd of cheering people with raised hands and beaming smiles watches a spectacular, colorful fireworks display illuminating the dark sky above."
+        },
+        {
+          "archetype_id": 2,
+          "name": "Intimate Affection",
+          "core_difference": "Captures low-arousal, profound familial contentment, separating itself from neutral domestic scenes through explicit smiling, warmth, and gentle physical connection.",
+          "visual_elements": "warm sunlight, living room rug, young couple laughing, toddler playing, golden retriever",
+          "text_query": "Bathed in warm, golden afternoon sunlight, a young couple sits comfortably on a cozy living room rug, laughing joyously as their toddler playfully tackles a floppy-eared golden retriever."
+        },
+        {
+          "archetype_id": 3,
+          "name": "Personal Triumph",
+          "core_difference": "Expresses the specific joy of athletic victory and overcoming a challenge, contrasting with anger's sports frustration by featuring open, upward, victorious body language.",
+          "visual_elements": "snowy mountain summit, blue sky, victorious pose, raised arms, smiling hiker",
+          "text_query": "Standing proudly on a snowy mountain summit against a brilliant blue sky, an exhausted but elated hiker throws both arms upward in a victorious pose, smiling brightly after completing the arduous climb."
+        },
+        {
+          "archetype_id": 4,
+          "name": "Idyllic Landscape",
+          "core_difference": "Evokes pleasure strictly through natural beauty and color harmony, distinguished from neutral landscapes by the exceptionally vibrant, uplifting palette and perfect weather cues.",
+          "visual_elements": "spring meadow, yellow wildflowers, butterflies, lush green grass, clear sun-drenched sky",
+          "text_query": "A vibrant spring meadow stretches toward the horizon, filled with blooming yellow wildflowers, fluttering butterflies, and lush green grass swaying under a perfectly clear, sun-drenched sky, evoking pure scenic tranquility and delight."
+        },
+        {
+          "archetype_id": 5,
+          "name": "Playful Animals",
+          "core_difference": "Demonstrates uninhibited frolicking and physical play in animals, distinctly differing from neutral catalog pet shots via dynamic motion and sparkling environmental interaction.",
+          "visual_elements": "energetic puppies, splashing puddle, flopping ears, sparkling water droplets, crisp morning light",
+          "text_query": "A high-speed, brightly lit photograph freezes the moment two energetic puppies joyfully splash through a shallow backyard puddle, ears flopping and water droplets sparkling in the crisp morning light."
+        },
+        {
+          "archetype_id": 6,
+          "name": "Social Dining",
+          "core_difference": "Focuses on shared laughter and camaraderie over food, avoiding the mundane atmosphere of a neutral routine by emphasizing genuine smiles and a warm ambiance.",
+          "visual_elements": "lively restaurant, diverse friends, hearty laugh, large pizza, colorful drinks, string lights",
+          "text_query": "Candidly framed across a lively restaurant table, a diverse group of friends shares a hearty, joyful laugh over a large pizza and colorful drinks, surrounded by the warm, inviting ambiance of string lights."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "emotion_name": "sadness",
+      "definition": "Sorrow, unhappiness, grief, loss, loneliness, or disappointment.",
+      "archetypes": [
+        {
+          "archetype_id": 1,
+          "name": "Grief and Mourning",
+          "core_difference": "Directly confronts profound, irreversible loss and weeping, distinguishing it from fear by the absence of immediate threat and the posture of surrender.",
+          "visual_elements": "somber dark clothing, kneeling figure, rain-slicked gravestone, buried face, wilted rose, overcast sky",
+          "text_query": "A grieving person dressed in somber dark clothing kneels beside a rain-slicked gravestone, burying their face in their hands while holding a single wilted rose beneath a heavy, overcast grey sky."
+        },
+        {
+          "archetype_id": 2,
+          "name": "Urban Isolation",
+          "core_difference": "Evokes loneliness and disconnection through vast empty space around a solitary figure, differentiated from neutral public spaces by the slouched posture and cold lighting.",
+          "visual_elements": "solitary figure, slouched posture, desolate bus stop, wet pavement, flickering streetlight, late night",
+          "text_query": "A solitary figure sits slouched on a desolate bus stop bench late at night, staring blankly at the wet pavement illuminated by a flickering, cold streetlight in an otherwise empty urban landscape."
+        },
+        {
+          "archetype_id": 3,
+          "name": "Disaster Loss",
+          "core_difference": "Displays the sorrowful aftermath of tragedy, contrasting with fear's active disaster archetype by showing exhaustion, bowed heads, and the finality of ruin.",
+          "visual_elements": "displaced family, charred ruins, burned-down house, bowed heads, exhaustion, settling ash",
+          "text_query": "Framed in a bleak documentary style, a displaced family stands silently amidst the charred wooden ruins of their burned-down house, their heads bowed in exhaustion and profound despair as ash settles around them."
+        },
+        {
+          "archetype_id": 4,
+          "name": "Childhood Disappointment",
+          "core_difference": "Focuses on a smaller-scale, deeply felt personal deflation, separated from anger by the absence of acting out and the presence of retreating, hugging body language.",
+          "visual_elements": "shadowy floor, tear-streaked cheeks, hugging knees, broken toy, neglected balloon, downcast eyes",
+          "text_query": "Sitting alone on a shadowy bedroom floor, a young boy with tear-streaked cheeks hugs his knees tightly, looking down in deep disappointment beside a broken toy and a neglected birthday balloon."
+        },
+        {
+          "archetype_id": 5,
+          "name": "Melancholy Landscape",
+          "core_difference": "Projects sorrow onto a desolate natural setting through pathetic fallacy, fundamentally different from neutral landscapes due to the use of barren elements and weeping weather.",
+          "visual_elements": "barren tree, misty moor, withered brown grass, heavy fog, sunless sky",
+          "text_query": "A deeply melancholic landscape shows a single barren tree standing on a misty, desolate moor, surrounded by withered brown grass and heavy fog rolling in under a perpetually weeping, sunless sky."
+        },
+        {
+          "archetype_id": 6,
+          "name": "Animal Distress",
+          "core_difference": "Captures resignation and captivity in an animal subject, distinguishing it from neutral pet photography through droopy features and the gloomy shelter context.",
+          "visual_elements": "stray dog, chain-link fence, dim animal shelter, droopy eyes, flattened ears, resignation",
+          "text_query": "A heartbreaking, close-up portrait of a stray dog behind the chain-link fence of a dimly lit animal shelter, looking directly at the camera with droopy eyes, flattened ears, and a posture of complete resignation."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "emotion_name": "surprise",
+      "definition": "A sudden reaction to something unexpected, novel, or startling.",
+      "archetypes": [
+        {
+          "archetype_id": 1,
+          "name": "Unexpected Celebration",
+          "core_difference": "Captures the exact moment of a positive shock, differentiated from pure joy by the open mouth, covered face, and the emphasis on the sudden transition.",
+          "visual_elements": "open mouth, hands covering face, wide eyes, confetti, balloons, sudden illumination",
+          "text_query": "A young woman covers her open mouth with both hands in pure astonishment, her eyes wide as she walks into a dark living room suddenly illuminated by friends jumping out with confetti and balloons."
+        },
+        {
+          "archetype_id": 2,
+          "name": "Startling Accident",
+          "core_difference": "Highlights a neutral or slightly negative workplace jolt, distinct from anger or fear because the emotion is pure reflex to a sudden, harmless structural failure.",
+          "visual_elements": "office worker, jolting backward, raised eyebrows, collapsing file folders, neat desk, action shot",
+          "text_query": "Caught in a perfectly timed action shot, an office worker jolts backward in their chair with eyebrows raised in shock as a towering stack of file folders suddenly collapses onto their neat desk."
+        },
+        {
+          "archetype_id": 3,
+          "name": "Novelty and Disbelief",
+          "core_difference": "Focuses on collective awe and cognitive dissonance rather than an acoustic startle, uniquely showing people trying to process an impossible sight.",
+          "visual_elements": "diverse crowd, dropped jaws, wide eyes, street magician, levitating object, sunny street",
+          "text_query": "A diverse crowd of onlookers on a sunny pedestrian street exhibits exaggerated expressions of sheer disbelief, with dropped jaws and wide eyes, as a street magician successfully levitates an everyday object in mid-air."
+        },
+        {
+          "archetype_id": 4,
+          "name": "Sudden Weather Event",
+          "core_difference": "Features an involuntary physical flinch to a loud environmental trigger, distinguishing it from fear by emphasizing the immediate, frozen startle rather than ongoing panic.",
+          "visual_elements": "startled hiker, hunched shoulders, pulled in neck, looking up, massive lightning bolt, twilight sky",
+          "text_query": "A startled hiker on a rocky trail freezes with shoulders hunched and neck pulled in, looking up in abrupt alarm as a massive, unexpected bolt of lightning suddenly splits the twilight sky overhead."
+        },
+        {
+          "archetype_id": 5,
+          "name": "Surreal Imagery",
+          "core_difference": "Evokes a double-take in the viewer through physics-defying visual anomalies, totally devoid of human subjects and functioning purely as an evoked expectation violation.",
+          "visual_elements": "architectural photograph, upside-down house, grassy lawn, physics-defying, clear details",
+          "text_query": "An incredibly surreal architectural photograph shows a standard residential house that has been constructed entirely upside down, forcing the viewer to do a double-take at the physics-defying roof resting on the grassy lawn."
+        },
+        {
+          "archetype_id": 6,
+          "name": "Animal Startle",
+          "core_difference": "Captures the rigid, sensory-overload response of an animal to an unexpected noise, fundamentally distinct from neutral cat portraits via extreme pupillary dilation and a puffed tail.",
+          "visual_elements": "domestic cat, dilated pupils, stiff upright ears, fluffed tail, tiled floor, fluorescent lights",
+          "text_query": "A close-up shot of a domestic cat reacting to a sudden noise, featuring maximally dilated pupils, upright stiff ears, and a fluffed-up tail, standing frozen on a tiled kitchen floor under bright fluorescent lights."
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "emotion_name": "neutral",
+      "definition": "Emotionally balanced or low-arousal content without a dominant positive or negative affect.",
+      "archetypes": [
+        {
+          "archetype_id": 1,
+          "name": "Relaxed Portrait",
+          "core_difference": "Presents a human face entirely free of affective tension, smiles, or grimaces, clearly lacking the emotional intensity that defines the other six classes.",
+          "visual_elements": "studio headshot, relaxed facial muscles, level gaze, no smile, plain grey background",
+          "text_query": "A professional studio headshot captures a softly lit adult looking directly at the camera with relaxed facial muscles, a level gaze, and no distinct smile, set against a plain, medium-grey seamless background."
+        },
+        {
+          "archetype_id": 2,
+          "name": "Ordinary Workspace",
+          "core_difference": "Documents an empty human environment in a clean, functional state, distinct from sadness's isolation by being a normal, well-lit setting devoid of melancholic cues.",
+          "visual_elements": "open-plan office, organized cubicles, blank monitors, mesh chairs, potted plants, bright lighting",
+          "text_query": "A brightly lit, contemporary open-plan office contains several organized cubicles featuring blank computer monitors, ergonomic mesh chairs, and simple potted plants, depicting a standard, functional work environment devoid of any human activity."
+        },
+        {
+          "archetype_id": 3,
+          "name": "Quiet Public Place",
+          "core_difference": "Observes people engaging in passive, everyday transit without conflict, joy, or urgency, contrasting sharply with the chaotic crowds of anger or the panic of fear.",
+          "visual_elements": "airport terminal, rolling luggage, illuminated corridors, waiting travelers, everyday expressions",
+          "text_query": "A wide-angle architectural photograph documents a modern airport terminal with travelers pulling rolling luggage calmly through the brightly illuminated corridors, waiting patiently at boarding gates with neutral, everyday expressions."
+        },
+        {
+          "archetype_id": 4,
+          "name": "Catalog-style Object",
+          "core_difference": "Focuses on the geometric and textural reality of a mundane item, avoiding any narrative context, decay (disgust), or destruction (anger).",
+          "visual_elements": "ceramic coffee mug, white surface, softbox lighting, smooth texture, geometric shape, macro photograph",
+          "text_query": "A pristine macro photograph displays a standard ceramic coffee mug resting on a clean white surface, perfectly illuminated by softbox lighting to highlight the smooth texture and simple geometric shape of the everyday object."
+        },
+        {
+          "archetype_id": 5,
+          "name": "Informational Graphic",
+          "core_difference": "Presents purely structural digital information, entirely circumventing organic emotion by displaying abstract UI elements and data completely devoid of affective tone.",
+          "visual_elements": "digital screenshot, web dashboard, bar chart, blue typography, navigation menu, white background",
+          "text_query": "A high-resolution digital screenshot presents a clean, minimalist web dashboard featuring a basic bar chart, uniform blue typography, and a straightforward navigation menu laid out on a sterile white background for data visualization."
+        },
+        {
+          "archetype_id": 6,
+          "name": "Routine Activity",
+          "core_difference": "Highlights mundane physical maintenance without expressive reaction, completely lacking the smiles of joy or the defeated posture of sadness during daily life.",
+          "visual_elements": "kitchen sink, casual clothing, washing dinner plate, natural window light, mundane chore",
+          "text_query": "Photographed with natural window light, an individual in casual clothing stands at a kitchen sink mechanically washing an ordinary ceramic dinner plate, focused entirely on the mundane household chore without expressing any distinct emotion."
+        }
+      ]
+    }
+  ]
+}

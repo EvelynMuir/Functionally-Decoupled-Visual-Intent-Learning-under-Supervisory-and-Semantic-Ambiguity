@@ -1,0 +1,472 @@
+{
+  "dataset": "emotion6",
+  "protocol": {
+    "selection_metric": "validation KL (lower is better)",
+    "test_split": "official split 1; never used for model selection",
+    "seeds": [
+      2026,
+      2027,
+      2028,
+      2029,
+      2030
+    ],
+    "slr_topk": 5,
+    "slr_alpha": 0.3,
+    "slrc_description_file": "${DATA_ROOT}/LDL/processed/semantic_priors/emotion6_gemini_slrc_prior.json",
+    "utd_gate": "1-max(y), where max(y) is sample-level annotator agreement; training only",
+    "teacher": "3-fold OOF VLM-rationale text teacher, training only",
+    "reported_metrics": {
+      "lower_is_better": [
+        "chebyshev",
+        "clark",
+        "kl",
+        "dvse"
+      ],
+      "higher_is_better": [
+        "cosine",
+        "spearman",
+        "mu"
+      ],
+      "mu_unit": "percent",
+      "dvse_polarity": {
+        "positive": [
+          "joy",
+          "surprise"
+        ],
+        "negative": [
+          "anger",
+          "disgust",
+          "fear",
+          "sadness"
+        ],
+        "excluded": [
+          "neutral"
+        ]
+      }
+    }
+  },
+  "aggregate_test": {
+    "baseline": {
+      "chebyshev": {
+        "mean": 0.17936663152239146,
+        "std": 0.0016780687960316855
+      },
+      "clark": {
+        "mean": 1.597904323603211,
+        "std": 0.0022796560897362116
+      },
+      "kl": {
+        "mean": 0.25317278462215687,
+        "std": 0.0023105310890105986
+      },
+      "cosine": {
+        "mean": 0.8946640364211224,
+        "std": 0.0012770684728241675
+      },
+      "spearman": {
+        "mean": 0.7222664919225098,
+        "std": 0.002236801873383112
+      },
+      "mu": {
+        "mean": 64.20109237287002,
+        "std": 0.33056862014661226
+      },
+      "dvse": {
+        "mean": 0.07838106387025681,
+        "std": 0.0007703479104648861
+      }
+    },
+    "utd": {
+      "chebyshev": {
+        "mean": 0.18044109894244814,
+        "std": 0.001571217028983979
+      },
+      "clark": {
+        "mean": 1.5949138028608765,
+        "std": 0.004209096857104291
+      },
+      "kl": {
+        "mean": 0.2537152343420714,
+        "std": 0.00293141567811007
+      },
+      "cosine": {
+        "mean": 0.8940589491823742,
+        "std": 0.0015803949508372665
+      },
+      "spearman": {
+        "mean": 0.7256313526355983,
+        "std": 0.002329034267407521
+      },
+      "mu": {
+        "mean": 64.1180898794053,
+        "std": 0.3844307269720354
+      },
+      "dvse": {
+        "mean": 0.07906769605353195,
+        "std": 0.0012204676245198063
+      }
+    },
+    "slrc": {
+      "chebyshev": {
+        "mean": 0.17968073260031303,
+        "std": 0.0014257544664283948
+      },
+      "clark": {
+        "mean": 1.597575144755239,
+        "std": 0.004747641999445629
+      },
+      "kl": {
+        "mean": 0.2515246935422709,
+        "std": 0.0017402577786528105
+      },
+      "cosine": {
+        "mean": 0.8954823314288574,
+        "std": 0.0011880604053448713
+      },
+      "spearman": {
+        "mean": 0.7231382705945576,
+        "std": 0.002294559525667457
+      },
+      "mu": {
+        "mean": 64.51609248650433,
+        "std": 0.25434829954368077
+      },
+      "dvse": {
+        "mean": 0.07810987632080461,
+        "std": 0.0005358895985316098
+      }
+    },
+    "fdil": {
+      "chebyshev": {
+        "mean": 0.18016550538538773,
+        "std": 0.0010166424603862178
+      },
+      "clark": {
+        "mean": 1.5909721034544824,
+        "std": 0.00202765998364172
+      },
+      "kl": {
+        "mean": 0.25132241023877927,
+        "std": 0.0005484698114726367
+      },
+      "cosine": {
+        "mean": 0.8952809271468037,
+        "std": 0.0007400159210213504
+      },
+      "spearman": {
+        "mean": 0.7219405349839115,
+        "std": 0.002318993139088119
+      },
+      "mu": {
+        "mean": 64.41344643024077,
+        "std": 0.10524014786805644
+      },
+      "dvse": {
+        "mean": 0.07811845937238082,
+        "std": 0.0007948589381558656
+      }
+    }
+  },
+  "per_seed": [
+    {
+      "dataset": "emotion6",
+      "seed": 2026,
+      "method": "baseline",
+      "best_epoch": 6,
+      "val_kl": 0.22732945045645161,
+      "teacher_oof_train_kl": 0.22961338225424474,
+      "test_chebyshev": 0.17992228756542472,
+      "test_clark": 1.6018222087247476,
+      "test_kl": 0.2554829014859447,
+      "test_cosine": 0.8938984231012566,
+      "test_spearman": 0.7255388962362697,
+      "test_mu": 63.91646788696792,
+      "test_dvse": 0.07941459121728146
+    },
+    {
+      "dataset": "emotion6",
+      "seed": 2026,
+      "method": "utd",
+      "best_epoch": 8,
+      "val_kl": 0.2299131913707806,
+      "teacher_oof_train_kl": 0.22961338225424474,
+      "test_chebyshev": 0.18131997326577698,
+      "test_clark": 1.591373623439862,
+      "test_kl": 0.2528038193742578,
+      "test_cosine": 0.8949367354165956,
+      "test_spearman": 0.7263364185243208,
+      "test_mu": 64.14838291443974,
+      "test_dvse": 0.08040760599578545
+    },
+    {
+      "dataset": "emotion6",
+      "seed": 2026,
+      "method": "slrc",
+      "best_epoch": 5,
+      "val_kl": 0.23157285413588746,
+      "teacher_oof_train_kl": 0.22961338225424474,
+      "test_chebyshev": 0.17958677260895503,
+      "test_clark": 1.592552150493192,
+      "test_kl": 0.24921212226514977,
+      "test_cosine": 0.8968305932118296,
+      "test_spearman": 0.7248433866511433,
+      "test_mu": 64.82746448353292,
+      "test_dvse": 0.0776850928385652
+    },
+    {
+      "dataset": "emotion6",
+      "seed": 2026,
+      "method": "fdil",
+      "best_epoch": 4,
+      "val_kl": 0.22942665591648664,
+      "teacher_oof_train_kl": 0.22961338225424474,
+      "test_chebyshev": 0.17928128020956344,
+      "test_clark": 1.5911511545228083,
+      "test_kl": 0.25135868712214254,
+      "test_cosine": 0.8951973848448502,
+      "test_spearman": 0.7242134137421428,
+      "test_mu": 64.46866001340778,
+      "test_dvse": 0.07816101548925486
+    },
+    {
+      "dataset": "emotion6",
+      "seed": 2027,
+      "method": "baseline",
+      "best_epoch": 7,
+      "val_kl": 0.22890410637496497,
+      "teacher_oof_train_kl": 0.22763752638898724,
+      "test_chebyshev": 0.1804010657039196,
+      "test_clark": 1.5965360020549806,
+      "test_kl": 0.25425576651912923,
+      "test_cosine": 0.8943057524085118,
+      "test_spearman": 0.7224413442964678,
+      "test_mu": 64.01132604031194,
+      "test_dvse": 0.07882718521921096
+    },
+    {
+      "dataset": "emotion6",
+      "seed": 2027,
+      "method": "utd",
+      "best_epoch": 9,
+      "val_kl": 0.2295216856340902,
+      "teacher_oof_train_kl": 0.22763752638898724,
+      "test_chebyshev": 0.18004634978664916,
+      "test_clark": 1.59208747462075,
+      "test_kl": 0.25241321112036297,
+      "test_cosine": 0.8946504709409328,
+      "test_spearman": 0.7289339067161867,
+      "test_mu": 64.25007374681945,
+      "test_dvse": 0.07882356560613214
+    },
+    {
+      "dataset": "emotion6",
+      "seed": 2027,
+      "method": "slrc",
+      "best_epoch": 5,
+      "val_kl": 0.22923368042683911,
+      "teacher_oof_train_kl": 0.22763752638898724,
+      "test_chebyshev": 0.18221630179281723,
+      "test_clark": 1.5959678146364389,
+      "test_kl": 0.2534757336125801,
+      "test_cosine": 0.8942075697337605,
+      "test_spearman": 0.7225445225207191,
+      "test_mu": 64.13046854876472,
+      "test_dvse": 0.0784820088896363
+    },
+    {
+      "dataset": "emotion6",
+      "seed": 2027,
+      "method": "fdil",
+      "best_epoch": 4,
+      "val_kl": 0.22402609431690912,
+      "teacher_oof_train_kl": 0.22763752638898724,
+      "test_chebyshev": 0.17940670117617336,
+      "test_clark": 1.5898033176573105,
+      "test_kl": 0.2505282135323747,
+      "test_cosine": 0.8966595181330868,
+      "test_spearman": 0.7240931294631127,
+      "test_mu": 64.49481921063303,
+      "test_dvse": 0.07880827086822803
+    },
+    {
+      "dataset": "emotion6",
+      "seed": 2028,
+      "method": "baseline",
+      "best_epoch": 6,
+      "val_kl": 0.23229692163486612,
+      "teacher_oof_train_kl": 0.22498530369580677,
+      "test_chebyshev": 0.18158877399535414,
+      "test_clark": 1.5985762141383526,
+      "test_kl": 0.25492005736229806,
+      "test_cosine": 0.8933078006521923,
+      "test_spearman": 0.7208631650553113,
+      "test_mu": 63.916875140644855,
+      "test_dvse": 0.07714351124582747
+    },
+    {
+      "dataset": "emotion6",
+      "seed": 2028,
+      "method": "utd",
+      "best_epoch": 10,
+      "val_kl": 0.22757604543236062,
+      "teacher_oof_train_kl": 0.22498530369580677,
+      "test_chebyshev": 0.17908904307817516,
+      "test_clark": 1.5954729078188483,
+      "test_kl": 0.2529563043249959,
+      "test_cosine": 0.8942292969613282,
+      "test_spearman": 0.7263437748965241,
+      "test_mu": 64.34494046299038,
+      "test_dvse": 0.07784111910789034
+    },
+    {
+      "dataset": "emotion6",
+      "seed": 2028,
+      "method": "slrc",
+      "best_epoch": 3,
+      "val_kl": 0.23276276119674133,
+      "teacher_oof_train_kl": 0.22498530369580677,
+      "test_chebyshev": 0.17847422796832785,
+      "test_clark": 1.5959757110812884,
+      "test_kl": 0.2502656161148196,
+      "test_cosine": 0.8967811792049104,
+      "test_spearman": 0.7264487843173452,
+      "test_mu": 64.71494992719227,
+      "test_dvse": 0.07740459595426932
+    },
+    {
+      "dataset": "emotion6",
+      "seed": 2028,
+      "method": "fdil",
+      "best_epoch": 7,
+      "val_kl": 0.2301655542387302,
+      "teacher_oof_train_kl": 0.22498530369580677,
+      "test_chebyshev": 0.18168888487190016,
+      "test_clark": 1.588044738283575,
+      "test_kl": 0.25218501368814833,
+      "test_cosine": 0.894675588094382,
+      "test_spearman": 0.7227101140731009,
+      "test_mu": 64.26640793994505,
+      "test_dvse": 0.07911191880283448
+    },
+    {
+      "dataset": "emotion6",
+      "seed": 2029,
+      "method": "baseline",
+      "best_epoch": 6,
+      "val_kl": 0.2253901382886239,
+      "teacher_oof_train_kl": 0.2277795126522961,
+      "test_chebyshev": 0.17696237339319826,
+      "test_clark": 1.5950442544071344,
+      "test_kl": 0.24920284742219526,
+      "test_cosine": 0.8970277316184183,
+      "test_spearman": 0.7235049538421489,
+      "test_mu": 64.75479992713993,
+      "test_dvse": 0.07852377209373086
+    },
+    {
+      "dataset": "emotion6",
+      "seed": 2029,
+      "method": "utd",
+      "best_epoch": 8,
+      "val_kl": 0.22944754458316782,
+      "teacher_oof_train_kl": 0.2277795126522961,
+      "test_chebyshev": 0.1787290609262666,
+      "test_clark": 1.5927734027723575,
+      "test_kl": 0.2509915142583779,
+      "test_cosine": 0.8954745832676262,
+      "test_spearman": 0.7246980545008913,
+      "test_mu": 64.4682399247699,
+      "test_dvse": 0.07770486111567929
+    },
+    {
+      "dataset": "emotion6",
+      "seed": 2029,
+      "method": "slrc",
+      "best_epoch": 5,
+      "val_kl": 0.22566449171353256,
+      "teacher_oof_train_kl": 0.2277795126522961,
+      "test_chebyshev": 0.17993138084192647,
+      "test_clark": 1.5967674282066475,
+      "test_kl": 0.25109212210695386,
+      "test_cosine": 0.8954982741338767,
+      "test_spearman": 0.7220064589103582,
+      "test_mu": 64.57727940912704,
+      "test_dvse": 0.07889646577357719
+    },
+    {
+      "dataset": "emotion6",
+      "seed": 2029,
+      "method": "fdil",
+      "best_epoch": 5,
+      "val_kl": 0.22548321935252652,
+      "teacher_oof_train_kl": 0.2277795126522961,
+      "test_chebyshev": 0.1810862392621171,
+      "test_clark": 1.5917228448795075,
+      "test_kl": 0.251517522671972,
+      "test_cosine": 0.8952724800719838,
+      "test_spearman": 0.7205682575181094,
+      "test_mu": 64.30905398842751,
+      "test_dvse": 0.07757582042323925
+    },
+    {
+      "dataset": "emotion6",
+      "seed": 2030,
+      "method": "baseline",
+      "best_epoch": 6,
+      "val_kl": 0.2266451628377569,
+      "teacher_oof_train_kl": 0.23100233094528885,
+      "test_chebyshev": 0.17795865695406052,
+      "test_clark": 1.5975429386908413,
+      "test_kl": 0.2520023503212172,
+      "test_cosine": 0.8947804743252332,
+      "test_spearman": 0.7189841001823513,
+      "test_mu": 64.40599286928548,
+      "test_dvse": 0.07799625957523333
+    },
+    {
+      "dataset": "emotion6",
+      "seed": 2030,
+      "method": "utd",
+      "best_epoch": 6,
+      "val_kl": 0.22823255805749232,
+      "teacher_oof_train_kl": 0.23100233094528885,
+      "test_chebyshev": 0.1830210676553727,
+      "test_clark": 1.602861605652564,
+      "test_kl": 0.2594113226323625,
+      "test_cosine": 0.8910036593253883,
+      "test_spearman": 0.7218446085400684,
+      "test_mu": 63.37881234800703,
+      "test_dvse": 0.08056132844217258
+    },
+    {
+      "dataset": "emotion6",
+      "seed": 2030,
+      "method": "slrc",
+      "best_epoch": 3,
+      "val_kl": 0.2284577526169899,
+      "teacher_oof_train_kl": 0.23100233094528885,
+      "test_chebyshev": 0.17819497978953844,
+      "test_clark": 1.6066126193586283,
+      "test_kl": 0.25357787361185097,
+      "test_cosine": 0.8940940408599093,
+      "test_spearman": 0.7198482005732225,
+      "test_mu": 64.33030006390469,
+      "test_dvse": 0.0780812181479751
+    },
+    {
+      "dataset": "emotion6",
+      "seed": 2030,
+      "method": "fdil",
+      "best_epoch": 3,
+      "val_kl": 0.2248970295729227,
+      "teacher_oof_train_kl": 0.23100233094528885,
+      "test_chebyshev": 0.17936442140718456,
+      "test_clark": 1.59413846192921,
+      "test_kl": 0.2510226141792589,
+      "test_cosine": 0.8945996645897165,
+      "test_spearman": 0.7181177601230916,
+      "test_mu": 64.52829099879047,
+      "test_dvse": 0.0769352712783475
+    }
+  ]
+}

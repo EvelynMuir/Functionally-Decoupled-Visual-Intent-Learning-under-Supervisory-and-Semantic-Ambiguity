@@ -1,0 +1,164 @@
+{
+  "generated": "2026-06-23T15:45:36",
+  "config": {
+    "cache_dir": "logs/analysis/min_agent_evidence_verification_v2_comparative_add_20260312/_cache",
+    "topk": 10,
+    "slr_alpha": 0.3,
+    "bootstrap": 5000,
+    "seed": 20260617,
+    "n_test": 1216,
+    "n_val": 498,
+    "num_classes": 28
+  },
+  "sanity": [
+    {
+      "method": "CLIP baseline",
+      "macro_f1": 45.93,
+      "target_f1": 45.93,
+      "mAP": 49.94,
+      "target_mAP": 50.59,
+      "match": true
+    },
+    {
+      "method": "UTD only",
+      "macro_f1": 50.68,
+      "target_f1": 50.68,
+      "mAP": 52.76,
+      "target_mAP": 53.34,
+      "match": true
+    },
+    {
+      "method": "SLR-C only",
+      "macro_f1": 50.9,
+      "target_f1": 49.43,
+      "mAP": 53.95,
+      "target_mAP": 53.79,
+      "match": false
+    },
+    {
+      "method": "FDIL",
+      "macro_f1": 51.63,
+      "target_f1": 51.57,
+      "mAP": 54.75,
+      "target_mAP": 55.12,
+      "match": true
+    }
+  ],
+  "threshold_free_metrics": [
+    {
+      "method": "CLIP baseline",
+      "macro_f1_classwise": 45.93,
+      "mAP": 49.94,
+      "macro_roc_auc": 87.04,
+      "micro_roc_auc": 84.9,
+      "micro_pr_auc": 54.89
+    },
+    {
+      "method": "UTD only",
+      "macro_f1_classwise": 50.68,
+      "mAP": 52.76,
+      "macro_roc_auc": 90.09,
+      "micro_roc_auc": 88.55,
+      "micro_pr_auc": 59.59
+    },
+    {
+      "method": "SLR-C only",
+      "macro_f1_classwise": 50.9,
+      "mAP": 53.95,
+      "macro_roc_auc": 88.24,
+      "micro_roc_auc": 86.73,
+      "micro_pr_auc": 58.6
+    },
+    {
+      "method": "FDIL",
+      "macro_f1_classwise": 51.63,
+      "mAP": 54.75,
+      "macro_roc_auc": 89.36,
+      "micro_roc_auc": 88.31,
+      "micro_pr_auc": 60.64
+    }
+  ],
+  "paired_significance": [
+    {
+      "comparison": "FDIL - CLIP baseline",
+      "metric": "mAP",
+      "delta": 4.804,
+      "ci95_low": 3.578,
+      "ci95_high": 6.103,
+      "p_value": 0.0,
+      "p_report": 0.0002
+    },
+    {
+      "comparison": "FDIL - CLIP baseline",
+      "metric": "macro_auc",
+      "delta": 2.312,
+      "ci95_low": 1.774,
+      "ci95_high": 2.862,
+      "p_value": 0.0,
+      "p_report": 0.0002
+    },
+    {
+      "comparison": "FDIL - CLIP baseline",
+      "metric": "micro_auc",
+      "delta": 3.404,
+      "ci95_low": 2.981,
+      "ci95_high": 3.829,
+      "p_value": 0.0,
+      "p_report": 0.0002
+    },
+    {
+      "comparison": "FDIL - UTD only",
+      "metric": "mAP",
+      "delta": 1.988,
+      "ci95_low": 0.269,
+      "ci95_high": 4.304,
+      "p_value": 0.0188,
+      "p_report": 0.0188
+    },
+    {
+      "comparison": "FDIL - UTD only",
+      "metric": "macro_auc",
+      "delta": -0.733,
+      "ci95_low": -1.743,
+      "ci95_high": 0.049,
+      "p_value": 0.0636,
+      "p_report": 0.0636
+    },
+    {
+      "comparison": "FDIL - UTD only",
+      "metric": "micro_auc",
+      "delta": -0.241,
+      "ci95_low": -0.638,
+      "ci95_high": 0.184,
+      "p_value": 0.26,
+      "p_report": 0.26
+    },
+    {
+      "comparison": "FDIL - SLR-C only",
+      "metric": "mAP",
+      "delta": 0.8,
+      "ci95_low": 0.188,
+      "ci95_high": 1.49,
+      "p_value": 0.0144,
+      "p_report": 0.0144
+    },
+    {
+      "comparison": "FDIL - SLR-C only",
+      "metric": "macro_auc",
+      "delta": 1.117,
+      "ci95_low": 0.631,
+      "ci95_high": 1.598,
+      "p_value": 0.0,
+      "p_report": 0.0002
+    },
+    {
+      "comparison": "FDIL - SLR-C only",
+      "metric": "micro_auc",
+      "delta": 1.576,
+      "ci95_low": 1.188,
+      "ci95_high": 1.951,
+      "p_value": 0.0,
+      "p_report": 0.0002
+    }
+  ]
+}

@@ -1,0 +1,1031 @@
+[
+  {
+    "id": 1,
+    "intent": "Being attractive.",
+    "description": [
+      {
+        "Archetype": 1,
+        "Name of the Scenario": "High Fashion Glamour",
+        "Core Difference": "Focuses on dramatic styling, formal wear, and professional lighting often found in red-carpet or high-end editorial environments.",
+        "Visual Elements": "Evening gown or tuxedo, striking jewelry, flawless makeup, posing confidently, dramatic lighting, glamorous vibe",
+        "Text Query": "A photo of a stunningly beautiful person in elegant formal wear posing under dramatic studio lighting, featuring flawless makeup, meticulously styled hair, and a confident, highly glamorous expression."
+      },
+      {
+        "Archetype": 2,
+        "Name of the Scenario": "Natural Fitness and Vitality",
+        "Core Difference": "Emphasizes physical health, athleticism, and a fresh-faced, active glow outdoors without heavy styling.",
+        "Visual Elements": "Sleek athletic wear, toned physique, glowing skin, running or stretching, bright natural sunlight, energetic and healthy vibe",
+        "Text Query": "An image showing a fit, attractive person with glowing skin wearing sleek athletic wear outdoors, looking fresh and radiating energetic vitality under bright morning sunlight."
+      },
+      {
+        "Archetype": 3,
+        "Name of the Scenario": "Sharp Professional Elegance",
+        "Core Difference": "Highlights meticulous grooming, tailored clothing, and a commanding posture in a sharp urban or corporate setting.",
+        "Visual Elements": "Tailored suit or crisp blazer, neat grooming, walking purposefully, modern office glass background, sophisticated and powerful vibe",
+        "Text Query": "A photo of a highly handsome and well-groomed person walking down a city street in a perfectly tailored suit, exuding sharp facial features, commanding confidence, and modern corporate elegance."
+      },
+      {
+        "Archetype": 4,
+        "Name of the Scenario": "Effortless Casual Chic",
+        "Core Difference": "Captures approachable, everyday beauty with trendy street style in a relaxed, candid, warm environment.",
+        "Visual Elements": "Trendy streetwear, oversized denim, bright candid smile, sitting at a table, sunny cafe patio, approachable and warm vibe",
+        "Text Query": "An image showing an effortlessly attractive person sitting at a sunlit outdoor cafe, wearing stylish casual streetwear, displaying a warm, genuine smile and glowing natural facial features."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "intent": "Beat people in a competition.",
+    "description": [
+      {
+        "Archetype": 1,
+        "Name of the Scenario": "Track and Field Race Victory",
+        "Core Difference": "Focuses on outdoor, high-energy physical exertion and athletic dominance at the exact moment of winning.",
+        "Visual Elements": "Running track, finish line tape, sweating athletes, cheering crowd, raised arms, sports uniform",
+        "Text Query": "A photo of an exhausted but triumphant runner crossing the finish line tape with raised arms, leaving rival athletes trailing behind on a sunny outdoor track."
+      },
+      {
+        "Archetype": 2,
+        "Name of the Scenario": "Intense Chess Match Checkmate",
+        "Core Difference": "Features a quiet, indoor, highly intellectual face-off centered entirely around a small tabletop board.",
+        "Visual Elements": "Chessboard, wooden pieces, intense eye contact, ticking clock, seated at a table, hands moving a piece, formal clothing",
+        "Text Query": "An image showing a focused chess player confidently moving a piece to checkmate, while the opponent looks down in defeat across a softly lit wooden table."
+      },
+      {
+        "Archetype": 3,
+        "Name of the Scenario": "E-sports Tournament Triumph",
+        "Core Difference": "Captures a dark, neon-lit digital battleground emphasizing technology and enthusiastic team celebrations.",
+        "Visual Elements": "Glowing monitors, RGB lighting, gaming headsets, raised fists, gaming chairs, matching team jerseys, ecstatic gamers",
+        "Text Query": "A photo of an ecstatic e-sports team in matching jerseys jumping out of their gaming chairs with raised fists, celebrating a tournament victory in front of glowing monitors."
+      },
+      {
+        "Archetype": 4,
+        "Name of the Scenario": "Academic Spelling Bee Champion",
+        "Core Difference": "Depicts a formal, structured indoor environment where intellectual knowledge is judged in front of an audience.",
+        "Visual Elements": "Stage, microphone, first-place ribbon, judges, bright spotlights, formal school attire, defeated contestants",
+        "Text Query": "An image showing a smiling student holding a large first-place trophy on a brightly lit auditorium stage, standing proudly behind a microphone while runner-up contestants clap politely."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "intent": "To communicate or express myself.",
+    "description": [
+      {
+        "Archetype": 1,
+        "Name of the Scenario": "Artistic Performance and Creation",
+        "Core Difference": "Focuses on non-verbal, physical, or creative mediums like paint or music to convey inner feelings rather than direct speech.",
+        "Visual Elements": "Paintbrushes, canvas, musical instruments, vibrant colors, expressive body language, messy studio, passionate vibe",
+        "Text Query": "A photo of an artist deeply focused on painting a vibrant, chaotic canvas in a messy, sunlit studio, surrounded by scattered brushes and palettes, capturing a raw moment of creative self-expression."
+      },
+      {
+        "Archetype": 2,
+        "Name of the Scenario": "Public Speaking and Advocacy",
+        "Core Difference": "Captures loud, outward-facing communication aimed at an audience or society, characterized by strong gestures and crowds.",
+        "Visual Elements": "Megaphone, microphone, stage, cardboard signs, crowd, passionate facial expressions, raised hands, energetic vibe",
+        "Text Query": "An image showing a passionate speaker holding a megaphone and raising one hand at a crowded outdoor rally, surrounded by people holding colorful cardboard signs in an energetic atmosphere of public advocacy."
+      },
+      {
+        "Archetype": 3,
+        "Name of the Scenario": "Intimate Interpersonal Conversation",
+        "Core Difference": "Highlights quiet, one-on-one verbal and non-verbal communication in a cozy, close-proximity indoor setting.",
+        "Visual Elements": "Coffee cups, wooden table, two people making eye contact, leaning in, warm lighting, relaxed posture, intimate vibe",
+        "Text Query": "A photo of two people leaning toward each other across a small wooden table in a dimly lit coffee shop, maintaining deep eye contact and gesturing gently during an earnest, expressive conversation."
+      },
+      {
+        "Archetype": 4,
+        "Name of the Scenario": "Digital Content Creation",
+        "Core Difference": "Depicts modern, technology-mediated expression where the subject communicates alone to a virtual audience through screens and lenses.",
+        "Visual Elements": "Ring light, smartphone on a tripod, microphone, computer monitors, glowing screens, looking directly into the camera, modern vibe",
+        "Text Query": "An image showing a person sitting in a room illuminated by neon LED strips and a bright ring light, enthusiastically gesturing and speaking into a smartphone mounted on a desk tripod."
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "intent": "Being creative (e.g., artistically, scientifically, intellectually). Being unique or different.",
+    "description": [
+      {
+        "Archetype": 1,
+        "Name of the Scenario": "Messy Fine Art Studio",
+        "Core Difference": "Focuses on traditional, physical artistic expression characterized by vibrant colors and chaotic, tactile materials.",
+        "Visual Elements": "Large canvas, splattered paint, brushes, palette, overalls, messy studio, colorful, focused action, expressive vibe",
+        "Text Query": "A photo of an artist in a chaotic, brightly lit studio, wearing paint-splattered clothes while passionately applying vivid colors to a massive abstract canvas with a thick brush."
+      },
+      {
+        "Archetype": 2,
+        "Name of the Scenario": "Advanced Science and Robotics Lab",
+        "Core Difference": "Focuses on scientific innovation and intellectual creation within a high-tech, structured, and cool-toned environment.",
+        "Visual Elements": "Whiteboard with equations, glowing computer screens, circuit boards, robotic arm, safety goggles, lab coat, cool blue lighting, focused vibe",
+        "Text Query": "An image showing a focused scientist in a dimly lit, high-tech lab, soldering a complex circuit board surrounded by glowing monitors and a glass whiteboard covered in dense mathematical diagrams."
+      },
+      {
+        "Archetype": 3,
+        "Name of the Scenario": "Unconventional Avant-Garde Fashion",
+        "Core Difference": "Focuses on being unique or different through extreme personal style and high visual contrast against an ordinary background.",
+        "Visual Elements": "Bright neon hair, asymmetric avant-garde clothing, crowded city street, ordinary pedestrians in gray, striking contrast, bold vibe",
+        "Text Query": "A photo of a confident person with neon green hair and bold, asymmetrical avant-garde clothing standing out vividly against a blurred crowd of pedestrians wearing dull, everyday business suits."
+      },
+      {
+        "Archetype": 4,
+        "Name of the Scenario": "Intellectual Brainstorming Session",
+        "Core Difference": "Focuses on conceptual design and intellectual creativity, represented by the visual organization of ideas in a bright, structured setting.",
+        "Visual Elements": "Glass wall, colorful sticky notes, markers, modern office, designer pointing, architectural models, well-lit, organized chaos, innovative vibe",
+        "Text Query": "An image showing a creative director in a bright, modern studio mapping out a complex web of colorful sticky notes and connecting lines on a large transparent glass wall."
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "intent": "Exploration - Being curious and adventurous. Having an exciting, stimulating life.",
+    "description": [
+      {
+        "Archetype": 1,
+        "Name of the Scenario": "High-Altitude Wilderness Expedition",
+        "Core Difference": "Focuses on vast natural landscapes, physical endurance, and human scale against giant geographical features.",
+        "Visual Elements": "Snow-capped peaks, rugged terrain, heavy backpacks, hiking poles, colorful outdoor jackets, pointing into the distance, awe-inspiring and epic vibe",
+        "Text Query": "A photo of a solo backpacker in brightly colored gear standing on a rugged mountain peak, looking out over a vast valley at sunrise, conveying a sense of epic outdoor adventure and geographical discovery."
+      },
+      {
+        "Archetype": 2,
+        "Name of the Scenario": "Deep Sea Scuba Diving",
+        "Core Difference": "Immersed in an alien-like, weightless underwater environment dominated by blue tones and specialized life-support gear.",
+        "Visual Elements": "Wetsuits, scuba tanks, coral reefs, schools of tropical fish, swimming through water, holding an underwater flashlight, mysterious and tranquil vibe",
+        "Text Query": "An image showing a scuba diver exploring a vibrant coral reef, surrounded by colorful tropical fish and deep blue water, using an underwater flashlight to closely inspect a dark ocean cave."
+      },
+      {
+        "Archetype": 3,
+        "Name of the Scenario": "Wandering in an Exotic Urban Alleyway",
+        "Core Difference": "Captures cultural immersion and human connection within a dense, chaotic, and vibrant man-made environment.",
+        "Visual Elements": "Narrow cobblestone streets, neon signs, bustling local markets, casual travel clothing, camera around the neck, looking around in wonder, vibrant and stimulating vibe",
+        "Text Query": "A photo of a curious traveler with a camera around their neck walking through a bustling, neon-lit night market in a foreign city, taking in the dense, vibrant, and chaotic street scene."
+      },
+      {
+        "Archetype": 4,
+        "Name of the Scenario": "Field Science and Microscopic Discovery",
+        "Core Difference": "Focuses on micro-exploration, intellectual curiosity, and extreme close-up observation rather than geographical travel.",
+        "Visual Elements": "Magnifying glass, field notebook, muddy boots, dense forest undergrowth, crouching and inspecting, focused facial expression, quiet and intellectually stimulating vibe",
+        "Text Query": "A photo of a focused person crouching in a lush forest, using a magnifying glass to closely examine a strange insect on a vibrant green leaf, capturing the quiet excitement of scientific discovery."
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "intent": "Having an easy and comfortable life.",
+    "description": [
+      {
+        "Archetype": 1,
+        "Name of the Scenario": "Cozy Domestic Solitude",
+        "Core Difference": "This scenario focuses on indoor, private relaxation characterized by soft textures, warm lighting, and a serene, solitary atmosphere.",
+        "Visual Elements": "Plush sofa, oversized knit sweater, warm sunlight through a window, sleeping cat, steaming mug of tea, soft lighting",
+        "Text Query": "A photo of a person relaxing on a plush sofa wearing an oversized sweater, enjoying a steaming mug of tea next to a sleeping cat in a sunlit, cozy living room."
+      },
+      {
+        "Archetype": 2,
+        "Name of the Scenario": "Idyllic Tropical Leisure",
+        "Core Difference": "This scenario highlights outdoor, vacation-like luxury, emphasizing bright colors, water, and effortless tropical lounging away from daily responsibilities.",
+        "Visual Elements": "Comfortable hammock, palm trees, white sand beach, sunglasses, tropical drink with an umbrella, clear blue sky",
+        "Text Query": "An image showing a relaxed individual lying in a comfortable hammock stretched between palm trees on a sunny white sand beach, holding a cold tropical drink with a clear blue ocean in the background."
+      },
+      {
+        "Archetype": 3,
+        "Name of the Scenario": "Carefree Urban Convenience",
+        "Core Difference": "This setting showcases modern city life where technology and accessible services provide effortless comfort, leisure, and a stress-free routine.",
+        "Visual Elements": "Sunny sidewalk cafe, tablet, stylish casual clothes, premium coffee, relaxed posture, modern street background",
+        "Text Query": "A photo of a casually dressed person sitting comfortably at a sunny outdoor city cafe, smiling effortlessly while looking at a tablet, with a premium latte and a fresh croissant on the table."
+      },
+      {
+        "Archetype": 4,
+        "Name of the Scenario": "Harmonious Outdoor Gathering",
+        "Core Difference": "This scenario emphasizes shared, low-stress social experiences in nature, focusing on connection and abundance without the pressure of busy schedules.",
+        "Visual Elements": "Lush green park, picnic blanket, fresh fruits and bread, laughing friends or family, golden hour lighting, relaxed body language",
+        "Text Query": "An image showing a happy family sharing a relaxed picnic on a lush green lawn during golden hour, lying back on a woven blanket surrounded by fresh fruits, bread, and smiling faces."
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "intent": "Enjoying life.",
+    "description": [
+      {
+        "Archetype": 1,
+        "Name of the Scenario": "Vibrant Social Picnic",
+        "Core Difference": "Focuses on multi-person social interaction, bright daylight, and shared food in a lively outdoor setting.",
+        "Visual Elements": "Group of friends, laughing, picnic blanket, wine glasses, sunny park, casual clothes, joyful and carefree vibe",
+        "Text Query": "A photo of a group of friends laughing together on a picnic blanket in a sunlit park, sharing snacks and pouring drinks, capturing a lively and carefree weekend afternoon."
+      },
+      {
+        "Archetype": 2,
+        "Name of the Scenario": "Cozy Solo Retreat",
+        "Core Difference": "Centers on introverted, quiet indoor relaxation with warm lighting, emphasizing personal comfort and stillness.",
+        "Visual Elements": "One person, oversized sweater, steaming mug of coffee, thick blanket, open book, rain on windowpane, warm cozy vibe",
+        "Text Query": "An image showing a person curled up in a comfortable armchair by a rain-streaked window, wearing an oversized sweater and reading a book with a steaming mug of coffee nearby."
+      },
+      {
+        "Archetype": 3,
+        "Name of the Scenario": "Majestic Outdoor Adventure",
+        "Core Difference": "Highlights expansive natural landscapes, physical achievement, and a sense of exhilarating freedom.",
+        "Visual Elements": "Solo hiker, mountain peak, arms raised, backpack, panoramic sunset, rugged terrain, adventurous and triumphant vibe",
+        "Text Query": "A photo of a solo hiker standing at the edge of a rugged mountain peak with arms raised in triumph, looking out over a vast, sun-drenched valley during a vibrant golden sunset."
+      },
+      {
+        "Archetype": 4,
+        "Name of the Scenario": "Creative Flow State",
+        "Core Difference": "Showcases the personal fulfillment and focus found in hands-on hobbies within a personal, lived-in space.",
+        "Visual Elements": "Person painting, messy apron, wooden easel, bright sunlight, colorful paints, indoor studio, focused and peaceful vibe",
+        "Text Query": "An image showing a casually dressed artist with a paint-splattered apron smiling while working on a colorful canvas painting in a brightly lit, cluttered home studio filled with brushes."
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "intent": "Appreciating fine design (man-made wonders like architectures).",
+    "description": [
+      {
+        "Archetype": 1,
+        "Name of the Scenario": "Monumental Historical Architecture",
+        "Core Difference": "Focuses on the grand, ornate, and classical scale of heritage structures made of stone or traditional materials, usually viewed with an upward, awe-struck gaze.",
+        "Visual Elements": "Gothic arches, ornate facades, ancient columns, tourist holding a camera, cobblestone courtyard, looking up, awe, monumental scale, warm lighting",
+        "Text Query": "A photo of a person standing in awe, looking up at the intricate stone carvings and soaring arches of a grand historical cathedral bathed in golden sunlight."
+      },
+      {
+        "Archetype": 2,
+        "Name of the Scenario": "Modern Minimalist Interiors",
+        "Core Difference": "Highlights clean geometric lines, sleek contemporary materials like glass and concrete, and a serene, contemplative atmosphere indoors.",
+        "Visual Elements": "Sweeping spiral staircases, smooth concrete walls, floor-to-ceiling windows, solitary figure, asymmetrical geometry, sleek, contemplative, modern art museum, dramatic light and shadow",
+        "Text Query": "An image showing a solitary figure walking down a sleek, concrete spiral staircase inside a contemporary museum, highlighting the striking geometric lines and minimalist design."
+      },
+      {
+        "Archetype": 3,
+        "Name of the Scenario": "Massive Engineering Infrastructure",
+        "Core Difference": "Captures the colossal, functional scale of industrial infrastructure blending with the environment from a wide, panoramic viewpoint.",
+        "Visual Elements": "Suspension bridge, steel cables, towering dam, viewing deck, sprawling landscape, sweeping curves, industrial strength, vast panorama, tourists pointing",
+        "Text Query": "A wide-angle photo of people standing at a scenic overlook, pointing and admiring the towering steel cables and massive structural scale of a suspension bridge at twilight."
+      },
+      {
+        "Archetype": 4,
+        "Name of the Scenario": "Intimate Industrial Craftsmanship",
+        "Core Difference": "A highly detailed, macro-level view focusing on the precision and artistry of high-end, human-made mechanical objects rather than large buildings.",
+        "Visual Elements": "Mechanical watch movement, polished wood, reflective metal, magnifying glass, focused gaze, intricate gears, luxury, meticulous, close-up shot, classic car grill",
+        "Text Query": "A close-up image showing a person closely inspecting the exposed gears, polished metals, and intricate mechanical design of a luxury tourbillon watch under bright exhibition lighting."
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "intent": "Appreciating fine design (artwork).",
+    "description": [
+      {
+        "Archetype": 1,
+        "Name of the Scenario": "The Formal Art Gallery Experience",
+        "Core Difference": "This scenario focuses on the traditional, minimalist 'white-cube' setting where framed art or sculptures are viewed under precise, controlled lighting.",
+        "Visual Elements": "White walls, framed abstract paintings, bronze sculptures on pedestals, soft gallery spotlights, observers standing quietly with hands behind their backs, contemplative mood, minimalist vibe",
+        "Text Query": "A photo of an observer standing quietly in a brightly lit, minimalist white-walled art gallery, gazing thoughtfully at a large, vibrant abstract painting illuminated by a precise overhead spotlight."
+      },
+      {
+        "Archetype": 2,
+        "Name of the Scenario": "Architectural and Spatial Immersion",
+        "Core Difference": "Instead of focusing on a standalone object, this archetype captures the appreciation of large-scale structural design, emphasizing lines, scale, and natural light.",
+        "Visual Elements": "Soaring glass ceilings, sweeping concrete curves, dramatic sunlight casting geometric shadows, a person looking up in awe, vast interior space, majestic and inspiring vibe",
+        "Text Query": "An image showing a person looking up in awe inside a grand, modern architectural atrium, surrounded by sweeping concrete curves, soaring glass ceilings, and dramatic geometric shadows cast by natural sunlight."
+      },
+      {
+        "Archetype": 3,
+        "Name of the Scenario": "Haute Couture and Textile Admiration",
+        "Core Difference": "This scenario highlights the tactile, highly detailed appreciation of wearable design and fine fashion in an intimate, luxurious setting.",
+        "Visual Elements": "Elegant mannequins, silk dresses, intricate beadwork, warm boutique lighting, a person delicately examining fabric, mirrors, luxurious and stylish vibe",
+        "Text Query": "A photo of an elegantly dressed individual in a dimly lit luxury boutique, leaning in closely to admire the intricate beadwork and shimmering silk fabric of a haute couture dress displayed on a mannequin."
+      },
+      {
+        "Archetype": 4,
+        "Name of the Scenario": "Sleek Industrial and Automotive Design",
+        "Core Difference": "This archetype centers on highly polished, reflective man-made industrial objects, emphasizing sleek aerodynamic curves and dramatic studio-style reflections.",
+        "Visual Elements": "Polished classic or concept car, gleaming metallic paint, chrome details, dark showroom floor, dramatic directional lighting, a person admiring the vehicle, sophisticated and high-tech vibe",
+        "Text Query": "An image showing an enthusiast in a dark, dramatically lit automotive showroom, crouching slightly to appreciate the sleek aerodynamic curves, gleaming metallic paint, and polished chrome details of a classic luxury car."
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "intent": "Appreciating other cultures.",
+    "description": [
+      {
+        "Archetype": 1,
+        "Name of the Scenario": "Immersive Culinary Exploration",
+        "Core Difference": "This scenario focuses on the sensory experience of eating foreign cuisine in a bustling, crowded market setting at night, rather than daytime sightseeing.",
+        "Visual Elements": "Steaming food stalls, local vendors, foreign tourists eating street food, crowded narrow streets, neon signs, glowing paper lanterns",
+        "Text Query": "A photo of excited travelers tasting steaming authentic dishes at a vibrant, crowded night market, surrounded by local vendors and glowing paper lanterns."
+      },
+      {
+        "Archetype": 2,
+        "Name of the Scenario": "Participating in a Traditional Festival",
+        "Core Difference": "This scenario highlights dynamic movement, energetic crowds, and active engagement with vibrant ceremonial customs or garments.",
+        "Visual Elements": "Colorful traditional costumes, cultural dancing, large energetic crowds, throwing colored powder or holding flowers, joyful expressions, bright daylight",
+        "Text Query": "An image showing a diverse group of tourists joyfully participating in a traditional cultural festival, wearing colorful garments and dancing alongside locals in a lively sunlit street."
+      },
+      {
+        "Archetype": 3,
+        "Name of the Scenario": "Admiring Historical Architecture",
+        "Core Difference": "This scenario centers on quiet observation and scale, featuring grand, ancient stone structures and peaceful outdoor exploration.",
+        "Visual Elements": "Ancient stone ruins, intricate temple carvings, tourists looking up in awe, holding cameras or guidebooks, vast outdoor spaces, clear sky",
+        "Text Query": "A photo of awe-struck visitors looking up at ancient temple ruins, respectfully admiring the intricate stone carvings and grand historical architecture against a clear blue sky."
+      },
+      {
+        "Archetype": 4,
+        "Name of the Scenario": "Hands-on Traditional Craft Workshop",
+        "Core Difference": "This is an intimate, indoor, close-up scenario focusing on hands, raw materials, and quiet skill-sharing with a local expert.",
+        "Visual Elements": "Clay or colorful woven textiles, artisan's hands guiding a tourist's hands, rustic workshop interior, focused and respectful expressions, warm indoor lighting",
+        "Text Query": "An image showing a traveler intently watching and learning from a local artisan in a warm, rustic workshop, working hands-on with natural materials to create traditional crafts."
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "intent": "Being a good parent (teaching, transmitting values). Being emotionally close to my children.",
+    "description": [
+      {
+        "Archetype": 1,
+        "Name of the Scenario": "Outdoor Skill-Building",
+        "Core Difference": "Focuses on physical activity, dynamic movement, and the classic milestone of learning a new outdoor skill with parental support.",
+        "Visual Elements": "Bicycle, helmet, paved park path, parent running alongside, holding the seat, sunny weather, encouraging smile, active posture",
+        "Text Query": "A photo of a smiling parent running alongside their child on a paved park path, holding the back of a small bicycle seat to help them balance, capturing a bright, active outdoor moment of teaching."
+      },
+      {
+        "Archetype": 2,
+        "Name of the Scenario": "Cozy Bedtime Story",
+        "Core Difference": "Highlights quiet, indoor emotional intimacy and intellectual bonding through storytelling in a warm, dimly lit environment.",
+        "Visual Elements": "Bed, thick blankets, pajamas, open children's book, warm lamp light, parent and child cuddling, pointing at pages, relaxed expressions",
+        "Text Query": "An image showing a parent and child cuddling in bed wearing pajamas, reading an open storybook together illuminated by warm, soft lamplight, expressing a quiet and tender emotional bond."
+      },
+      {
+        "Archetype": 3,
+        "Name of the Scenario": "Cultivating Environmental Values",
+        "Core Difference": "Illustrates the active transmission of moral and environmental values through shared, hands-on physical labor in nature.",
+        "Visual Elements": "Gardening gloves, small green sapling, trowel, dirt, outdoor garden, kneeling together, parent guiding child's hands, sunlit day",
+        "Text Query": "A photo of a parent kneeling in the dirt alongside their young child, gently guiding the child's hands to plant a small green sapling in a sunlit garden, demonstrating hands-on environmental values."
+      },
+      {
+        "Archetype": 4,
+        "Name of the Scenario": "Everyday Life Skills and Messy Play",
+        "Core Difference": "Captures a casual, messy indoor activity that combines teaching practical daily life skills with joyful, spontaneous bonding.",
+        "Visual Elements": "Kitchen counter, flour smudges on faces, mixing bowl, wooden spoon, aprons, laughing, baking ingredients, bright indoor kitchen lighting",
+        "Text Query": "A photo of a laughing parent and child wearing aprons in a bright kitchen, with smudges of flour on their faces, stirring a large mixing bowl together during a fun baking session."
+      },
+      {
+        "Archetype": 5,
+        "Name of the Scenario": "Emotional Comfort and Active Listening",
+        "Core Difference": "Focuses entirely on emotional regulation and vulnerability, contrasting with the playful scenes by showing support during a difficult moment.",
+        "Visual Elements": "Living room floor, parent crouching down, eye level, gentle hug, child looking tearful but comforted, compassionate facial expression, soft natural light",
+        "Text Query": "An image showing a parent crouching down to make eye contact and gently hugging a visibly upset child on a living room floor, illustrating deep emotional support, comfort, and active listening."
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "intent": "Being happy and content. Feeling satisfied with one's life. Feeling good about myself.",
+    "description": [
+      {
+        "Archetype": 1,
+        "Name of the Scenario": "Peaceful Cozy Solitude",
+        "Core Difference": "Focuses on quiet, solitary indoor contentment rather than active or social joy.",
+        "Visual Elements": "Oversized sweater, steaming mug, armchair, sunlight streaming through window, soft smile, relaxed posture, warm lighting, cozy vibe",
+        "Text Query": "A photo of a person curled up in a plush armchair by a sunlit window, wearing a cozy sweater and holding a warm mug, smiling softly with a look of peaceful contentment."
+      },
+      {
+        "Archetype": 2,
+        "Name of the Scenario": "Outdoor Adventure Achievement",
+        "Core Difference": "Captures expansive, energetic self-satisfaction through physical accomplishment in nature.",
+        "Visual Elements": "Mountain peak, sunrise, hiking gear, arms raised, triumphant smile, vast landscape, dynamic action, empowering vibe",
+        "Text Query": "An image showing an energetic hiker standing on a mountain summit at sunrise, arms raised in triumph and smiling broadly, projecting deep self-satisfaction and empowerment against a vast landscape."
+      },
+      {
+        "Archetype": 3,
+        "Name of the Scenario": "Lively Social Connection",
+        "Core Difference": "Highlights the happiness derived from community, shared experiences, and active laughter.",
+        "Visual Elements": "Backyard string lights, dining table, friends, diverse group, mid-laugh, clinking glasses, warm evening glow, joyful vibe",
+        "Text Query": "A photo of a diverse group of friends gathered around a rustic outdoor dinner table under string lights, sharing food and throwing their heads back in genuine, joyful laughter."
+      },
+      {
+        "Archetype": 4,
+        "Name of the Scenario": "Confident Self-Reflection",
+        "Core Difference": "Visually represents 'feeling good about myself' through direct self-appreciation and confident body language.",
+        "Visual Elements": "Bathroom mirror, casual morning clothes, direct eye contact with reflection, bright smile, natural light, self-love vibe",
+        "Text Query": "An image showing a person looking into a brightly lit bathroom mirror, wearing casual morning clothes and flashing a confident, glowing smile at their own reflection."
+      },
+      {
+        "Archetype": 5,
+        "Name of the Scenario": "Creative Flow State",
+        "Core Difference": "Depicts satisfaction found in deep focus and the messy joy of engaging in personal hobbies.",
+        "Visual Elements": "Easel, messy apron, paint on hands, deep focus, subtle grin, art studio, sunlight, fulfilling vibe",
+        "Text Query": "A photo of an artist in a sunlit studio, wearing a paint-splattered apron while working at an easel, sporting a serene smile of deep fulfillment and creative flow."
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "intent": "Being ambitious, hard-working.",
+    "description": [
+      {
+        "Archetype": 1,
+        "Name of the Scenario": "The Late-Night Corporate Grind",
+        "Core Difference": "Focuses on solitary, white-collar mental labor in a low-light environment, emphasizing overtime and dedication to a screen-based task.",
+        "Visual Elements": "Glowing laptop screen, dark office setting, rolled-up sleeves, scattered papers, empty coffee cups, intense eye contact with the monitor, sticky notes",
+        "Text Query": "A photo of a focused professional working late in a dark office, illuminated only by a glowing laptop screen, with empty coffee cups on a messy desk covered in scattered papers and sticky notes."
+      },
+      {
+        "Archetype": 2,
+        "Name of the Scenario": "Athletic Dedication and Physical Pushing",
+        "Core Difference": "Highlights extreme physical exertion, bodily sweat, and kinetic energy rather than intellectual or desk-bound effort.",
+        "Visual Elements": "Sweat droplets, strained muscles, activewear, gym equipment, dramatic high-contrast lighting, chalked hands, deeply focused facial expression",
+        "Text Query": "An image showing an exhausted but determined athlete lifting heavy weights in a dimly lit gym, sweat dripping from their forehead, with strained muscles and a deeply focused facial expression."
+      },
+      {
+        "Archetype": 3,
+        "Name of the Scenario": "The Immersed Academic Researcher",
+        "Core Difference": "Centers on intellectual pursuit and knowledge gathering in an educational setting, surrounded by physical information mediums like books and boards.",
+        "Visual Elements": "Towering stacks of thick books, massive whiteboard, complex mathematical equations, library or laboratory setting, pens, glasses, bright fluorescent lighting",
+        "Text Query": "A photo of a dedicated student surrounded by towering stacks of thick books in a bright library, intensely writing notes while looking up at a whiteboard completely covered in complex mathematical equations."
+      },
+      {
+        "Archetype": 4,
+        "Name of the Scenario": "Gritty Hands-On Craftsmanship",
+        "Core Difference": "Captures raw manual labor and building, emphasizing tangible materials, industrial tools, and a rugged, messy workspace.",
+        "Visual Elements": "Workshop garage, grease-stained overalls, heavy machinery, protective gear, bright flying sparks, sawdust or dirt, calloused hands, hands-on action",
+        "Text Query": "An image showing a rugged mechanic in grease-stained overalls working intensely under the hood of a car in a cluttered garage, illuminated by the bright, flying sparks of a nearby welding torch."
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "intent": "Achieving harmony and oneness (with self and the universe).",
+    "description": [
+      {
+        "Archetype": 1,
+        "Name of the Scenario": "Solo Nature Meditation",
+        "Core Difference": "Focuses on isolated, quiet physical contemplation within a vast, calm earthly landscape during golden hour.",
+        "Visual Elements": "Solitary person, lotus pose, calm lake reflection, mountain peak, sunrise or sunset, still water, golden light, peaceful vibe",
+        "Text Query": "A photo of a solitary person sitting in a lotus meditation pose on a smooth rock overlooking a perfectly still lake during golden hour, surrounded by majestic mountains and a peaceful, serene atmosphere."
+      },
+      {
+        "Archetype": 2,
+        "Name of the Scenario": "Cosmic Awe and Stargazing",
+        "Core Difference": "Emphasizes connection to the universe through nighttime celestial observation and striking, diminutive silhouettes.",
+        "Visual Elements": "Night sky, Milky Way galaxy, dark silhouette of a person standing, looking up, glowing stars, vastness, awe-inspiring vibe",
+        "Text Query": "An image showing the dark silhouette of a person standing on a quiet, grassy hill, gazing up in awe at the vast, glowing Milky Way galaxy stretching across the expansive night sky."
+      },
+      {
+        "Archetype": 3,
+        "Name of the Scenario": "Indoor Creative Flow State",
+        "Core Difference": "Depicts inner harmony found through deep, mindful absorption in a physical craft within an intimate indoor setting.",
+        "Visual Elements": "Sunlit studio, person making pottery, spinning wheel, clay-covered hands, warm sunlight through window, focused expression, tranquil indoor vibe",
+        "Text Query": "A photo of an artist in a sunlit indoor studio, deeply focused and at peace while shaping wet clay on a pottery wheel, enveloped in a calm, harmonious creative flow state."
+      },
+      {
+        "Archetype": 4,
+        "Name of the Scenario": "Synchronized Group Movement",
+        "Core Difference": "Highlights collective harmony and shared energetic alignment among multiple people in a communal, urban-adjacent setting.",
+        "Visual Elements": "Group of diverse people, Tai Chi practice, urban park outdoors, synchronized poses, flowing clothes, morning mist, serene community vibe",
+        "Text Query": "A photo of a diverse group of people moving in perfect unison while practicing Tai Chi in an urban park on a misty morning, demonstrating collective peace and synchronized, flowing energy."
+      },
+      {
+        "Archetype": 5,
+        "Name of the Scenario": "Tactile Connection with Fauna",
+        "Core Difference": "Illustrates oneness with the natural world through intimate, physical, and emotional bonding with an animal.",
+        "Visual Elements": "Person and horse, foreheads touching, closed eyes, grassy meadow, gentle hands, soft lighting, compassionate cross-species vibe",
+        "Text Query": "An image showing a close-up of a person standing in a quiet meadow with their eyes closed, gently pressing their forehead against a horse's head in a deeply peaceful, harmonious cross-species connection."
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "intent": "Being physically active, fit, healthy, e.g. maintaining a healthy weight, eating nutritious foods. To be physically able to do my daily/routine activities. Having athletic ability.",
+    "description": [
+      {
+        "Archetype": 1,
+        "Name of the Scenario": "Intense Gym Workout",
+        "Core Difference": "Focuses on deliberate, high-exertion athletic training in a specialized indoor environment using equipment.",
+        "Visual Elements": "Dumbbells, sweat, athletic wear, gym mirrors, heavy lifting, intense facial expression, energetic vibe",
+        "Text Query": "A photo of a focused person in activewear lifting heavy dumbbells in a modern gym, sweating and showing strong muscle definition with an energetic and intense athletic vibe."
+      },
+      {
+        "Archetype": 2,
+        "Name of the Scenario": "Healthy Kitchen Meal Prep",
+        "Core Difference": "Highlights the dietary and nutritional aspect of health in a domestic setting rather than physical exertion.",
+        "Visual Elements": "Fresh vegetables, fruits, chopping board, bright modern kitchen, salad bowl, smiling, preparing food, vibrant colors, wholesome vibe",
+        "Text Query": "An image showing a smiling person standing in a bright kitchen, chopping vibrant fresh vegetables on a wooden board to prepare a large, colorful, nutritious salad for a healthy meal."
+      },
+      {
+        "Archetype": 3,
+        "Name of the Scenario": "Functional Everyday Mobility",
+        "Core Difference": "Showcases practical, real-world application of fitness through effortless daily tasks in casual, non-athletic settings.",
+        "Visual Elements": "Heavy grocery bags, children, stairs, casual clothing, effortless posture, outdoor residential setting, capable and active vibe",
+        "Text Query": "A photo of an active adult in casual clothes effortlessly carrying heavy grocery bags while walking up a flight of outdoor stairs, demonstrating functional everyday fitness and physical capability."
+      },
+      {
+        "Archetype": 4,
+        "Name of the Scenario": "Outdoor Mindful Exercise",
+        "Core Difference": "Captures gentle, restorative physical activity connected to nature and flexibility, contrasting with high-intensity gym routines.",
+        "Visual Elements": "Yoga mat, stretching, sunny park, sunrise, calm expression, barefoot, green trees, peaceful and grounded vibe",
+        "Text Query": "An image showing a person peacefully stretching and doing yoga poses on a mat in a sunny green park, demonstrating flexibility, mobility, and a balanced, healthy outdoor lifestyle."
+      },
+      {
+        "Archetype": 5,
+        "Name of the Scenario": "High-Energy Outdoor Sports",
+        "Core Difference": "Depicts athletic ability applied to a dynamic, recreational outdoor group activity or competitive sport.",
+        "Visual Elements": "Soccer ball, grassy field, running, jumping, sports clothing, teammates, dynamic action, competitive and joyful vibe",
+        "Text Query": "A photo of energetic friends playing a fast-paced game of soccer on a sunny green field, sprinting and kicking the ball, showcasing endurance, teamwork, and strong athletic ability."
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "intent": "Being in love.",
+    "description": [
+      {
+        "Archetype": 1,
+        "Name of the Scenario": "Cozy Domestic Intimacy",
+        "Core Difference": "Focuses on private, everyday moments indoors with casual clothing and soft, warm ambient lighting.",
+        "Visual Elements": "Couch, blankets, sweatpants, coffee mugs, cuddling, laughing, warm ambient light, living room",
+        "Text Query": "A photo of a couple wearing comfortable loungewear, cuddling closely on a cozy living room couch bathed in warm morning sunlight, sharing a gentle laugh over coffee."
+      },
+      {
+        "Archetype": 2,
+        "Name of the Scenario": "The Formal Evening Date",
+        "Core Difference": "Features formal attire, nighttime urban settings, and elegant environments with dramatic, low-light ambiance.",
+        "Visual Elements": "Evening dress, suit, candlelit table, wine glasses, deep eye contact, city lights, fine dining, elegant posture",
+        "Text Query": "An image showing a dressed-up couple at a dimly lit, upscale restaurant, locking eyes across a candlelit table with wine glasses, surrounded by blurred sparkling city lights."
+      },
+      {
+        "Archetype": 3,
+        "Name of the Scenario": "Playful Outdoor Adventure",
+        "Core Difference": "Captures dynamic movement, vibrant natural environments, and high-energy affection in broad daylight.",
+        "Visual Elements": "Beach, casual outdoor gear, piggyback ride, running, bright sunshine, open sky, wide smiles, windblown hair",
+        "Text Query": "A photo of two people enjoying a playful piggyback ride on a sunlit sandy beach, wearing casual summer clothes with their hair blowing in the wind, expressing pure joyful energy."
+      },
+      {
+        "Archetype": 4,
+        "Name of the Scenario": "Quiet Elderly Affection",
+        "Core Difference": "Depicts enduring, gentle love through older subjects and subtle physical gestures in a peaceful, nostalgic setting.",
+        "Visual Elements": "White hair, wrinkles, holding hands, park bench, autumn leaves, soft expressions, vintage clothing, gentle posture",
+        "Text Query": "An image showing an elderly couple with silver hair sitting closely on a wooden park bench surrounded by fallen autumn leaves, softly holding wrinkled hands and smiling peacefully at each other."
+      },
+      {
+        "Archetype": 5,
+        "Name of the Scenario": "Digital Long-Distance Romance",
+        "Core Difference": "Features only one person physically present in the frame, showing love through solitary interaction with a glowing digital screen.",
+        "Visual Elements": "Smartphone, glowing screen, dark room, radiant smile, blushing face, single subject, modern technology, bed",
+        "Text Query": "A photo of a person sitting alone in a darkened bedroom illuminated only by the warm glow of a smartphone screen, smiling affectionately with a slight blush while looking at the device."
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "intent": "Being in love with animal.",
+    "description": [
+      {
+        "Archetype": 1,
+        "Name of the Scenario": "Domestic Intimacy and Cuddling",
+        "Core Difference": "This scenario highlights quiet, close-proximity physical affection with a common household pet in an indoor setting.",
+        "Visual Elements": "Cozy couch, sleeping dog or cat, person hugging the animal, eyes closed, gentle smile, soft indoor lighting, warm and peaceful vibe.",
+        "Text Query": "A photo of a person lying on a cozy couch, tightly hugging a sleeping golden retriever. The person has their eyes closed with a gentle, affectionate smile in soft, warm indoor lighting."
+      },
+      {
+        "Archetype": 2,
+        "Name of the Scenario": "Energetic Outdoor Play",
+        "Core Difference": "This scenario captures the dynamic, joyous bond shared through active play and movement in nature.",
+        "Visual Elements": "Grassy park or beach, running person, leaping dog, flying frisbee or ball, laughing expression, bright sunlight, energetic and vibrant vibe.",
+        "Text Query": "An image showing a joyous person running through a sunny, grassy park, laughing while throwing a frisbee for an energetic border collie. The scene is bright, dynamic, and full of lively motion."
+      },
+      {
+        "Archetype": 3,
+        "Name of the Scenario": "Rustic Farm Connection",
+        "Core Difference": "This scenario emphasizes a grounded, serene connection with large livestock in an agricultural or rural environment.",
+        "Visual Elements": "Wooden barn, large animal like a horse or cow, person in denim or plaid, forehead-to-forehead contact, calm expression, natural rustic lighting, peaceful and grounded vibe.",
+        "Text Query": "A photo of a person in denim work clothes standing in a rustic wooden barn, tenderly pressing their forehead against a brown horse's snout with a calm, deeply connected expression."
+      },
+      {
+        "Archetype": 4,
+        "Name of the Scenario": "Wildlife Rescue and Nurturing",
+        "Core Difference": "This scenario focuses on the maternal or protective care given to vulnerable, orphaned, or injured wild animals.",
+        "Visual Elements": "Veterinary clinic or sanctuary, person in scrubs or gloves, baby animal wrapped in blankets, bottle-feeding, focused gaze, clinical yet tender vibe.",
+        "Text Query": "An image showing a wildlife rehabilitator in scrubs gently holding and bottle-feeding a tiny orphaned fawn wrapped in a blanket, demonstrating focused, nurturing care in a brightly lit clinic setting."
+      },
+      {
+        "Archetype": 5,
+        "Name of the Scenario": "Exotic Animal Admiration",
+        "Core Difference": "This scenario showcases trust and fascination with unconventional pets in a specialized habitat setting.",
+        "Visual Elements": "Sunroom or terrarium background, large parrot or reptile, person holding the animal on an arm, eye contact between human and animal, smiling with awe, bright and curious vibe.",
+        "Text Query": "A photo of a smiling person standing in a bright sunroom, gently holding a large, colorful macaw on their arm. They are looking at the bird with deep admiration and mutual trust."
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "intent": "Inspiring others, Influencing, persuading others.",
+    "description": [
+      {
+        "Archetype": 1,
+        "Name of the Scenario": "The Keynote Speaker",
+        "Core Difference": "Focuses on a formal, large-scale presentation setting with theatrical lighting and a clear spatial divide between the persuader and the listeners.",
+        "Visual Elements": "Speaker on stage, spotlight, microphone, large dark auditorium, seated audience in shadows, expressive hand gestures, smart-casual attire, confident vibe",
+        "Text Query": "A photo of a charismatic keynote speaker standing on a brightly lit stage in a dark auditorium, gesturing passionately with one hand while holding a microphone, as a large audience watches intently from the shadows."
+      },
+      {
+        "Archetype": 2,
+        "Name of the Scenario": "The Locker Room Pep Talk",
+        "Core Difference": "Centers on an intense, intimate, and highly physical group dynamic in a raw, athletic environment.",
+        "Visual Elements": "Coach in center, huddled athletes, team jerseys, locker room benches, intense facial expressions, pointing, sweat, high-energy and urgent vibe",
+        "Text Query": "An image showing an intense sports coach standing in the middle of a locker room, leaning forward and making strong eye contact while giving an energetic pep talk to a huddled circle of focused athletes."
+      },
+      {
+        "Archetype": 3,
+        "Name of the Scenario": "The Street Activist Rally",
+        "Core Difference": "Takes place outdoors in a chaotic, grassroots environment, characterized by improvised tools and a dense, standing crowd.",
+        "Visual Elements": "Megaphone, raised fists, cardboard protest signs, outdoor street setting, daylight, casual clothing, diverse standing crowd, defiant and rallying vibe",
+        "Text Query": "A photo of an energetic activist standing on a makeshift podium in a crowded city street, shouting passionately into a megaphone with a raised fist while leading a diverse crowd holding colorful protest signs."
+      },
+      {
+        "Archetype": 4,
+        "Name of the Scenario": "The Creative Brainstorming Session",
+        "Core Difference": "Highlights a collaborative, well-lit, small-group indoor setting, focusing on intellectual persuasion using visual aids and close proximity.",
+        "Visual Elements": "Whiteboard with diagrams, colorful sticky notes, brightly lit office, professional pointing at board, engaged colleagues sitting around a table, collaborative vibe",
+        "Text Query": "An image showing an enthusiastic mentor in a brightly lit modern office, pointing at a whiteboard covered in colorful sticky notes while smiling and explaining a concept to a small group of attentive colleagues."
+      },
+      {
+        "Archetype": 5,
+        "Name of the Scenario": "The Digital Influencer",
+        "Core Difference": "Represents modern parasocial persuasion, featuring a solo subject breaking the fourth wall to look directly into a camera lens.",
+        "Visual Elements": "Ring light, smartphone on tripod, stylish neon-lit bedroom setup, animated facial expressions, open hand gestures, trendy clothing, engaging and charismatic vibe",
+        "Text Query": "A photo of an expressive digital influencer sitting in a stylized room illuminated by a ring light, looking directly into a camera lens with wide eyes and open hand gestures while recording an energetic video."
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "intent": "To keep things manageable. To make plans.",
+    "description": [
+      {
+        "Archetype": 1,
+        "Name of the Scenario": "The Analog Personal Planner",
+        "Core Difference": "Focuses on tactile, individual time-management using physical stationery and handwritten notes in a cozy, isolated setting.",
+        "Visual Elements": "Open paper planner, colored pens, highlighters, sticky notes, coffee mug, hands writing, wooden desk, focused and tactile vibe",
+        "Text Query": "A photo of a person sitting at a desk carefully writing in an open paper daily planner surrounded by colored markers, sticky notes, and a coffee mug in a well-lit cozy room."
+      },
+      {
+        "Archetype": 2,
+        "Name of the Scenario": "The Digital Command Center",
+        "Core Difference": "Centers on software-based scheduling and modern project management using screens rather than physical objects.",
+        "Visual Elements": "Dual computer monitors, Kanban board software, Gantt charts, glowing screens, modern office desk, typing hands, sleek and professional tech vibe",
+        "Text Query": "An image showing a professional working at a desk with dual computer monitors displaying colorful digital calendar grids and project management software, illuminated by the glow of the screens."
+      },
+      {
+        "Archetype": 3,
+        "Name of the Scenario": "The Family Kitchen Schedule",
+        "Core Difference": "Moves the planning context away from traditional workspaces and into a busy, shared domestic household environment.",
+        "Visual Elements": "Refrigerator, large magnetic whiteboard, colorful magnets, chore charts, grocery lists, domestic kitchen setting, busy but structured domestic vibe",
+        "Text Query": "A photo of a large white magnetic dry-erase calendar attached to a stainless steel kitchen refrigerator, filled with handwritten family schedules, colorful magnets, and a grocery list."
+      },
+      {
+        "Archetype": 4,
+        "Name of the Scenario": "The Collaborative Strategy Room",
+        "Core Difference": "Highlights multi-person, large-scale brainstorming and forward-planning in an active corporate or startup setting.",
+        "Visual Elements": "Glass wall or large whiteboard, multiple people standing, bright sticky notes, drawn flowcharts, pointing gestures, conference room, dynamic and collaborative vibe",
+        "Text Query": "An image showing a group of colleagues in a modern glass-walled conference room collaboratively placing bright sticky notes and drawing flowcharts on a large whiteboard to map out a project timeline."
+      },
+      {
+        "Archetype": 5,
+        "Name of the Scenario": "Physical Space Organization",
+        "Core Difference": "Represents 'keeping things manageable' through the literal, physical tidying and categorization of objects rather than abstract time management.",
+        "Visual Elements": "Clear plastic storage bins, label maker, neatly folded linens or pantry items, organized shelves, methodical hands, satisfyingly tidy and decluttered vibe",
+        "Text Query": "A photo of a person's hands placing neatly organized items into clear plastic storage bins on a brightly lit shelving unit, with a freshly printed white label attached to the front."
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "intent": "Experiencing natural beauty.",
+    "description": [
+      {
+        "Archetype": 1,
+        "Name of the Scenario": "The Grand Mountain Summit",
+        "Core Difference": "Focuses on sweeping panoramic perspective, emphasizing vast, awe-inspiring scale of landscape compared to small human figure.",
+        "Visual Elements": "Rocky mountain peaks, expansive valleys, dramatic cloud formations, hiking backpack, person standing at edge looking outward, vast scale, majestic and triumphant vibe",
+        "Text Query": "A photo of a hiker standing on a rocky mountain summit, gazing out over a vast, sunlit valley with dramatic clouds and distant peaks, capturing a sense of epic scale."
+      },
+      {
+        "Archetype": 2,
+        "Name of the Scenario": "Intimate Forest Flora",
+        "Core Difference": "Shifts focus away from grand vistas to close-up, tactile interactions with small, intricate details of plant life in enclosed environment.",
+        "Visual Elements": "Lush green foliage, blooming wildflowers, mossy tree trunks, dappled sunlight, person crouching, gently touching petals or leaves, soft focus, peaceful and quiet vibe",
+        "Text Query": "An image showing a person crouching in a dense, green forest undergrowth, gently touching the vibrant petals of a small wildflower bathed in dappled sunlight, highlighting intricate botanical details."
+      },
+      {
+        "Archetype": 3,
+        "Name of the Scenario": "Nocturnal Stargazing",
+        "Core Difference": "Captures beauty of nature in the dark, relying on high-contrast lighting, cosmic elements, and human silhouettes rather than daylight scenery.",
+        "Visual Elements": "Brilliant starry night sky, Milky Way or Aurora Borealis, dark open field, faintly glowing tent or campfire, silhouette of person looking upward, deep blues and purples, contemplative vibe",
+        "Text Query": "A photo of a silhouetted person standing beside a faintly glowing tent in a dark, open landscape, looking up at a brilliant, starry night sky featuring the vibrant Milky Way."
+      },
+      {
+        "Archetype": 4,
+        "Name of the Scenario": "Immersive Aquatic Encounter",
+        "Core Difference": "Introduces completely different medium—water—focusing on fluid textures, coastal ecosystems, and interactions either on or below water's surface.",
+        "Visual Elements": "Crystal-clear turquoise water, kayak or snorkeling mask, sun rays reflecting off ripples, submerged rocks or coral, deep cyans and emerald greens, tranquil and immersive vibe",
+        "Text Query": "An image showing a person paddling a yellow kayak on a crystal-clear, turquoise lake, looking down through the transparent water at smooth rocks, surrounded by a serene, sunlit shoreline."
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "intent": "Being really passionate about something.",
+    "description": [
+      {
+        "Archetype": 1,
+        "Name of the Scenario": "Athletic Triumph and Exertion",
+        "Core Difference": "This scenario captures visceral, explosive passion through physical exertion, dynamic body language, and raw, high-energy emotion.",
+        "Visual Elements": "Sweaty athlete, sports uniform, clenched fists, strained neck muscles, wide open mouth shouting, blurred stadium background, action-packed vibe",
+        "Text Query": "A photo of a sweaty athlete in a sports uniform clenching their fists and screaming in victory on a field, displaying intense emotion and physical exertion."
+      },
+      {
+        "Archetype": 2,
+        "Name of the Scenario": "Deep Artistic Flow",
+        "Core Difference": "This scenario depicts quiet but intense, tactile dedication, focusing on the visual messiness of the creative process and the subject's laser-focused eye contact with their work.",
+        "Visual Elements": "Cluttered studio, hands covered in clay or paint, messy apron, leaning intimately close to a canvas, furrowed brow of concentration, warm lighting, absorbed vibe",
+        "Text Query": "An image showing an artist in a cluttered studio, hands covered in colorful paint, leaning closely toward a large canvas with a deeply focused, absorbed expression."
+      },
+      {
+        "Archetype": 3,
+        "Name of the Scenario": "Fervent Activism and Advocacy",
+        "Core Difference": "This scenario shows ideological passion communicated forcefully outward to others, characterized by assertive gestures, facial tension, and distinct props like signs or megaphones.",
+        "Visual Elements": "Protester, megaphone, raised cardboard signs, wide expressive eyes, pointed finger, outdoor urban street, dense crowd background, rebellious and energetic vibe",
+        "Text Query": "An image showing a passionate protester standing in a crowded city street, yelling forcefully into a megaphone while holding a hand-painted cardboard sign high in the air."
+      },
+      {
+        "Archetype": 4,
+        "Name of the Scenario": "Late-Night Intellectual Fixation",
+        "Core Difference": "This scenario represents obsessive, cerebral passion in an isolated, low-light setting, relying heavily on the lighting contrast and surrounding environmental clutter to tell the story.",
+        "Visual Elements": "Dark room, glowing monitor light reflecting on glasses, messy hair, scattered papers, empty coffee cups, intense staring, isolated and obsessive vibe",
+        "Text Query": "A photo of a focused individual alone in a dark room illuminated only by a glowing computer monitor, surrounded by scattered papers and empty coffee cups."
+      },
+      {
+        "Archetype": 5,
+        "Name of the Scenario": "Overwhelming Fan Euphoria",
+        "Core Difference": "This scenario illustrates a receptive, emotionally overwhelmed state of passion directed at a performer or team, highlighted by dramatic lighting and collective group behavior.",
+        "Visual Elements": "Concert-goer or super-fan, tears of joy streaming down face, reaching arms forward, colorful neon stage lighting, band merchandise, euphoric and emotional vibe",
+        "Text Query": "A photo of a crying fan in a dense crowd reaching their arms enthusiastically toward a brightly lit stage, bathed in colorful neon concert lighting."
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "intent": "Being playful, carefree, lighthearted.",
+    "description": [
+      {
+        "Archetype": 1,
+        "Name of the Scenario": "Nature/Outdoor Exuberance",
+        "Core Difference": "This scenario focuses on wide, dynamic full-body movements and the subject's interaction with vast, open natural environments.",
+        "Visual Elements": "Open field, sandy beach, jumping mid-air, running, wide smile, arms outstretched, windblown hair, bright sunlight, dynamic posture, vast sky",
+        "Text Query": "A photo of a person jumping mid-air on a sunny beach with arms outstretched, displaying a wide smile and windblown hair, capturing a sense of energetic freedom and bright, dynamic movement against a blue sky."
+      },
+      {
+        "Archetype": 2,
+        "Name of the Scenario": "Domestic Candid Silliness",
+        "Core Difference": "This scenario centers on intimate, indoor close-ups that highlight exaggerated facial expressions and playful mischief with everyday household items.",
+        "Visual Elements": "Living room, couch, making funny faces, laughing hysterically, wearing domestic objects as props, messy hair, warm indoor lighting, intimate framing",
+        "Text Query": "An image showing two friends on a cozy living room couch laughing hysterically while making exaggerated, funny faces, with one playfully balancing a bright plastic bowl on their head under warm indoor lighting."
+      },
+      {
+        "Archetype": 3,
+        "Name of the Scenario": "Urban Spontaneity",
+        "Core Difference": "This setting places the playful action in a concrete city environment, defined by the unconventional, mischievous use of urban infrastructure.",
+        "Visual Elements": "City street, parking lot, riding a shopping cart, balancing on a curb, casual streetwear, blurred background from motion, kinetic energy, concrete",
+        "Text Query": "A photo of a young adult joyfully riding inside a shopping cart being pushed by a friend across a paved city parking lot, wearing casual streetwear and laughing loudly, with the background slightly blurred from motion."
+      },
+      {
+        "Archetype": 4,
+        "Name of the Scenario": "Joyful Pet Bonding",
+        "Core Difference": "This scenario introduces a non-human subject, shifting the visual focus to the messy, energetic physical interaction and cross-species play.",
+        "Visual Elements": "Backyard, grassy park, rolling on the ground, dog, throwing a toy, laughing, getting licked, messy clothes, golden hour light, active poses",
+        "Text Query": "An image showing a person playfully rolling around on the green grass of a park, laughing brightly as a large dog licks their face, capturing a messy, energetic, and heartwarming interaction bathed in golden hour light."
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "intent": "Sharing my feelings with others.",
+    "description": [
+      {
+        "Archetype": 1,
+        "Name of the Scenario": "Intimate One-on-One Confession",
+        "Core Difference": "This scenario focuses on close physical proximity, quiet vulnerability, and micro-expressions between two individuals in a private setting.",
+        "Visual Elements": "Two people, living room couch or quiet cafe, holding hands, tissue box, tearful eyes, leaning in, empathetic gaze, soft lighting, melancholic, sincere vibe",
+        "Text Query": "A photo of two friends sitting close together on a living room couch, one person leaning in with a vulnerable expression and tearful eyes while the other holds their hand in a comforting, empathetic gesture."
+      },
+      {
+        "Archetype": 2,
+        "Name of the Scenario": "Support Group Circle",
+        "Core Difference": "This scenario features a structured, multi-person gathering focused on shared emotional experiences in a communal, brightly lit space.",
+        "Visual Elements": "Circle of folding chairs, community center or church hall, name tags, coffee cups, one person gesturing while speaking, others nodding, attentive posture, supportive, serious vibe",
+        "Text Query": "An image showing a diverse group of people sitting in a circle of chairs in a community room, with one individual speaking expressively while the rest of the group listens attentively with supportive body language."
+      },
+      {
+        "Archetype": 3,
+        "Name of the Scenario": "Intense Digital Communication",
+        "Core Difference": "This scenario captures the modern act of sharing feelings remotely, visually isolating a single subject interacting emotionally with technology.",
+        "Visual Elements": "Smartphone or laptop, glowing screen reflecting on a face, thumbs typing rapidly, solitary environment (bedroom or dark room), expressive facial reaction (laughing, crying, or shocked), modern, solitary vibe",
+        "Text Query": "A photo of a young person sitting alone in a dimly lit bedroom, their face illuminated by the glow of a smartphone as they type a long message with an intense, emotionally expressive look."
+      },
+      {
+        "Archetype": 4,
+        "Name of the Scenario": "Exuberant Shared Celebration",
+        "Core Difference": "This scenario highlights the sharing of intense positive emotions through highly dynamic physical movement and group excitement.",
+        "Visual Elements": "Group of friends, throwing arms up, wide open mouths, jumping, tightly hugging, holding a letter or phone with good news, sunny outdoor setting, energetic, euphoric vibe",
+        "Text Query": "An image showing a group of friends outdoors jumping and tightly hugging each other with wide, ecstatic smiles, dynamically sharing the overwhelming joy and excitement of a piece of good news."
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "intent": "Being part of a social group. Having people to do things with. Having close friends, others to rely on. Making friends, drawing others near.",
+    "description": [
+      {
+        "Archetype": 1,
+        "Name of the Scenario": "Outdoor Active Adventure",
+        "Core Difference": "This scenario captures bonding through high-energy, physical movement and shared goals in an expansive, bright outdoor setting rather than static socializing.",
+        "Visual Elements": "Hiking gear, backpacks, athletic clothing, high-fives, mountain trail or open park, dynamic poses, bright sunlight, energetic and adventurous vibe",
+        "Text Query": "A photo of a group of friends hiking up a steep mountain trail together, wearing backpacks, laughing and giving high-fives under a bright sunny sky."
+      },
+      {
+        "Archetype": 2,
+        "Name of the Scenario": "Cozy Intimate Support",
+        "Core Difference": "This highlights the 'relying on others' aspect of the intent through tight visual framing, eye contact, and relaxed body language in a quiet, intimate indoor space.",
+        "Visual Elements": "Coffee mugs, comfortable couch, warm lamps, leaning in, sympathetic smiles, gentle physical touch, cozy living room or cafe, comforting and safe vibe",
+        "Text Query": "An image showing two close friends sitting on a comfortable living room couch, drinking coffee, leaning in closely to share a deep, supportive conversation."
+      },
+      {
+        "Archetype": 3,
+        "Name of the Scenario": "The Lively Communal Feast",
+        "Core Difference": "Depicts a larger, festive social group centered around the communal act of sharing food and drinks in a crowded, vibrant, and visually busy space.",
+        "Visual Elements": "Long dining table, plates of food, wine glasses, diverse group of people, wide open mouths laughing, clinking glasses, warm string lights, festive and chaotic vibe",
+        "Text Query": "A photo of a large group of diverse people gathered around a busy dinner table, laughing loudly and toasting glasses of wine in a warmly lit room."
+      },
+      {
+        "Archetype": 4,
+        "Name of the Scenario": "Collaborative Community Task",
+        "Core Difference": "Visually centers on people working side-by-side on a tangible, shared project, demonstrating connection through cooperative, hands-on action rather than pure leisure.",
+        "Visual Elements": "Gardening tools, paint brushes, plants, community garden or mural wall, dirty hands, casual work clothes, teamwork, focused but joyful vibe",
+        "Text Query": "An image showing a group of cheerful volunteers working together in a lush community garden, planting flowers side-by-side with dirty hands and bright smiles."
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "intent": "Being successful in my occupation. Having a good job.",
+    "description": [
+      {
+        "Archetype": 1,
+        "Name of the Scenario": "Corporate Leadership & Strategy",
+        "Core Difference": "This scenario captures classic white-collar success, focusing on modern office environments, professional business attire, and authoritative body language.",
+        "Visual Elements": "Glass-walled boardroom, tailored suit, pointing at a rising financial chart, attentive colleagues, modern laptop, confident posture, bright natural lighting, skyscrapers in the window",
+        "Text Query": "A photo of a confident executive in a tailored suit leading a presentation in a modern glass-walled boardroom, pointing at a chart showing upward growth while colleagues look on attentively."
+      },
+      {
+        "Archetype": 2,
+        "Name of the Scenario": "The Master Artisan at Work",
+        "Core Difference": "This highlights hands-on, highly skilled vocational success, focusing on specialized tools and intense concentration in a dynamic, non-office environment.",
+        "Visual Elements": "Stainless steel commercial kitchen, crisp white chef's coat, tweezers plating a gourmet dish, intense focus, steam, warm ambient lighting, busy background staff",
+        "Text Query": "An image showing a focused head chef in a pristine white uniform carefully plating a complex gourmet dish with tweezers in a bustling, high-end stainless steel commercial kitchen."
+      },
+      {
+        "Archetype": 3,
+        "Name of the Scenario": "Scientific Innovation & Discovery",
+        "Core Difference": "This depicts success as intellectual achievement and cutting-edge research, situated in a sterile, highly technological, and brightly lit setting.",
+        "Visual Elements": "Clean laboratory, white lab coat, blue nitrile gloves, glowing microscope, digital data screens, team of researchers, cool blue lighting, pipettes",
+        "Text Query": "A photo of an accomplished scientist in a white lab coat and safety goggles smiling confidently while examining a glowing sample under a high-tech microscope in a modern research laboratory."
+      },
+      {
+        "Archetype": 4,
+        "Name of the Scenario": "Industrial Project Management",
+        "Core Difference": "This represents success outdoors in a physical, blue-collar leadership role, grounded in large-scale tangible infrastructure and physical labor.",
+        "Visual Elements": "Massive construction site, steel scaffolding, yellow hard hat, high-visibility vest, unrolled blueprints, pointing confidently, sunrise lighting, tall cranes in the background",
+        "Text Query": "An image showing a proud construction project manager wearing a yellow hard hat and safety vest, holding unrolled blueprints and confidently directing operations on a large-scale building site at sunrise."
+      },
+      {
+        "Archetype": 5,
+        "Name of the Scenario": "Public Recognition and Award",
+        "Core Difference": "Rather than showing the work itself, this captures the external validation and celebratory climax of career success on a public stage.",
+        "Visual Elements": "Auditorium stage, holding a glass award or plaque, elegant formal attire, shaking hands, microphone, dramatic spotlights, blurred audience clapping in the background",
+        "Text Query": "A photo of a smiling professional in formal attire standing on a brightly lit stage, proudly holding a glass recognition award and shaking hands with a presenter while an audience claps."
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "intent": "Teaching others.",
+    "description": [
+      {
+        "Archetype": 1,
+        "Name of the Scenario": "The Traditional Academic Classroom",
+        "Core Difference": "This scenario focuses on a structured, multi-person indoor environment with a clear focal point (a board or screen) and a presenter-audience dynamic.",
+        "Visual Elements": "Chalkboard, whiteboard, rows of desks, teacher standing, pointing, students sitting, raised hands, notebooks, educational posters, focused and structured vibe",
+        "Text Query": "A photo of a teacher standing in front of a whiteboard pointing at a diagram, while several students sit at rows of desks taking notes in a brightly lit classroom."
+      },
+      {
+        "Archetype": 2,
+        "Name of the Scenario": "Athletic Coaching and Physical Demonstration",
+        "Core Difference": "This setting is highly dynamic, often outdoors or in a gym, focusing on bodily movement, posture correction, and sports equipment.",
+        "Visual Elements": "Grass field, gym floor, athletic wear, sports equipment, whistles, coach physically guiding a player's stance, active and energetic vibe",
+        "Text Query": "An image showing an athletic coach on a grassy field, physically guiding a young player's hands and adjusting their posture to correct their grip on a sports racket."
+      },
+      {
+        "Archetype": 3,
+        "Name of the Scenario": "Hands-on Craft or Vocational Mentorship",
+        "Core Difference": "This environment is tactile and often messy, focusing on a close-up, shared physical interaction with tools or raw materials.",
+        "Visual Elements": "Workbench, hand tools, raw materials (wood, clay, canvas), aprons, safety goggles, older mentor guiding an apprentice's hands, dusty and creative vibe",
+        "Text Query": "A photo of an experienced artisan in a dusty workshop, placing their hands gently over an apprentice's hands to guide them in shaping wet clay on a pottery wheel."
+      },
+      {
+        "Archetype": 4,
+        "Name of the Scenario": "Corporate Digital Mentorship",
+        "Core Difference": "This is a modern, professional indoor setting where the shared focal point is a digital interface rather than a physical object or board.",
+        "Visual Elements": "Office desks, glowing computer monitors, office chairs, business casual attire, one person seated, another standing and pointing at the screen, collaborative and professional vibe",
+        "Text Query": "An image showing a senior office worker leaning over a colleague's desk, pointing directly at a complex data chart on a glowing computer monitor to explain a software process."
+      },
+      {
+        "Archetype": 5,
+        "Name of the Scenario": "Parent-Child Life Skill Instruction",
+        "Core Difference": "This scenario is marked by a casual, intimate setting (home or park) and a significant physical size difference between the teacher (adult) and learner (child).",
+        "Visual Elements": "Sidewalk, living room, casual everyday clothes, bicycles, shoelaces, adult kneeling or crouching next to a toddler, encouraging smiles, warm and patient vibe",
+        "Text Query": "A photo of a parent kneeling on a suburban sidewalk, holding the handlebars of a small bicycle while looking at their young child to teach them how to ride safely."
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "intent": "Keeping things in order (my desk, office, house, etc.).",
+    "description": [
+      {
+        "Archetype": 1,
+        "Name of the Scenario": "The Minimalist Professional Workspace",
+        "Core Difference": "This scenario focuses on flat surfaces, sharp geometric lines, electronics, and stationery within a well-lit office environment.",
+        "Visual Elements": "Laptop, dual monitors, stacked paper trays, pen holder, cable ties, planner, clean desk surface, bright, focused, minimalist vibe",
+        "Text Query": "A photo of a person neatly arranging files and stationery on a modern office desk, with a laptop, organized cable management, and stacked paper trays in a brightly lit room."
+      },
+      {
+        "Archetype": 2,
+        "Name of the Scenario": "The Domestic Wardrobe and Laundry",
+        "Core Difference": "This environment is dominated by soft textures, fabrics, and vertical storage solutions in a cozy, warm-toned bedroom or closet.",
+        "Visual Elements": "Folded shirts, clothes hangers, laundry basket, color-coordinated fabric, wooden shelves, woven storage bins, warm bedroom lighting, cozy, domestic vibe",
+        "Text Query": "An image showing a person folding soft clothing into neat piles, surrounded by a highly organized walk-in closet with color-coordinated shirts on hangers and woven storage bins."
+      },
+      {
+        "Archetype": 3,
+        "Name of the Scenario": "The Heavy-Duty Workshop/Garage",
+        "Core Difference": "Visually characterized by metallic surfaces, rugged tools, industrial storage, and complex small parts (hardware) in a rustic setting.",
+        "Visual Elements": "Wooden workbench, wall pegboard, metal wrenches, screwdrivers, labeled plastic hardware drawers, oily or dusty textures, methodical, industrial vibe",
+        "Text Query": "A photo of a rustic garage workbench where a person is sorting metal wrenches, screwdrivers, and hardware into labeled plastic drawers and hanging tools on a large wall pegboard."
+      },
+      {
+        "Archetype": 4,
+        "Name of the Scenario": "The Kitchen Pantry Restock",
+        "Core Difference": "Centers entirely around food items, reflective glass containers, and repetitive cylindrical shapes with high color variation from ingredients.",
+        "Visual Elements": "Glass mason jars, deep pantry shelves, dried pasta, colorful spices, custom typography labels, bright kitchen lighting, satisfying, abundant vibe",
+        "Text Query": "An image showing an open kitchen pantry filled with perfectly aligned clear glass jars of spices, pasta, and cereals, featuring custom printed labels and neatly stacked grocery items."
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "intent": "Having work I really like.",
+    "description": [
+      {
+        "Archetype": 1,
+        "Name of the Scenario": "The Passionate Artisan in a Studio",
+        "Core Difference": "This scenario focuses on tactile, hands-on physical creation in a cluttered, personalized space, contrasting heavily with sterile or digital work environments.",
+        "Visual Elements": "Pottery wheel, wet clay, splattered apron, messy workbench, warm sunlight, dirty hands, joyful smile, creative clutter, earthy tones",
+        "Text Query": "A photo of a smiling artisan in a sunlit, messy studio wearing a clay-splattered apron, completely absorbed in shaping pottery on a wheel, radiating a warm, creative energy."
+      },
+      {
+        "Archetype": 2,
+        "Name of the Scenario": "The Focused Tech Professional in Flow State",
+        "Core Difference": "This highlights solitary, digital knowledge work where passion is expressed not through physical exertion, but through intense, comfortable, and satisfying mental focus.",
+        "Visual Elements": "Multiple glowing monitors, dark mode interfaces, ergonomic chair, noise-canceling headphones, subtle smirk of satisfaction, cozy desk lamp, coffee mug, dim lighting",
+        "Text Query": "An image showing a relaxed software engineer sitting in a dimly lit, cozy room with multiple glowing monitors, wearing headphones, and smiling slightly while typing, deeply engaged in a flow state."
+      },
+      {
+        "Archetype": 3,
+        "Name of the Scenario": "The Joyful Outdoor Field Worker",
+        "Core Difference": "This captures physical, outdoor labor where job satisfaction is visually linked to nature, physical exertion, and tangible, real-world results.",
+        "Visual Elements": "Dirt, lush green crops, wide-brimmed sun hat, plaid shirt, sweaty but beaming face, bright overhead sunlight, vast outdoor landscape, gardening tools",
+        "Text Query": "A photo of a cheerful botanist kneeling in a vibrant, sun-drenched field, wearing a wide-brimmed hat, smiling broadly while inspecting a flourishing green plant with muddy hands under a bright blue sky."
+      },
+      {
+        "Archetype": 4,
+        "Name of the Scenario": "The Enthusiastic Collaborative Leader",
+        "Core Difference": "This emphasizes human interaction, dynamic teamwork, and the joy of helping or guiding others in a bright, highly social environment.",
+        "Visual Elements": "Whiteboard with charts, bright classroom or open office, pointing gestures, engaged group of people, direct eye contact, genuine laughter, bright fluorescent or natural lighting",
+        "Text Query": "An image showing an energetic teacher in a bright classroom, laughing warmly while pointing at a colorful whiteboard, surrounded by an engaged group of students sharing in the enthusiastic, collaborative atmosphere."
+      }
+    ]
+  }
+]

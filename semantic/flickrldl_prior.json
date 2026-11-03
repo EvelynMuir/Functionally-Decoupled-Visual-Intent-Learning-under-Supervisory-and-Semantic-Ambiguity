@@ -1,0 +1,398 @@
+{
+  "document_title": "Flickr-LDL and Twitter-LDL Emotion Archetypes for SLR-C",
+  "class_order_source": "Flickr-LDL/Twitter-LDL Plutchik eight-emotion order",
+  "emotions": [
+    {
+      "id": 1,
+      "emotion_name": "amusement",
+      "definition": "Enjoyment, humor, or playful entertainment.",
+      "archetypes": [
+        {
+          "archetype_id": 1,
+          "name": "Pet in Costume",
+          "core_difference": "Separates from excitement by focusing on absurd humor and passive playfulness rather than high-energy thrill.",
+          "visual_elements": "golden retriever, oversized sunglasses, party hat, living room rug, warm natural light",
+          "text_query": "A golden retriever sits on a living room rug wearing oversized sunglasses and a colorful party hat, panting with a goofy expression in warm, cheerful natural light."
+        },
+        {
+          "archetype_id": 2,
+          "name": "Witty Street Sign",
+          "core_difference": "Relies on visual irony and object-based humor rather than human facial expressions.",
+          "visual_elements": "weathered sign, altered graffiti, funny punchline, urban setting, midday sunlight",
+          "text_query": "A weathered urban street sign features cleverly altered graffiti that turns a standard warning into a funny punchline, captured straight-on in bright, cheerful midday sunlight."
+        },
+        {
+          "archetype_id": 3,
+          "name": "Candid Photobomb",
+          "core_difference": "Unexpected, spontaneous human disruption in a formal setting, highlighting unexpected humor.",
+          "visual_elements": "formal wedding guest, posing group, leaping figure in background, grinning face, bright daylight",
+          "text_query": "During a formal outdoor wedding reception, a grinning guest playfully leaps into the background of a posed group photo, creating a candid, brightly lit moment of surprise."
+        },
+        {
+          "archetype_id": 4,
+          "name": "Muddy Child",
+          "core_difference": "Joyful, mischievous messiness in nature, distinguishing from pure contentment via playful action.",
+          "visual_elements": "toddler, wet brown mud, huge mischievous grin, backyard puddle, soft overcast daylight",
+          "text_query": "A toddler covered head-to-toe in wet brown mud flashes a huge, mischievous grin while sitting in a lush green backyard puddle under soft overcast daylight."
+        },
+        {
+          "archetype_id": 5,
+          "name": "Friends Laughing",
+          "core_difference": "Subtle, shared social amusement in a moody indoor setting, avoiding the extreme intensity of excitement.",
+          "visual_elements": "three friends, cafe table, heads tilted back laughing, coffee cups, warm amber lighting",
+          "text_query": "Three friends sit at a softly lit cafe table, heads tilted back in genuine, relaxed laughter over shared coffee cups, surrounded by warm amber indoor lighting."
+        },
+        {
+          "archetype_id": 6,
+          "name": "Street Performer",
+          "core_difference": "Intentional performative comedy utilizing exaggerated props and theatrical makeup in a public space.",
+          "visual_elements": "street clown, exaggerated face paint, juggling colorful pins, smiling onlookers, cobblestone walkway",
+          "text_query": "A brightly dressed street performer with exaggerated face paint juggles colorful bowling pins for a smiling crowd of onlookers on a bustling cobblestone pedestrian walkway."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "emotion_name": "anger",
+      "definition": "Strong displeasure, irritation, rage, or hostility.",
+      "archetypes": [
+        {
+          "archetype_id": 1,
+          "name": "Fierce Protester",
+          "core_difference": "Distinguishes from disgust by showing active, assertive human hostility and shouting rather than physical aversion.",
+          "visual_elements": "screaming protester, clenched fist, dense urban crowd, furrowed brow, harsh contrasting light",
+          "text_query": "A passionate, furious protester stands in a dense urban crowd, screaming loudly with a tightly clenched fist and deeply furrowed brow under harsh, contrasting afternoon daylight."
+        },
+        {
+          "archetype_id": 2,
+          "name": "Traffic Road Rage",
+          "core_difference": "Everyday contextual frustration showing aggressive body language from inside a confined vehicle.",
+          "visual_elements": "driver leaning out window, stationary car, highway traffic jam, aggressive gesturing, glaring sun",
+          "text_query": "A driver leans out the window of a stationary car in a massive highway traffic jam, gesturing aggressively with a red, tense face amid glaring afternoon sun."
+        },
+        {
+          "archetype_id": 3,
+          "name": "Smashed Object",
+          "core_difference": "Evokes anger through the violent destruction of property without requiring human facial expressions.",
+          "visual_elements": "shattered computer monitor, chaotic messy desk, cracked dark glass, cold fluorescent overhead light",
+          "text_query": "A completely shattered computer monitor sits on a chaotic, paper-strewn desk, illuminated by cold fluorescent overhead light that emphasizes the violent cracks in the dark glass."
+        },
+        {
+          "archetype_id": 4,
+          "name": "Sports Confrontation",
+          "core_difference": "Interpersonal aggressive posturing and physical tension during a high-adrenaline outdoor event.",
+          "visual_elements": "two rival athletes, pressing foreheads together, glaring eyes, muddy grass field, tight framing",
+          "text_query": "Two rival athletes press their foreheads together on a muddy grass field, glaring fiercely into each other's eyes during a tense, tightly framed sports confrontation."
+        },
+        {
+          "archetype_id": 5,
+          "name": "Harsh Industrial Landscape",
+          "core_difference": "Environmental hostility using sharp angles, fire, and aggressive color palettes instead of living subjects.",
+          "visual_elements": "jagged metal ruins, towering smokestacks, deep shadows, intense fiery red sky, apocalyptic sunset",
+          "text_query": "Jagged metal ruins and towering smokestacks dominate a brutal industrial landscape, cast in intense, fiery red and deep shadow by a harsh, apocalyptic sunset."
+        },
+        {
+          "archetype_id": 6,
+          "name": "Snarling Animal",
+          "core_difference": "Primal, instinctual aggression in a gritty urban environment, separating from awe by signaling direct threat.",
+          "visual_elements": "large stray dog, bared sharp teeth, flattened ears, deep snarl, narrow concrete alley, low-angle light",
+          "text_query": "A large stray dog stands defensively in a narrow concrete alley, baring its sharp teeth with flattened ears and a deep snarl in gritty, low-angle urban lighting."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "emotion_name": "awe",
+      "definition": "Wonder or reverence caused by something impressive, sublime, or vast.",
+      "archetypes": [
+        {
+          "archetype_id": 1,
+          "name": "Milky Way Galaxy",
+          "core_difference": "Differentiates from fear by portraying cosmic vastness as a majestic, peaceful spectacle rather than a terrifying unknown.",
+          "visual_elements": "tiny silhouetted figure, rocky outcrop, glowing Milky Way galaxy, vast clear night sky",
+          "text_query": "A tiny silhouetted figure stands on a rocky outcrop, looking up at the glowing, infinitely vast expanse of the Milky Way galaxy spanning the clear night sky."
+        },
+        {
+          "archetype_id": 2,
+          "name": "Cathedral Sun Rays",
+          "core_difference": "Architectural grandeur and sublime indoor lighting emphasizing reverence rather than everyday contentment.",
+          "visual_elements": "golden sun rays, intricate stained-glass windows, floating dust, stone floor, cavernous ancient cathedral",
+          "text_query": "Thick golden rays of sunlight stream through the intricate stained-glass windows of a colossal ancient cathedral, illuminating floating dust and casting vibrant, reverent colors across the stone floor."
+        },
+        {
+          "archetype_id": 3,
+          "name": "Macro Snowflake",
+          "core_difference": "Microscopic wonder revealing intricate hidden geometry, distinct from sweeping macro landscapes.",
+          "visual_elements": "symmetrical ice crystals, single snowflake, dark woolen glove, high-magnification macro, crisp cool light",
+          "text_query": "A high-magnification macro shot reveals the perfectly symmetrical, delicate ice crystals of a single snowflake resting on a dark woolen glove under crisp, cool winter lighting."
+        },
+        {
+          "archetype_id": 4,
+          "name": "Breaching Whale",
+          "core_difference": "Majestic wildlife displaying immense scale and power gracefully in a colorful outdoor setting.",
+          "visual_elements": "massive humpback whale, breaching glassy ocean surface, glittering water droplets, pastel pink sunset",
+          "text_query": "A massive humpback whale breaches the glassy ocean surface, sending glittering water droplets into the air against a breathtaking backdrop of a pastel pink sunset."
+        },
+        {
+          "archetype_id": 5,
+          "name": "Mountain Summit",
+          "core_difference": "Geological majesty emphasizing extreme elevation and an expansive horizon viewed by a lone subject.",
+          "visual_elements": "lone mountaineer, dramatic snow-capped summit, sea of jagged peaks, fluffy low clouds, brilliant morning sunlight",
+          "text_query": "A lone mountaineer gazes out from a dramatic, snow-capped summit over an endless sea of jagged peaks and low-hanging fluffy clouds in brilliant, clear morning sunlight."
+        },
+        {
+          "archetype_id": 6,
+          "name": "Rocket Launch",
+          "core_difference": "Technological sublime blending intense blinding energy with monumental human achievement.",
+          "visual_elements": "towering spacecraft, lifting off launchpad, blinding pillar of golden fire, dark dusk sky, billowing smoke",
+          "text_query": "A towering spacecraft lifts off the launchpad on a blinding pillar of golden fire, illuminating the dark dusk sky and surrounding smoke with intense, awe-inspiring radiance."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "emotion_name": "contentment",
+      "definition": "Calm satisfaction, comfort, serenity, or peaceful happiness.",
+      "archetypes": [
+        {
+          "archetype_id": 1,
+          "name": "Sleeping Cat",
+          "core_difference": "Contrasts with amusement by focusing on peaceful rest, passive warmth, and closed eyes rather than active play.",
+          "visual_elements": "orange tabby cat, curled up, warm glowing sunbeam, plush armchair, eyes closed",
+          "text_query": "An orange tabby cat curls up peacefully in a warm, glowing square of sunlight on a plush living room armchair, eyes fully closed in deep rest."
+        },
+        {
+          "archetype_id": 2,
+          "name": "Tea in the Rain",
+          "core_difference": "Quiet contemplation mixing indoor safety with gentle outdoor weather, separating from sadness through cozy warmth.",
+          "visual_elements": "person in knit blanket, sitting by large window, steaming mug of tea, soft falling rain",
+          "text_query": "A calm person wrapped in a thick knit blanket sits comfortably by a large window, holding a steaming mug of tea while watching soft, gentle rain fall outdoors."
+        },
+        {
+          "archetype_id": 3,
+          "name": "Glassy Alpine Lake",
+          "core_difference": "Separates from sadness by utilizing warm pastel colors, perfect symmetry, and undisturbed pristine nature to evoke peace.",
+          "visual_elements": "mirror-like alpine lake, soft lavender and peach dawn, misty pine trees, perfect stillness, no people",
+          "text_query": "A perfectly still, mirror-like alpine lake reflects the soft lavender and peach hues of a quiet dawn, framed by gentle, misty pine trees in complete solitude."
+        },
+        {
+          "archetype_id": 4,
+          "name": "Elderly Couple Strolling",
+          "core_difference": "Enduring, quiet human connection over time rather than the volatile high energy of excitement.",
+          "visual_elements": "elderly couple, holding hands, relaxed pace, leaf-covered park path, warm golden autumn light",
+          "text_query": "An elderly couple holds hands affectionately as they stroll at a relaxed pace down a tranquil, leaf-covered park path bathed in the warm, golden light of autumn."
+        },
+        {
+          "archetype_id": 5,
+          "name": "Cozy Workspace",
+          "core_difference": "Object-based satisfaction derived from order, cleanliness, and warm lighting in a solitary indoor environment.",
+          "visual_elements": "neatly organized wooden desk, open journal, glowing desk lamp, small potted succulent, dim evening room",
+          "text_query": "A neatly organized, minimalist wooden desk holds an open journal, a glowing desk lamp, and a small potted succulent in a calming, dimly lit evening room."
+        },
+        {
+          "archetype_id": 6,
+          "name": "Dog by Campfire",
+          "core_difference": "Intimate, secure bonding in a gentle outdoor setting, balancing dark shadows with warm firelight.",
+          "visual_elements": "tired dog, resting head on owner's knee, gently crackling campfire, dark shadows, peaceful forest",
+          "text_query": "A tired dog rests its heavy head comfortably on its owner's knee beside a gently crackling campfire, surrounded by the soft, dark shadows of a peaceful forest."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "emotion_name": "disgust",
+      "definition": "Revulsion, aversion, contamination response, or strong dislike.",
+      "archetypes": [
+        {
+          "archetype_id": 1,
+          "name": "Rotting Fruit",
+          "core_difference": "Distinguishes from anger by evoking biological aversion via decay and contamination rather than physical hostility.",
+          "visual_elements": "bruised rotting peaches, fuzzy blue mold, swarming fruit flies, stained kitchen counter, ceramic bowl",
+          "text_query": "A ceramic bowl of severely bruised, rotting peaches is covered in fuzzy blue mold and swarming with tiny fruit flies on a neglected, deeply stained kitchen counter."
+        },
+        {
+          "archetype_id": 2,
+          "name": "Overflowing Trash",
+          "core_difference": "Urban grime and poor sanitation triggering environmental revulsion, utilizing a direct human aversion gesture.",
+          "visual_elements": "pedestrian pinching nose, overflowing leaking garbage bags, damp dim city alleyway",
+          "text_query": "A pedestrian pinches their nose while quickly walking past a massive pile of leaking, split garbage bags in a damp, dimly lit city alleyway."
+        },
+        {
+          "archetype_id": 3,
+          "name": "Slimy Parasite",
+          "core_difference": "Visceral response to unpleasant, moist textures and creepy-crawly subjects via tight macro photography.",
+          "visual_elements": "gelatinous slug, decaying wet leaves, slimy textured skin, tight macro shot, harsh cold flash",
+          "text_query": "A tight macro shot captures a thick, gelatinous slug crawling over decaying wet leaves, its slimy textured skin gleaming under harsh, cold camera flash."
+        },
+        {
+          "archetype_id": 4,
+          "name": "Toxic Sludge",
+          "core_difference": "Ecological contamination emphasizing unnatural, sickly colors in a landscape rather than biological rot.",
+          "visual_elements": "neon-green chemical sludge, rusty industrial pipe, stagnant murky river, dead vegetation, bleak grey sky",
+          "text_query": "Thick, unnatural neon-green chemical sludge pours from a rusty industrial pipe into a stagnant, murky river, surrounded by dead vegetation under a bleak, grey sky."
+        },
+        {
+          "archetype_id": 5,
+          "name": "Unappetizing Food",
+          "core_difference": "Gustatory aversion combining strange textures and a clear human facial grimace in a dining context.",
+          "visual_elements": "wrinkled nose, grimacing mouth, plate of grey lumpy meat, dimly lit dingy cafeteria",
+          "text_query": "A diner stares with a deeply wrinkled nose and grimacing mouth at a plate of grey, lumpy, unidentifiable meat served in a dimly lit, dingy cafeteria."
+        },
+        {
+          "archetype_id": 6,
+          "name": "Dirty Restroom",
+          "core_difference": "Architectural decay highlighting filth and unsanitary conditions with harsh, unflattering lighting.",
+          "visual_elements": "stained cracked sink, dark grime, mysterious puddles, flickering sickly green fluorescent bulb",
+          "text_query": "A deeply stained, cracked public restroom sink is covered in dark grime and mysterious puddles, illuminated by a flickering, sickly green fluorescent bulb overhead."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "emotion_name": "excitement",
+      "definition": "Energetic enthusiasm, anticipation, thrill, or stimulation.",
+      "archetypes": [
+        {
+          "archetype_id": 1,
+          "name": "Music Festival Crowd",
+          "core_difference": "Separates from amusement by focusing on intense collective euphoric energy, roaring, and vibrant sensory overload.",
+          "visual_elements": "cheering crowd jumping, hands raised in air, piercing neon laser lights, nighttime music festival",
+          "text_query": "A massive, cheering crowd jumps enthusiastically with hands raised in the air, bathed in piercing neon laser lights at a high-energy nighttime music festival."
+        },
+        {
+          "archetype_id": 2,
+          "name": "Surfing Action",
+          "core_difference": "Dynamic sports action emphasizing high speed, athletic skill, and adrenaline in bright nature.",
+          "visual_elements": "skilled surfer carving, steep glowing blue ocean wave, brilliant spray of white water, sunny sky",
+          "text_query": "A skilled surfer aggressively carves down the steep face of a massive, glowing blue ocean wave, sending a brilliant spray of white water into the sunny sky."
+        },
+        {
+          "archetype_id": 3,
+          "name": "Opening a Gift",
+          "core_difference": "Unrestrained, wide-eyed anticipation and purely domestic thrill, distinct from calm contentment.",
+          "visual_elements": "young child tearing bright red wrapping paper, large birthday present, mouth wide open screaming, bright living room",
+          "text_query": "A young child furiously tears the bright red wrapping paper off a large birthday present, mouth wide open in a scream of pure joy in a bright living room."
+        },
+        {
+          "archetype_id": 4,
+          "name": "Sprinter Winning",
+          "core_difference": "Triumphant, explosive athletic energy at a climactic moment, contrasting with the hostility of anger.",
+          "visual_elements": "muscular sprinter crossing finish line, bright red track, arms thrown upward, roaring in victory, bright stadium lighting",
+          "text_query": "A muscular sprinter crosses the finish line on a bright red track, throwing both arms upward and roaring in victory under clear, bright stadium lighting."
+        },
+        {
+          "archetype_id": 5,
+          "name": "Rollercoaster Drop",
+          "core_difference": "Visceral thrill and high speed captured in a mechanical amusement setting, evoking adrenaline rather than fear.",
+          "visual_elements": "riders screaming, arms thrown up, bright yellow rollercoaster car, steep steel drop, clear blue sky",
+          "text_query": "Riders throw their arms up and scream in sheer thrill as their bright yellow rollercoaster car plunges down a terrifyingly steep steel drop against a clear blue sky."
+        },
+        {
+          "archetype_id": 6,
+          "name": "Motion Blur City",
+          "core_difference": "Abstract, kinetic energy of urban nightlife conveyed purely through long-exposure photographic technique without specific subjects.",
+          "visual_elements": "long exposure photography, rushing river of red and white light trails, busy nighttime city street, fast-paced electricity",
+          "text_query": "Long exposure photography transforms a busy nighttime city street into a rushing river of vibrant red and white light trails, conveying a sense of fast-paced urban electricity."
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "emotion_name": "fear",
+      "definition": "Alarm, anxiety, perceived danger, threat, or vulnerability.",
+      "archetypes": [
+        {
+          "archetype_id": 1,
+          "name": "Shadowy Figure",
+          "core_difference": "Differentiates from awe by placing the subject in a vulnerable, oppressive darkness rather than a majestic vastness.",
+          "visual_elements": "blurred unidentifiable shadowy figure, desolate dim concrete parking garage, heavy darkness",
+          "text_query": "A blurred, unidentifiable shadowy figure stands motionless at the far end of a desolate, dimly lit concrete parking garage, surrounded by oppressive, heavy darkness."
+        },
+        {
+          "archetype_id": 2,
+          "name": "Bear Encounter",
+          "core_difference": "Immediate physical danger from an unpredictable wild animal, triggering survival alarm rather than wonder.",
+          "visual_elements": "terrified frozen hiker, narrow fog-shrouded forest trail, massive dark grizzly bear rearing on hind legs",
+          "text_query": "A terrified hiker freezes on a narrow, fog-shrouded forest trail as a massive, dark grizzly bear rears up on its hind legs just yards away."
+        },
+        {
+          "archetype_id": 3,
+          "name": "Panicked Eyes",
+          "core_difference": "Direct human facial expression of pure terror, utilizing tight framing and isolated low-key lighting.",
+          "visual_elements": "wide panicked eyes looking upward, pitch-black shadows, bead of sweat, harsh cold spotlight, tight dramatic portrait",
+          "text_query": "A tight, dramatic portrait shows a person's wide, panicked eyes looking upward from pitch-black shadows, a single bead of sweat reflecting a harsh, cold spotlight."
+        },
+        {
+          "archetype_id": 4,
+          "name": "Looming Tornado",
+          "core_difference": "Imminent environmental destruction highlighting extreme human helplessness against vast, dark forces.",
+          "visual_elements": "massive churning dark grey tornado, touching ground, isolated fragile wooden farmhouse, apocalyptic greenish-black storm sky",
+          "text_query": "A massive, churning dark grey tornado touches the ground ominously just behind a fragile, isolated wooden farmhouse under an apocalyptic, greenish-black storm sky."
+        },
+        {
+          "archetype_id": 5,
+          "name": "Dizzying Cliff POV",
+          "core_difference": "Induces visceral phobic anxiety regarding heights and falling through an unstable first-person perspective.",
+          "visual_elements": "looking straight down, crumbling edge of high canyon cliff, jagged threatening rocks far below, harsh midday shadows",
+          "text_query": "Looking straight down from the crumbling edge of a dizzyingly high canyon cliff, the jagged rocks far below appear threatening and unstable in harsh midday shadows."
+        },
+        {
+          "archetype_id": 6,
+          "name": "Abandoned Hospital",
+          "core_difference": "Creepy, unsettling atmosphere relying on architectural decay, isolation, and eerie cold color tones.",
+          "visual_elements": "decaying abandoned hospital corridor, peeling paint, overturned rusty wheelchairs, single flickering blue light, deep darkness",
+          "text_query": "A decaying, abandoned hospital corridor stretches into darkness, with peeling paint, overturned rusty wheelchairs, and a single flickering blue light creating an atmosphere of deep dread."
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "emotion_name": "sadness",
+      "definition": "Sorrow, unhappiness, grief, loss, loneliness, or disappointment.",
+      "archetypes": [
+        {
+          "archetype_id": 1,
+          "name": "Rainy Bench Isolation",
+          "core_difference": "Contrasts with contentment by turning solitary weather into a symbol of urban isolation and heavy, somber mood.",
+          "visual_elements": "lone hunched figure in dark coat, isolated wet park bench, gazing downward, relentless grey rain, empty street",
+          "text_query": "A lone, hunched figure in a dark coat sits isolated on a wet park bench, gazing downward as heavy, relentless grey rain falls on the empty city street."
+        },
+        {
+          "archetype_id": 2,
+          "name": "Wilted Rose",
+          "core_difference": "Still life symbolizing decay, memory, and profound loss through inanimate objects without showing human tears.",
+          "visual_elements": "single severely wilted red rose, drooping over dusty glass vase, scattered dried petals, faded old photograph, dim moody lighting",
+          "text_query": "A single, severely wilted red rose droops over the edge of a dusty glass vase, its dried petals scattered beside a faded old photograph in dim, moody lighting."
+        },
+        {
+          "archetype_id": 3,
+          "name": "Stray Dog",
+          "core_difference": "Evokes pity and heartbreak via an abandoned, suffering animal in a desolate urban setting.",
+          "visual_elements": "scruffy emaciated stray dog, wet concrete sidewalk, head hanging low, weak yellow glow of solitary streetlamp",
+          "text_query": "A scruffy, emaciated stray dog sits on a wet concrete sidewalk, head hanging low and eyes cast downward under the weak, yellow glow of a solitary streetlamp."
+        },
+        {
+          "archetype_id": 4,
+          "name": "Broken Toy",
+          "core_difference": "Childhood disappointment and quiet sorrow captured intimately indoors, separating from the energetic joy of excitement.",
+          "visual_elements": "small weeping child, shadowed bedroom floor, tear-streaked face, holding broken pieces of wooden toy",
+          "text_query": "A small child sits on a shadowed bedroom floor, quietly weeping with a tear-streaked face while gently holding the broken pieces of a favorite wooden toy."
+        },
+        {
+          "archetype_id": 5,
+          "name": "Desolate Winter Landscape",
+          "core_difference": "Vast environmental emptiness using completely muted tones and barren subjects to project overarching melancholy.",
+          "visual_elements": "barren snow-covered field, grey overcast horizon, single leafless twisted oak tree, freezing cold",
+          "text_query": "A vast, barren snow-covered field stretches toward a grey, overcast horizon, containing only a single, completely leafless, twisted oak tree standing alone in the freezing cold."
+        },
+        {
+          "archetype_id": 6,
+          "name": "Hospital Window Grief",
+          "core_difference": "Profound grief and confinement in a clinical space, emphasizing emotional weight and separation.",
+          "visual_elements": "weary person leaning forehead, cold sterile hospital window pane, staring blankly, dull overcast cityscape, expression of grief",
+          "text_query": "A weary person leans their forehead against a cold, sterile hospital window pane, staring blankly out at a dull, overcast cityscape with an expression of profound grief."
+        }
+      ]
+    }
+  ]
+}

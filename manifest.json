@@ -1,0 +1,330 @@
+{
+  "title": "Functionally Decoupled Visual Intent Learning under Supervisory and Semantic Ambiguity — supplementary data",
+  "version": "revision-3-draft-2026-11-03",
+  "status": "Public revision-3 supplementary data; repository version, not a DOI archive",
+  "permanent_reference": "https://github.com/EvelynMuir/Functionally-Decoupled-Visual-Intent-Learning-under-Supervisory-and-Semantic-Ambiguity",
+  "recompute": "python build_reports.py (NumPy and SciPy)",
+  "scope": "Cached generated text and compact numeric inputs for inferential reports and systematic error analysis; no raw images, model weights or large feature caches",
+  "training_seeds": {
+    "intentonomy": [
+      20260317,
+      20260615,
+      20260616,
+      20260801,
+      20260802
+    ],
+    "intentonomy_oof": [
+      20260819
+    ],
+    "emotic": [
+      20260625,
+      20260626,
+      20260627,
+      20260628,
+      20260629
+    ],
+    "ldl": [
+      2026,
+      2027,
+      2028,
+      2029,
+      2030
+    ]
+  },
+  "generation": {
+    "rationale_model": "Qwen/Qwen2.5-VL-7B-Instruct (manuscript and generator source)",
+    "generator_default_checkpoint": "cc594898137f460bfe9f0759e9844b3ce807cfb5 (source default; historical loaded revision not logged per request)",
+    "text_encoder": "BAAI/bge-large-en-v1.5; exact historical revision not recorded in generation outputs",
+    "visual_encoder": "OpenAI CLIP ViT-L/14",
+    "intentonomy_train_recorded_command": {
+      "temperature": 0.0,
+      "max_tokens": 768,
+      "max_image_size": 336,
+      "request_batch_size": 256
+    },
+    "source_defaults_not_historical_confirmation": {
+      "intentonomy": {
+        "top_p": 0.9,
+        "max_image_size": 448
+      },
+      "ldl": {
+        "temperature": 0.0,
+        "max_tokens": 320,
+        "max_image_size": 384,
+        "retries": 3
+      }
+    },
+    "generation_random_seed": "Not explicitly supplied/recorded by these generation scripts; training seeds above do not identify generation randomness",
+    "scenario_model": "Gemini 3.1 Pro Preview (author-confirmed model label)",
+    "scenario_generation_parameters": {
+      "temperature": 1,
+      "thinking_level": "high",
+      "source": "Author supplied on 2026-11-03; service snapshot, generation seed, top-p and token limit not supplied"
+    },
+    "prompts": "Author-confirmed Intentonomy scenario template and expanded class-wise requests in prompts/; available LDL scenario templates also in prompts/. Per-request Intentonomy/EMOTIC rationale prompts in cached JSONL; system prompts and LDL rationale template in sources/generate_*."
+  },
+  "remaining_gaps": [
+    "EMOTIC scenario-generation prompt has not been located. Intentonomy template is author-confirmed for all classes; historical request/response session logs are not available.",
+    "Generation RNG seeds, historical software versions and exact loaded checkpoint revisions were not logged in each cached record; source defaults are not proof of historical settings.",
+    "Large feature caches and training checkpoints remain in the original experiment directories and are not bundled. This package supports reanalysis, not standalone full retraining."
+  ],
+  "files": [
+    {
+      "path": "inputs/intentonomy_seed_results.json",
+      "source": "logs/analysis/e16_seed_significance_5seed/summary.json",
+      "purpose": "Full-precision saved statistical inputs and recorded run configuration"
+    },
+    {
+      "path": "inputs/intentonomy_subset_seed_results.json",
+      "source": "logs/analysis/e16_subsets_5seed/summary.json",
+      "purpose": "Full-precision saved statistical inputs and recorded run configuration"
+    },
+    {
+      "path": "inputs/emotic_seed_results.json",
+      "source": "logs/analysis/emotic_fdil_pool_kfold_slrctuned_20260819/summary.json",
+      "purpose": "Full-precision saved statistical inputs and recorded run configuration"
+    },
+    {
+      "path": "inputs/flickrldl_seed_results.json",
+      "source": "logs/analysis/flickrldl_fdil_5seed_20260821/summary.json",
+      "purpose": "Full-precision saved statistical inputs and recorded run configuration"
+    },
+    {
+      "path": "inputs/emotion6_seed_results.json",
+      "source": "logs/analysis/emotion6_fdil_5seed_20260821/summary.json",
+      "purpose": "Full-precision saved statistical inputs and recorded run configuration"
+    },
+    {
+      "path": "inputs/bootstrap.csv",
+      "source": "logs/analysis/e13_threshold_free_significance_topk10_20260623/e13_paired_significance.csv",
+      "purpose": "Saved finite-resolution sample-bootstrap contrasts"
+    },
+    {
+      "path": "inputs/bootstrap_protocol.json",
+      "source": "logs/analysis/e13_threshold_free_significance_topk10_20260623/summary.json",
+      "purpose": "Bootstrap resampling configuration and original report"
+    },
+    {
+      "path": "inputs/intentonomy_oof_predictions.npz",
+      "source": "logs/analysis/e17_ambiguity_quadrants_5fold_v2/e17_oof_scores.npz + fold thresholds; aligned train_base.npz IDs",
+      "purpose": "Compact predictions sufficient to reproduce all new errors and conditional contrasts",
+      "rows": 12739,
+      "class_order": [
+        "Attractive",
+        "BeatCompete",
+        "Communicate",
+        "CreativeUnique",
+        "CuriousAdventurousExcitingLife",
+        "EasyLife",
+        "EnjoyLife",
+        "FineDesignLearnArt-Arch",
+        "FineDesignLearnArt-Art",
+        "FineDesignLearnArt-Culture",
+        "GoodParentEmoCloseChild",
+        "Happy",
+        "HardWorking",
+        "Harmony",
+        "Health",
+        "InLove",
+        "InLoveAnimal",
+        "InspirOthrs",
+        "ManagableMakePlan",
+        "NatBeauty",
+        "PassionAbSmthing",
+        "Playful",
+        "ShareFeelings",
+        "SocialLifeFriendship",
+        "SuccInOccupHavGdJob",
+        "TchOthrs",
+        "ThngsInOrdr",
+        "WorkILike"
+      ]
+    },
+    {
+      "path": "inputs/oof_protocol.json",
+      "source": "logs/analysis/e17_ambiguity_quadrants_5fold_v2/summary.json",
+      "purpose": "Recorded cross-fitting protocol, ambiguity definitions and seed"
+    },
+    {
+      "path": "semantic/intentonomy_prior.json",
+      "source": "../Intentonomy/data/intent_description_gemini.json",
+      "purpose": "Exact cached semantic prior text; generation history is recorded separately"
+    },
+    {
+      "path": "semantic/emotic_prior.json",
+      "source": "../Emotic/emotion_description_gemini.json",
+      "purpose": "Exact cached semantic prior text; generation history is recorded separately"
+    },
+    {
+      "path": "semantic/flickrldl_prior.json",
+      "source": "../LDL/processed/semantic_priors/ldl_gemini_slrc_prior.json",
+      "purpose": "Exact cached semantic prior text; generation history is recorded separately"
+    },
+    {
+      "path": "semantic/emotion6_prior.json",
+      "source": "../LDL/processed/semantic_priors/emotion6_gemini_slrc_prior.json",
+      "purpose": "Exact cached semantic prior text; generation history is recorded separately"
+    },
+    {
+      "path": "semantic/intentonomy_label_texts.json",
+      "source": "scripts/analyze_text_prior_boundary.py; src/models/intentonomy_clip_vit_slot_module.py",
+      "purpose": "Exact lexical and canonical text banks in Intentonomy class order"
+    },
+    {
+      "path": "semantic/intentonomy_train_rationales.jsonl.gz",
+      "source": "logs/analysis/vlm_full_20260316/rationale_full.jsonl",
+      "purpose": "Cached rationale records, preserving prompts when originally recorded; no raw images",
+      "records": 12739
+    },
+    {
+      "path": "semantic/intentonomy_val_rationales.jsonl.gz",
+      "source": "logs/analysis/vlm_full_20260316/val_rationale_baseline_pred.jsonl",
+      "purpose": "Cached rationale records, preserving prompts when originally recorded; no raw images",
+      "records": 498
+    },
+    {
+      "path": "semantic/intentonomy_test_rationales.jsonl.gz",
+      "source": "logs/analysis/vlm_full_20260316/test_rationale_baseline_pred.jsonl",
+      "purpose": "Cached rationale records, preserving prompts when originally recorded; no raw images",
+      "records": 1216
+    },
+    {
+      "path": "semantic/emotic_train_rationales.jsonl.gz",
+      "source": "logs/analysis/emotic_vlm_20260323/rationale_full.jsonl",
+      "purpose": "Cached rationale records, preserving prompts when originally recorded; no raw images",
+      "records": 23706
+    },
+    {
+      "path": "semantic/emotic_val_rationales.jsonl.gz",
+      "source": "logs/analysis/emotic_vlm_20260323/val_rationale_baseline_pred.jsonl",
+      "purpose": "Cached rationale records, preserving prompts when originally recorded; no raw images",
+      "records": 3334
+    },
+    {
+      "path": "semantic/emotic_test_rationales.jsonl.gz",
+      "source": "logs/analysis/emotic_vlm_20260323/test_rationale_baseline_pred.jsonl",
+      "purpose": "Cached rationale records, preserving prompts when originally recorded; no raw images",
+      "records": 7279
+    },
+    {
+      "path": "semantic/flickrldl_train_rationales.jsonl.gz",
+      "source": "logs/analysis/flickrldl_rationales/train_rationales.jsonl",
+      "purpose": "Cached rationale records, preserving prompts when originally recorded; no raw images",
+      "records": 6690
+    },
+    {
+      "path": "semantic/emotion6_train_rationales.jsonl.gz",
+      "source": "logs/analysis/emotion6_rationales/train_rationales.jsonl",
+      "purpose": "Cached rationale records, preserving prompts when originally recorded; no raw images",
+      "records": 1108
+    },
+    {
+      "path": "sources/generate_vlm_rationales.py",
+      "source": "scripts/generate_vlm_rationales.py",
+      "purpose": "Source snapshot; full training/generation requires the project repository and original datasets"
+    },
+    {
+      "path": "sources/generate_emotic_vlm_rationales.py",
+      "source": "scripts/generate_emotic_vlm_rationales.py",
+      "purpose": "Source snapshot; full training/generation requires the project repository and original datasets"
+    },
+    {
+      "path": "sources/generate_ldl_vlm_rationales.py",
+      "source": "scripts/generate_ldl_vlm_rationales.py",
+      "purpose": "Source snapshot; full training/generation requires the project repository and original datasets"
+    },
+    {
+      "path": "sources/extract_vlm_rationale_features.py",
+      "source": "scripts/extract_vlm_rationale_features.py",
+      "purpose": "Source snapshot; full training/generation requires the project repository and original datasets"
+    },
+    {
+      "path": "sources/extract_ldl_rationale_features.py",
+      "source": "scripts/extract_ldl_rationale_features.py",
+      "purpose": "Source snapshot; full training/generation requires the project repository and original datasets"
+    },
+    {
+      "path": "sources/analyze_text_prior_boundary.py",
+      "source": "scripts/analyze_text_prior_boundary.py",
+      "purpose": "Source snapshot; full training/generation requires the project repository and original datasets"
+    },
+    {
+      "path": "sources/build_e16_seed_significance.py",
+      "source": "scripts/build_e16_seed_significance.py",
+      "purpose": "Source snapshot; full training/generation requires the project repository and original datasets"
+    },
+    {
+      "path": "sources/build_e17_ambiguity_quadrants.py",
+      "source": "scripts/build_e17_ambiguity_quadrants.py",
+      "purpose": "Source snapshot; full training/generation requires the project repository and original datasets"
+    },
+    {
+      "path": "sources/build_e13_threshold_free_significance.py",
+      "source": "scripts/build_e13_threshold_free_significance.py",
+      "purpose": "Source snapshot; full training/generation requires the project repository and original datasets"
+    },
+    {
+      "path": "sources/analyze_privileged_distillation.py",
+      "source": "scripts/analyze_privileged_distillation.py",
+      "purpose": "Source snapshot; full training/generation requires the project repository and original datasets"
+    },
+    {
+      "path": "sources/analyze_distillation_slrc.py",
+      "source": "scripts/analyze_distillation_slrc.py",
+      "purpose": "Source snapshot; full training/generation requires the project repository and original datasets"
+    },
+    {
+      "path": "sources/run_ldl_fdil.py",
+      "source": "scripts/run_ldl_fdil.py",
+      "purpose": "Source snapshot; full training/generation requires the project repository and original datasets"
+    },
+    {
+      "path": "sources/slrc_prior_norm.py",
+      "source": "scripts/slrc_prior_norm.py",
+      "purpose": "Source snapshot; full training/generation requires the project repository and original datasets"
+    },
+    {
+      "path": "sources/environment.yaml",
+      "source": "environment.yaml",
+      "purpose": "Existing project dependency specification; not a historical generation environment lock"
+    },
+    {
+      "path": "sources/requirements.txt",
+      "source": "requirements.txt",
+      "purpose": "Existing project dependency specification; not a historical generation environment lock"
+    },
+    {
+      "path": "prompts/ldl_slrc_gemini_prompt.md",
+      "source": "docs/prompts/ldl_slrc_gemini_prompt.md",
+      "purpose": "Available exact semantic-prior prompt template"
+    },
+    {
+      "path": "prompts/emotion6_slrc_gemini_prompt.md",
+      "source": "docs/prompts/emotion6_slrc_gemini_prompt.md",
+      "purpose": "Available exact semantic-prior prompt template"
+    },
+    {
+      "path": "prompts/intentonomy_scenario_template.txt",
+      "source": "Author-provided template, confirmed on 2026-11-03",
+      "purpose": "Applied to all 28 Intentonomy classes by replacing only target_intent"
+    },
+    {
+      "path": "prompts/intentonomy_scenario_requests.json",
+      "source": "Author-confirmed template + canonical intent descriptions",
+      "purpose": "Expanded prompts in class order; target_intent is the only substituted field"
+    },
+    {
+      "path": "sources/intentonomy_generation_record.md",
+      "source": "docs/record/record_0316_01_VLMLateFusion.md",
+      "purpose": "Historical commands documenting Intentonomy rationale generation and BGE extraction"
+    }
+  ],
+  "reports": {
+    "paired_statistics": "reports/*_paired.csv",
+    "hypothesis_diagnostics": "reports/hypothesis_contrasts.csv",
+    "systematic_errors": "reports/stratified_errors.csv; reports/confusion_pairs.csv; reports/selected_cases.json",
+    "bootstrap": "reports/bootstrap.csv"
+  },
+  "holm_scope": "Existing Intentonomy FDIL-versus-five-comparator family within each metric, and existing twelve ambiguity-cell comparisons. Transfer and sample-bootstrap reports keep their respective original paired-test protocols.",
+  "packaging_notes": "Machine-specific paths in source snapshots are replaced with placeholders. build_reports.py runs independently of the original project and omits image-dependent figure generation; numeric analysis is unchanged."
+}

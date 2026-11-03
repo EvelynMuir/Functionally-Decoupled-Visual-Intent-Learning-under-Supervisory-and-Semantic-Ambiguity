@@ -1,0 +1,10 @@
+report,scope,n,favorable,overlaps_zero,adverse
+intentonomy_paired,all comparisons,30,29,1,0
+intentonomy_subsets_paired,all comparisons,25,13,12,0
+emotic_paired,all comparisons,12,7,5,0
+emotic_paired,FDIL versus baseline,4,4,0,0
+flickrldl_paired,all comparisons,21,3,16,2
+flickrldl_paired,FDIL versus baseline,7,2,4,1
+emotion6_paired,all comparisons,21,2,19,0
+emotion6_paired,FDIL versus baseline,7,1,6,0
+quadrant_paired,all comparisons,12,6,6,0

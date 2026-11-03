@@ -1,0 +1,5 @@
+hypothesis,condition,contrast,mean_difference
+H1,High agreement,high minus low semantic ambiguity,4.506869624324946
+H1,Low agreement,high minus low semantic ambiguity,0.6824854851727647
+H2,Low semantic ambiguity,low minus high agreement,0.08336398245698418
+H2,High semantic ambiguity,low minus high agreement,0.9081740655880431

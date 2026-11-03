@@ -1,0 +1,10 @@
+comparison,metric,delta,ci95_low,ci95_high,p_value,p_report
+FDIL - CLIP baseline,mAP,4.804,3.578,6.103,0.0,0.0002
+FDIL - CLIP baseline,macro_auc,2.312,1.774,2.862,0.0,0.0002
+FDIL - CLIP baseline,micro_auc,3.404,2.981,3.829,0.0,0.0002
+FDIL - UTD only,mAP,1.988,0.269,4.304,0.0188,0.0188
+FDIL - UTD only,macro_auc,-0.733,-1.743,0.049,0.0636,0.0636
+FDIL - UTD only,micro_auc,-0.241,-0.638,0.184,0.26,0.26
+FDIL - SLR-C only,mAP,0.8,0.188,1.49,0.0144,0.0144
+FDIL - SLR-C only,macro_auc,1.117,0.631,1.598,0.0,0.0002
+FDIL - SLR-C only,micro_auc,1.576,1.188,1.951,0.0,0.0002

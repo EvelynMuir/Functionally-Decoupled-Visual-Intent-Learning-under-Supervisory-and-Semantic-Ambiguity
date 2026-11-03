@@ -1,0 +1,958 @@
+{
+  "document_title": "Emotion Recognition Archetypes for Vision-Language Models",
+  "document_path": "${DATA_ROOT}/Emotic/emotion_description_gemini.json",
+  "emotions": [
+    {
+      "id": 1,
+      "emotion_name": "Affection",
+      "definition": "Fond feelings; love; tenderness",
+      "archetypes": [
+        {
+          "archetype_id": 1,
+          "name": "Parental Tenderness",
+          "core_difference": "Stark physical size contrast and protective, asymmetrical caregiving posture between an adult and a small child",
+          "visual_elements": "Adult, infant or toddler, cradling arms, gentle touch, soft blankets, warm natural light, nursery or domestic interior, protective embrace, peaceful vibe",
+          "text_query": "A photo of a parent gently cradling a sleeping newborn baby wrapped in a soft blanket, looking down with a peaceful and protective expression in a warmly lit room"
+        },
+        {
+          "archetype_id": 2,
+          "name": "Romantic Intimacy",
+          "core_difference": "Extreme facial proximity, mirrored body language, and romantic tension between two adult partners in an atmospheric setting",
+          "visual_elements": "Two adults, foreheads touching, holding hands, closed eyes, sunset or dim ambient lighting, blurred background, intimate embrace, romantic vibe",
+          "text_query": "An image showing a young couple locked in a close embrace at sunset, their foreheads lightly touching and eyes closed, standing together against a brightly colored, gently blurred evening sky"
+        },
+        {
+          "archetype_id": 3,
+          "name": "The Human-Animal Bond",
+          "core_difference": "Introduces non-human anatomy (pets), highlighting physical textures of fur and interspecies comfort between human and animal",
+          "visual_elements": "Person, dog or cat, thick fur, petting, kneeling, grassy park or living room floor, casual clothing, relaxed posture, joyful and comforting vibe",
+          "text_query": "A photo of a casually dressed person kneeling in a vibrant green park, tightly hugging a large, fluffy dog that is leaning into the embrace with a relaxed, happy posture"
+        },
+        {
+          "archetype_id": 4,
+          "name": "Platonic Camaraderie",
+          "core_difference": "Lively, open group dynamic with peers engaging in energetic, casual physical touch, contrasting with closed, one-on-one poses",
+          "visual_elements": "Group of young adults, laughing faces, casual streetwear, arms around shoulders, leaning against each other, urban street or coffee shop, bright daylight, energetic vibe",
+          "text_query": "An image showing a diverse group of laughing friends walking down a bright city street, casually leaning on each other with their arms wrapped securely around one another's shoulders"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "emotion_name": "Anger",
+      "definition": "Intense displeasure or rage; furious; resentful",
+      "archetypes": [
+        {
+          "archetype_id": 1,
+          "name": "Vehicular Frustration (Road Rage)",
+          "core_difference": "Aggressive gestures and facial tension isolated within the tight, metallic confines of a vehicle",
+          "visual_elements": "Driver, car interior, steering wheel, white-knuckle grip, yelling, blurred traffic background, daylight, clenched jaw, aggressive vibe",
+          "text_query": "A photo of a furious driver sitting in heavy traffic, aggressively gripping the steering wheel with clenched fists and yelling through the windshield with a tense, red face"
+        },
+        {
+          "archetype_id": 2,
+          "name": "Inanimate Object Conflict (Tech Breakdown)",
+          "core_difference": "Isolated human frustration directed at an unyielding inanimate object within a sterile, indoor corporate environment",
+          "visual_elements": "Office worker, computer monitor, desk, fluorescent lighting, raised fists, papers scattered, frustrated facial expression, destructive energy",
+          "text_query": "An image showing an angry office worker in a cubicle, violently raising both fists to slam them onto a desk in front of a blank computer monitor and scattered papers"
+        },
+        {
+          "archetype_id": 3,
+          "name": "Collective Outrage (Street Protest)",
+          "core_difference": "Vocal, unified anger within a large, dynamic crowd outdoors, emphasizing scale and shared rebellious emotion",
+          "visual_elements": "Large crowd, city street, painted cardboard signs, raised fists, open mouths shouting, megaphones, daylight, chaotic and defiant vibe",
+          "text_query": "A photo of a dense crowd of protesters marching down a city street, holding up large painted signs and shouting aggressively with raised fists and intense, furious expressions"
+        },
+        {
+          "archetype_id": 4,
+          "name": "Interpersonal Hostility (Domestic Argument)",
+          "core_difference": "Intimate, face-to-face conflict, mirrored aggressive body language, and close physical proximity between two individuals in a private setting",
+          "visual_elements": "Two adults, living room or kitchen, pointing fingers, rigid posture, narrowed eyes, evening ambient lighting, domestic backdrop, hostile vibe",
+          "text_query": "An image showing two people standing face-to-face in a dimly lit living room, intensely arguing with rigid postures, narrowed eyes, and one person aggressively pointing a finger at the other"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "emotion_name": "Annoyance",
+      "definition": "Bothered by something or someone; irritated; impatient; frustrated",
+      "archetypes": [
+        {
+          "archetype_id": 1,
+          "name": "The Endless Queue (Impatient Waiting)",
+          "core_difference": "Passive, static frustration of being delayed in a crowded public transit or retail space",
+          "visual_elements": "Commuter, wristwatch, long line of people, sighing, crossed arms, train station or airport, static, impatient vibe",
+          "text_query": "A photo of a tired commuter standing in a long, crowded airport line, aggressively checking their wristwatch with a heavy sigh and crossed arms"
+        },
+        {
+          "archetype_id": 2,
+          "name": "Auditory Intrusion (Sensory Overload)",
+          "core_difference": "Physical reaction to an invisible environmental nuisance, using body to block out sensory input",
+          "visual_elements": "Person in pajamas, pillow over head, hands pressing ears, bedroom, morning light, wincing face, irritated vibe",
+          "text_query": "An image showing a frustrated person lying in bed in the morning light, squeezing a pillow tightly over their head and ears with a wincing expression to block out loud noise"
+        },
+        {
+          "archetype_id": 3,
+          "name": "The Unwanted Conversation (Social Irritation)",
+          "core_difference": "Subtle, one-sided interpersonal friction through asymmetric body language and facial micro-expressions, like the classic eye roll",
+          "visual_elements": "Two people, office breakroom or cafe, one talking eagerly, the other rolling eyes, resting chin on hand, looking away, awkward vibe",
+          "text_query": "A photo of an annoyed woman sitting at a small cafe table, rolling her eyes and resting her chin heavily on her hand while the person across from her talks enthusiastically"
+        },
+        {
+          "archetype_id": 4,
+          "name": "Everyday Nuisance (Fine-Motor Frustration)",
+          "core_difference": "Close-up, isolating struggle with a minor, stubborn inanimate object that requires tedious effort to fix",
+          "visual_elements": "Close-up on hands, tangled wires or earphones, furrowed brow, desk top, tight grip, exasperated vibe",
+          "text_query": "An image showing a close-up of a person's hands tightly gripping a massive knot of tangled cables, with their deeply furrowed, exasperated brow visible in the slightly blurred background"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "emotion_name": "Anticipation",
+      "definition": "State of looking forward; hoping on or getting prepared for possible future events",
+      "archetypes": [
+        {
+          "archetype_id": 1,
+          "name": "The Starting Line (Athletic Tension)",
+          "core_difference": "Extreme physical tension, coiled energy, and athletic readiness in a stark outdoor or stadium environment",
+          "visual_elements": "Sprinters, starting blocks, red track, crouched posture, tense muscles, focused gaze, daylight or stadium lights, high-stakes and explosive vibe",
+          "text_query": "A photo of sprinters crouched at the starting blocks on a red athletic track, their muscles tense and eyes locked forward in eager readiness just before the starting gun"
+        },
+        {
+          "archetype_id": 2,
+          "name": "The Oven Watch (Domestic Culinary Wait)",
+          "core_difference": "Warm, low-stakes domestic scene illuminated by the specific, intimate glow of an artificial appliance light",
+          "visual_elements": "Child, oven window, warm glowing orange light, hands pressed to glass, baking cookies, dim kitchen interior, cozy and eager vibe",
+          "text_query": "An image showing a young child kneeling on a kitchen floor, pressing their hands eagerly against the glowing glass door of an oven while watching cookies rise inside"
+        },
+        {
+          "archetype_id": 3,
+          "name": "Backstage Peeking (Performance Readiness)",
+          "core_difference": "Dramatic, high-contrast lighting and the literal threshold between a hidden dark space and a public, brightly lit arena",
+          "visual_elements": "Performer, heavy red velvet curtain, backstage shadows, bright stage spotlight, peeking out, wide-eyed expression, nervous excitement vibe",
+          "text_query": "A photo of an actor standing in a dark backstage area, nervously but excitedly peeking through a small gap in a heavy red velvet curtain toward a brightly lit stage"
+        },
+        {
+          "archetype_id": 4,
+          "name": "The Sealed Envelope (High-Stakes News)",
+          "core_difference": "Tight focus on interaction with a small, flat object, emphasizing psychological weight and facial micro-expressions right before life-changing news is revealed",
+          "visual_elements": "Young adult, thick paper envelope, half-pulled letter, hovering thumbs, held breath, wide eyes, living room sofa, quiet and suspenseful vibe",
+          "text_query": "An image showing a teenager sitting on a living room sofa, holding their breath with wide eyes as they slowly and carefully pull a folded letter out of a torn envelope"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "emotion_name": "Aversion",
+      "definition": "Feeling disgust, dislike, repulsion; feeling hate",
+      "archetypes": [
+        {
+          "archetype_id": 1,
+          "name": "Olfactory/Gustatory Disgust (Spoiled Food)",
+          "core_difference": "Isolated facial micro-expression reacting to a bad smell or taste from a specific consumable object",
+          "visual_elements": "Person, wrinkled nose, pinched face, holding moldy food or stinky garbage at arm's length, kitchen setting, grossed-out vibe",
+          "text_query": "A photo of a person in a kitchen holding a piece of heavily moldy fruit at arm's length, pinching their nose shut and grimacing with a deeply wrinkled face"
+        },
+        {
+          "archetype_id": 2,
+          "name": "Tactile Repulsion (The 'Ew' Factor)",
+          "core_difference": "Full-body, sudden recoiling motion and defensive posture away from a small, creepy, or slimy physical stimulus",
+          "visual_elements": "Person, shrinking back, hands raised defensively to chest, looking down, spider or slimy texture, bathroom or outdoor setting, recoiling vibe",
+          "text_query": "An image showing a person in a brightly lit bathroom violently recoiling and pulling their hands tightly back against their chest while staring down at a large bug on the floor"
+        },
+        {
+          "archetype_id": 3,
+          "name": "Interpersonal Contempt (Social Dislike)",
+          "core_difference": "Cold, psychological dislike directed at another human, utilizing closed-off body language and a subtle sneer rather than an extreme physical reaction",
+          "visual_elements": "Two adults, office or party environment, glaring, sneering lip, side-eye, crossed arms, turning shoulders away, cold and hostile vibe",
+          "text_query": "A photo of two people at a crowded social event, where one person is actively turning their shoulders away and shooting a cold, glaring side-eye with a sneering lip at the other"
+        },
+        {
+          "archetype_id": 4,
+          "name": "Phobic Avoidance (Gaze Aversion)",
+          "core_difference": "Intentional gaze aversion and intense physical cringing away from an impending, uncomfortable but sterile procedure",
+          "visual_elements": "Patient, medical professional, syringe or cotton swab, turning head sharply away, squeezing eyes completely shut, clinical lighting, tense and avoidant vibe",
+          "text_query": "An image showing a tense patient in a sterile doctor's office, squeezing their eyes completely shut and turning their head sharply away to avoid looking at an approaching syringe"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "emotion_name": "Confidence",
+      "definition": "Feeling of being certain; conviction that an outcome will be favorable; encouraged; proud",
+      "archetypes": [
+        {
+          "archetype_id": 1,
+          "name": "Executive Command (Public Speaking)",
+          "core_difference": "Formal authority, polished presentation, and asymmetrical power dynamic of one person comfortably holding the attention of a large crowd",
+          "visual_elements": "Speaker, stage spotlight, tailored business suit, upright posture, open hand gestures, microphone, blurred audience background, authoritative and proud vibe",
+          "text_query": "A photo of an executive in a tailored suit standing tall on a brightly lit stage, making open, relaxed hand gestures and smiling assuredly while confidently addressing a blurred audience"
+        },
+        {
+          "archetype_id": 2,
+          "name": "Athletic Mastery (Mid-Action Peak)",
+          "core_difference": "Physical conviction and dynamic movement, capturing the exact moment a subject demonstrates absolute, fearless control over their body in a high-stakes physical environment",
+          "visual_elements": "Athlete, mid-air leap, sports gear, relaxed facial muscles despite extreme physical exertion, clear sky or stadium, dynamic low angle, fearless vibe",
+          "text_query": "An image showing a skateboarder suspended mid-air during a complex trick, maintaining a perfectly relaxed, intensely focused expression of absolute certainty against a bright blue sky"
+        },
+        {
+          "archetype_id": 3,
+          "name": "Quiet Self-Assurance (Casual Portrait)",
+          "core_difference": "Relies entirely on subtle micro-expressions, relaxed resting posture, and direct, unflinching eye contact in a low-stakes, everyday environment",
+          "visual_elements": "Adult, casual clothing, leaning back, hands resting easily, direct eye contact, slight smirk, natural lighting, coffee shop or living room, unbothered and secure vibe",
+          "text_query": "A photo of a casually dressed person sitting in a sunlit cafe, leaning back comfortably with relaxed shoulders and looking directly into the camera lens with a subtle, unbothered smirk"
+        },
+        {
+          "archetype_id": 4,
+          "name": "Intellectual Conviction (The Problem Solver)",
+          "core_difference": "Moment of mental clarity and pride in a technical or academic setting, focusing on interaction with complex data or tools",
+          "visual_elements": "Scientist or student, large whiteboard filled with equations, dry-erase marker, turning around, beaming smile, raised chin, bright classroom or lab, proud and encouraged vibe",
+          "text_query": "An image showing a smiling student standing in a brightly lit classroom, holding a marker in front of a whiteboard covered in complex math, looking back with a proud, accomplished posture"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "emotion_name": "Disapproval",
+      "definition": "Feeling that something is wrong or reprehensible; contempt; hostile",
+      "archetypes": [
+        {
+          "archetype_id": 1,
+          "name": "The Formal Reprimand",
+          "core_difference": "Hierarchical authority dynamics within a stark, professional environment, characterized by direct, top-down hostility",
+          "visual_elements": "Office desk, business suits, pointing index finger, furrowed brow, rigid posture, intense eye contact, cold and clinical vibe",
+          "text_query": "An image showing a stern executive in a modern corporate office, leaning intensely over a desk with a deeply furrowed brow and pointing a finger aggressively toward someone off-camera"
+        },
+        {
+          "archetype_id": 2,
+          "name": "Public Social Judgment",
+          "core_difference": "Passive-aggressive disapproval from strangers in a casual, public setting, relying on subtle, avoidant body language rather than direct confrontation",
+          "visual_elements": "Busy street or cafe, casual clothing, bystanders, tightly crossed arms, side-eye glances, whispering behind a hand, physical distancing, judgmental vibe",
+          "text_query": "A photo of two people sitting in a busy outdoor cafe, leaning away with their arms tightly crossed, casting a sharp, contemptuous side-eye glare at an unseen passerby"
+        },
+        {
+          "archetype_id": 3,
+          "name": "Domestic Disgust",
+          "core_difference": "Intimate, close-quarters relational tension with overt facial expressions of contempt and disgust in a familiar, personal space",
+          "visual_elements": "Messy living room or kitchen, casual homewear, sneering upper lip, hands resting on hips, rolling eyes, turned shoulders, tense and exhausted vibe",
+          "text_query": "A photo of a person standing in a dimly lit kitchen wearing casual clothes, rolling their eyes with a pronounced sneer of disgust and turning their shoulders away from an argument"
+        },
+        {
+          "archetype_id": 4,
+          "name": "Oppositional Hostility",
+          "core_difference": "Active, aggressive, and overt hostility within a chaotic, crowded outdoor setting, often tied to ideological or group conflict",
+          "visual_elements": "Urban street, protest signs, barricades, dense crowd, glaring intensely, shouting mouth, gripping hands, confrontational and aggressive vibe",
+          "text_query": "An image showing a person in a dense, chaotic outdoor crowd, gripping a cardboard sign tightly while leaning forward to aggressively glare and shout with absolute contempt"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "emotion_name": "Disconnection",
+      "definition": "Feeling not interested in the main event of the surrounding; indifferent; bored; distracted",
+      "archetypes": [
+        {
+          "archetype_id": 1,
+          "name": "The Social Gathering Isolation",
+          "core_difference": "Chaotic, dimly lit, high-energy social environment contrasted with a static, artificially illuminated subject retreating into a digital space",
+          "visual_elements": "Dimmed party lights, blurred dancing crowd, single subject sitting on a couch, glowing smartphone screen illuminating the face, slouched posture, blank facial expression, heavy vignette",
+          "text_query": "A photo of a person sitting alone on a couch at a lively house party, staring blankly at a glowing smartphone screen while a blurred crowd dances and talks in the background"
+        },
+        {
+          "archetype_id": 2,
+          "name": "The Corporate Meeting Daydreamer",
+          "core_difference": "Structured, brightly lit, formal environment focusing on physical presence versus mental absence, indicated by broken eye contact with a clear focal point",
+          "visual_elements": "Conference room table, harsh fluorescent lighting, colleagues in business attire looking forward, whiteboard presenter, one subject resting chin in hand, looking out a window, doodling on a notepad",
+          "text_query": "An image showing a corporate boardroom meeting where one employee rests their chin on their hand, staring absently out the window, completely ignoring the enthusiastic speaker presenting at the whiteboard"
+        },
+        {
+          "archetype_id": 3,
+          "name": "The Unimpressed Stadium Spectator",
+          "core_difference": "Extreme scale and collective emotion, emphasizing disconnection through a subject performing an entirely out-of-place, low-energy activity amid mass hysteria",
+          "visual_elements": "Outdoor stadium seating, bright daylight, massive crowd with hands in the air, team colors, cheering, single subject sitting with arms crossed, yawning, reading a paperback book, neutral attire",
+          "text_query": "A photo of a bored spectator yawning and looking down at a book while sitting in the stands of a brightly lit sports stadium, surrounded by thousands of cheering fans waving flags"
+        },
+        {
+          "archetype_id": 4,
+          "name": "The Distracted Dinner Date",
+          "core_difference": "Intimate, close-up, two-person composition highlighting asymmetrical emotional engagement and micro-expressions of indifference rather than full physical withdrawal",
+          "visual_elements": "Candlelit restaurant table, warm low lighting, wine glasses, one subject talking enthusiastically with hand gestures, second subject looking downward or away, flat expression, aimlessly playing with silverware",
+          "text_query": "An image showing a couple at a candlelit restaurant table, where one person speaks animatedly while the other stares downward with an indifferent expression, aimlessly pushing food around their plate with a fork"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "emotion_name": "Disquietment",
+      "definition": "Nervous; worried; upset; anxious; tense; pressured; alarmed",
+      "archetypes": [
+        {
+          "archetype_id": 1,
+          "name": "The Late-Night Deadline",
+          "core_difference": "Active, technology-induced stress, characterized by isolation, harsh lighting, and physical manifestation of being overwhelmed by an immediate task",
+          "visual_elements": "Glowing computer monitor, dark room, messy desk, stacked paperwork, empty coffee cups, rubbing temples, tight jaw, screen glare, exhaustion",
+          "text_query": "A photo of a tense person sitting alone in a dark office, illuminated only by the harsh glare of a computer monitor, surrounded by messy stacks of paper and empty coffee cups, rubbing their temples"
+        },
+        {
+          "archetype_id": 2,
+          "name": "The Clinical Waiting Room",
+          "core_difference": "Passive, anticipatory anxiety in a sterile environment, focusing heavily on involuntary body language rather than engagement with a task",
+          "visual_elements": "Sterile white walls, row of plastic chairs, fluorescent overhead lighting, wringing hands together, bouncing leg, looking down, empty corridor, pale color palette",
+          "text_query": "An image showing an anxious individual sitting hunched over in a stark, brightly lit hospital waiting room, tightly wringing their hands together with a worried expression, staring blankly at the sterile linoleum floor"
+        },
+        {
+          "archetype_id": 3,
+          "name": "The Public Spotlight",
+          "core_difference": "Single, highly exposed subject against a large, intimidating group, capturing the 'deer in headlights' social panic and alarm",
+          "visual_elements": "Wooden podium, microphone, blurred audience in the foreground/background, bright stage spotlight, sweating forehead, wide eyes, clutching crumpled notes, stiff and rigid posture",
+          "text_query": "A photo of a nervous speaker standing rigidly behind a wooden podium on a brightly lit stage, clutching crumpled notes tightly, looking out with wide, alarmed eyes at a large, out-of-focus crowd"
+        },
+        {
+          "archetype_id": 4,
+          "name": "Domestic Financial Strain",
+          "core_difference": "Worry embedded within a relatable, everyday home setting, focusing on the quiet, crushing weight of personal and domestic responsibilities",
+          "visual_elements": "Wooden kitchen table, scattered opened envelopes, calculator, pen, head resting heavy in hands, dim overhead warm lamp, furrowed brow, muted domestic colors",
+          "text_query": "An image showing an upset person sitting at a dimly lit kitchen table covered with scattered bills and a calculator, resting their heavy head in their hands with a deeply furrowed, anxious brow"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "emotion_name": "Doubt/Confusion",
+      "definition": "Difficulty to understand or decide; thinking about different options",
+      "archetypes": [
+        {
+          "archetype_id": 1,
+          "name": "The Consumer Choice (Retail Dilemma)",
+          "core_difference": "Physical comparison of tangible options in a bright, cluttered, everyday retail environment",
+          "visual_elements": "Supermarket aisle, two competing products, holding items in both hands, shifting gaze, furrowed brow, bright lighting, colorful packaging, everyday consumer vibe",
+          "text_query": "A photo of a shopper standing in a brightly lit supermarket aisle, holding two different cereal boxes in each hand, looking back and forth between them with a furrowed brow and pursed lips"
+        },
+        {
+          "archetype_id": 2,
+          "name": "Cognitive Overload (Academic/Technical Struggle)",
+          "core_difference": "Intellectual confusion when confronting abstract, dense information in an indoor study or work setting",
+          "visual_elements": "Cluttered desk, complex equations, computer monitor, rubbing temples, squinting eyes, late-night lighting, books, tense academic vibe",
+          "text_query": "An image showing a student sitting at a cluttered desk late at night, rubbing their temples and squinting intensely at a laptop screen filled with dense, complicated lines of code"
+        },
+        {
+          "archetype_id": 3,
+          "name": "Geographic Disorientation (The Lost Traveler)",
+          "core_difference": "Spatial and navigational confusion set in an expansive, dynamic outdoor or environmental context",
+          "visual_elements": "Urban intersection or trail fork, overlapping street signs, open physical map, scratching back of the head, looking upward or around, travel gear, wayfinding vibe",
+          "text_query": "A photo of a tourist wearing a backpack standing at a busy city intersection, scratching the back of their head while looking up at a confusing cluster of overlapping directional street signs"
+        },
+        {
+          "archetype_id": 4,
+          "name": "Interpersonal Miscommunication (Social Bafflement)",
+          "core_difference": "Social and conversational confusion relying heavily on physical body language and facial expressions during a human interaction",
+          "visual_elements": "Two people, coffee shop or office, tilted head, one raised eyebrow, open palms facing up, skewed mouth, social tension vibe",
+          "text_query": "An image showing a person in a cafe having a conversation, with their head tilted, one eyebrow raised, and both palms facing upward in a bewildered gesture toward their friend across the table"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "emotion_name": "Embarrassment",
+      "definition": "Feeling ashamed or guilty",
+      "archetypes": [
+        {
+          "archetype_id": 1,
+          "name": "The Public Clumsiness Mishap",
+          "core_difference": "Sudden, highly visible physical accident in a busy social setting with reactive onlookers",
+          "visual_elements": "Spilled coffee, dropped cafeteria tray, crowded room, shocked onlookers pointing or staring, flushed cheeks, hands covering mouth, awkward apologizing posture",
+          "text_query": "A photo of a visibly flustered person in a crowded cafe dropping a tray of coffees, with hands covering their face in shock while surrounding customers stare awkwardly at the mess"
+        },
+        {
+          "archetype_id": 2,
+          "name": "The Intimate Guilt / Caught Red-Handed",
+          "core_difference": "Quiet, indoor scene of being caught doing something wrong, emphasizing shrinking, submissive body language rather than sudden panic",
+          "visual_elements": "Broken vase on the floor, messy room, looking down at the ground, hands clasped behind the back, hunched shoulders, avoiding eye contact",
+          "text_query": "An image showing a person looking down at the floor with hunched shoulders and hands clasped behind their back, standing guiltily next to a shattered flower vase in a quiet living room"
+        },
+        {
+          "archetype_id": 3,
+          "name": "The Public Speaking Freeze",
+          "core_difference": "Sheer isolation and exposure of a single subject isolated from a large crowd, highlighting performance anxiety",
+          "visual_elements": "Microphone, wooden podium, bright stage spotlight, blurred audience in the dark, sweating forehead, gripping podium tightly, wide deer-in-headlights eyes, stiff posture",
+          "text_query": "A photo of a nervous speaker standing frozen behind a podium under a bright stage spotlight, gripping the edges tightly with wide eyes and a flushed face, facing a blurred, expectant audience"
+        },
+        {
+          "archetype_id": 4,
+          "name": "The Digital Faux Pas / Screen Realization",
+          "core_difference": "Modern, close-up scenario where the environment is irrelevant, and the embarrassment is entirely driven by interaction with a digital device",
+          "visual_elements": "Glowing laptop or smartphone screen, dark room, deep facepalm gesture, cringing facial expression, peering through fingers, illuminating blue screen light",
+          "text_query": "An image showing a person in a dimly lit room illuminated only by a laptop screen, intensely burying their face in their hands in a deep facepalm after making a digital mistake"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "emotion_name": "Engagement",
+      "definition": "Paying attention to something; absorbed into something; curious; interested",
+      "archetypes": [
+        {
+          "archetype_id": 1,
+          "name": "Deep Academic or Professional Focus",
+          "core_difference": "Solitary, static concentration using screens or literature in an indoor, structured environment",
+          "visual_elements": "Glowing laptop screen, stacks of books, leaning forward, resting chin on hand, furrowed brow, quiet library or home office, coffee mug, reading glasses",
+          "text_query": "A photo of a person sitting at a dimly lit desk, leaning closely toward a glowing laptop screen with furrowed brows and a hand on their chin, deeply absorbed in complex reading material"
+        },
+        {
+          "archetype_id": 2,
+          "name": "Innocent Discovery and Curiosity",
+          "core_difference": "Raw, wide-eyed wonder and close physical proximity to a novel, physical object, typically set in nature",
+          "visual_elements": "Squatting or crouching posture, magnifying glass, hands reaching out, wide unblinking eyes, slightly parted lips, bright natural outdoor lighting, garden or forest setting",
+          "text_query": "An image showing a young child crouching in a sunny garden, holding a magnifying glass close to a green leaf, their eyes wide and lips slightly parted in pure fascination and curiosity"
+        },
+        {
+          "archetype_id": 3,
+          "name": "Intimate Active Listening",
+          "core_difference": "Interpersonal, emotional engagement through body language and prolonged eye contact in a busy social setting",
+          "visual_elements": "Two people at a small table, leaning across the table, direct eye contact, subtle empathetic smile, nodding, blurred background of a busy cafe, warm indoor lighting",
+          "text_query": "A photo of an individual sitting in a busy coffee shop, completely ignoring the surrounding crowd, leaning forward across a small table to maintain intense, warm eye contact with their conversation partner"
+        },
+        {
+          "archetype_id": 4,
+          "name": "High-Stakes Interactive Flow State",
+          "core_difference": "Dynamic, high-adrenaline concentration where the subject is physically locked-in and reacting to fast-paced external stimuli",
+          "visual_elements": "Video game controller or musical instrument, intense stare, tense and rigid posture, sitting at the edge of a seat, neon gaming lights or stage lighting, sweat",
+          "text_query": "An image showing an esports player gripping a controller tightly, sitting at the very edge of their seat under neon lights, staring unblinkingly at a monitor with extreme focus and a tense posture"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "emotion_name": "Esteem",
+      "definition": "Feelings of favourable opinion or judgement; respect; admiration; gratefulness",
+      "archetypes": [
+        {
+          "archetype_id": 1,
+          "name": "Formal Professional Recognition",
+          "core_difference": "Public, institutional validation and success in a brightly lit, formal indoor setting",
+          "visual_elements": "Stage, wooden podium, business suits, award plaque or certificate, firm handshake, smiling faces, bright spotlights, clapping audience in the background",
+          "text_query": "A photo of a proud mentor in a sharp suit shaking hands with a young professional on a brightly lit stage, handing them an award plaque while an audience claps in the background"
+        },
+        {
+          "archetype_id": 2,
+          "name": "Intergenerational Reverence",
+          "core_difference": "Intimate, quiet, and personal respect between individuals of vastly different ages in a private, domestic space",
+          "visual_elements": "Young adult, elderly person, wrinkled hands, gentle touch, warm natural sunlight, cozy living room furniture, soft and tender facial expressions",
+          "text_query": "An image showing a young woman gently holding the hands of an elderly man in a cozy living room bathed in warm afternoon sunlight, looking at him with a soft smile of deep gratitude"
+        },
+        {
+          "archetype_id": 3,
+          "name": "The Standing Ovation",
+          "core_difference": "Massive, collective expression of awe and admiration from a large crowd directed toward a single, distant focal point",
+          "visual_elements": "Large crowded theater, tiered seating, people standing up, clapping hands, faces angled upwards, dim ambient lighting, bright stage illumination in the distance",
+          "text_query": "A photo of a massive theater audience standing up in the dimly lit rows, clapping their hands enthusiastically while looking up with awe and admiration toward a brightly illuminated stage"
+        },
+        {
+          "archetype_id": 4,
+          "name": "Somber Memorial Tribute",
+          "core_difference": "Respectful gratefulness and deep, quiet reverence in an outdoor, serious, and historically or culturally significant context",
+          "visual_elements": "Engraved stone monument, wreath of flowers, military uniform or dark winter coat, bowed head, salute, overcast sky, quiet park environment",
+          "text_query": "An image showing a lone person in a dark coat standing with their head bowed in quiet reverence, placing a vibrant floral wreath at the base of an engraved stone monument under a cloudy sky"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "emotion_name": "Excitement",
+      "definition": "Feeling enthusiasm; stimulated; energetic",
+      "archetypes": [
+        {
+          "archetype_id": 1,
+          "name": "High-Speed Adrenaline and Thrill",
+          "core_difference": "High-kinetic, outdoor environments where excitement is a direct physiological reaction to thrilling physical movement and speed",
+          "visual_elements": "Roller coaster car, motion-blurred background, raised hands, wind-blown hair, open-mouthed screaming smiles, clear blue sky, metal tracks",
+          "text_query": "A photo of people riding a fast roller coaster with their hands raised in the air, wind-blown hair, and wide-open screaming smiles against a bright blue sky, capturing intense adrenaline and thrill"
+        },
+        {
+          "archetype_id": 2,
+          "name": "Triumphant Sporting Victory",
+          "core_difference": "Group dynamics in a structured, competitive setting, characterized by shared physical celebration and athletic context",
+          "visual_elements": "Team uniforms, grassy field or court, teammates hugging, jumping in the air, raised fists, sweat, stadium seating in the background, bright floodlights",
+          "text_query": "An image showing a group of athletes in dirt-stained uniforms jumping and tightly hugging each other on a bright green field, with raised fists and ecstatic facial expressions celebrating a major victory"
+        },
+        {
+          "archetype_id": 3,
+          "name": "Intimate Domestic Surprise",
+          "core_difference": "Quiet, well-lit indoor setting emphasizing a deeply personal, focused reaction to a sudden positive revelation",
+          "visual_elements": "Living room couch, torn wrapping paper, open cardboard box or glowing laptop screen, wide gasping eyes, hands covering mouth, warm indoor lighting, casual clothing",
+          "text_query": "A photo of a person sitting on a cozy living room couch, hands covering their open mouth in a joyful gasp, looking down at a newly opened cardboard box surrounded by colorful torn wrapping paper"
+        },
+        {
+          "archetype_id": 4,
+          "name": "Vibrant Nightlife Spectacle",
+          "core_difference": "Nocturnal, densely packed social environment dominated by dark shadows, artificial lighting, and collective, rhythmic euphoria",
+          "visual_elements": "Dark background, vibrant neon lasers, dense silhouettes of a crowd, glowing wristbands, raised hands facing a central stage, energetic dancing, atmospheric smoke",
+          "text_query": "An image showing a densely packed crowd at a night music festival, with silhouettes of energetic dancing people raising glowing wristbands and hands toward a stage illuminated by vibrant neon lasers and smoke"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "emotion_name": "Fatigue",
+      "definition": "Weariness; tiredness; sleepy",
+      "archetypes": [
+        {
+          "archetype_id": 1,
+          "name": "The Late-Night Knowledge Worker",
+          "core_difference": "Mental exhaustion and screen-fatigue in an indoor, sedentary, low-light environment",
+          "visual_elements": "Glowing laptop screen, dark room, rubbing eyes, slumped posture, face resting in hands, empty coffee mugs, office desk, artificial blue light",
+          "text_query": "A photo of an office worker slumped over a desk in a darkened room, rubbing their eyes under the blue glow of a laptop monitor, surrounded by empty coffee cups and scattered paperwork"
+        },
+        {
+          "archetype_id": 2,
+          "name": "Post-Exertion Physical Depletion",
+          "core_difference": "Acute, bodily exhaustion and muscle fatigue in a bright, active, physical environment",
+          "visual_elements": "Outdoor running track or gym, sports apparel, sweating profusely, hands resting on knees, dropped equipment, heavy breathing, harsh sunlight, flushed skin",
+          "text_query": "An image showing a sweaty athlete hunched over with hands resting on their knees on an outdoor running track, breathing heavily with a dropped water bottle resting on the sunlit ground beside them"
+        },
+        {
+          "archetype_id": 3,
+          "name": "The Overwhelmed Caregiver",
+          "core_difference": "Chronic, chaotic domestic weariness characterized by clutter and a lack of personal space",
+          "visual_elements": "Messy living room, scattered plastic toys, adult slumped back on a fabric couch, disheveled hair, blank stare, soft daylight, casual loungewear, piles of laundry",
+          "text_query": "A photo of an exhausted parent with disheveled hair staring blankly while slumped heavily back on a living room couch, completely surrounded by scattered brightly colored children's toys and folded laundry"
+        },
+        {
+          "archetype_id": 4,
+          "name": "The Public Transit Nod-Off",
+          "core_difference": "Transient, passive drowsiness occurring in a cramped, moving, public environment with strangers",
+          "visual_elements": "Subway train or bus interior, passenger sleeping, mouth slightly open, head leaning against a glass window, headphones, backpacks, harsh fluorescent overhead lighting",
+          "text_query": "An image showing a tired commuter fast asleep on a crowded subway train, their head slumped sideways against the glass window, wearing headphones and holding a backpack under bright fluorescent overhead lighting"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "emotion_name": "Fear",
+      "definition": "Feeling suspicious or afraid of danger, threat, evil or pain; horror",
+      "archetypes": [
+        {
+          "archetype_id": 1,
+          "name": "The Midnight Stalker (Suspicion & Paranoia)",
+          "core_difference": "Quiet, psychological dread of an unseen or trailing threat in an isolated, dark urban environment",
+          "visual_elements": "Foggy street, dim yellow streetlamps, dark alleyway, brick walls, lone figure looking backward, tense posture, long shadows, cold color palette",
+          "text_query": "A photo of a lone person walking quickly down a foggy, dimly lit alleyway at night, glancing nervously over their shoulder at a long shadow cast on a brick wall"
+        },
+        {
+          "archetype_id": 2,
+          "name": "Clinical Anticipation (Fear of Pain)",
+          "core_difference": "Brightly lit, sterile environment capturing a visceral, stationary reaction to a highly specific, visible object",
+          "visual_elements": "Hospital or dental chair, bright fluorescent lights, metallic medical instruments, patient with wide eyes, doctor in a mask, cowering body language, sterile white room",
+          "text_query": "An image showing a patient sitting tensely in a brightly lit dental chair, pressing themselves against the backrest with wide eyes as a gloved hand approaches holding a metallic drill"
+        },
+        {
+          "archetype_id": 3,
+          "name": "Imminent Catastrophe (Fleeing Danger)",
+          "core_difference": "Large-scale, high-energy environmental chaos and the active, physical response of fleeing for one's life outdoors",
+          "visual_elements": "Massive wildfire or storm in the background, flying debris, people running frantically, chaotic motion blur, glowing orange or dark grey sky, ruined landscape",
+          "text_query": "A photo of desperate people running away from a massive, glowing orange wildfire in a forest, showing intense sprinting and chaotic urgency as smoke fills the daytime sky"
+        },
+        {
+          "archetype_id": 4,
+          "name": "Supernatural Entrapment (Horror & Evil)",
+          "core_difference": "Intimate, indoor, cinematic portrayal of pure horror and entrapment, focusing on an unnatural threat in a domestic space",
+          "visual_elements": "Dark bedroom, person hiding under blankets, glowing eyes in a closet, moonlight streaming through a window, trembling hands, expression of pure terror, high contrast lighting",
+          "text_query": "An image showing a terrified person hiding under the covers in a dark, moonlit bedroom, clutching the blanket tightly with trembling hands while staring wide-eyed at a dark figure in the closet"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "emotion_name": "Happiness",
+      "definition": "Feeling delighted; feeling enjoyment or amusement",
+      "archetypes": [
+        {
+          "archetype_id": 1,
+          "name": "High-Energy Youthful Play (Outdoor, Kinetic)",
+          "core_difference": "High-kinetic energy, scattered water droplets, bright outdoor daylight, and active, whole-body exuberance",
+          "visual_elements": "Water droplets, green grass, bright bathing suits, running, jumping, wide open-mouthed smiles, bright, energetic, sunny",
+          "text_query": "A photo of young children laughing and running through a spraying water sprinkler on a bright green lawn during a sunny summer afternoon"
+        },
+        {
+          "archetype_id": 2,
+          "name": "Quiet Cozy Contentment (Indoor, Static, Solo)",
+          "core_difference": "Soft textures, static posing, indoor comfort, and quiet, serene enjoyment rather than loud, active joy",
+          "visual_elements": "Knitted blanket, sleeping cat, steaming mug, reading a book, smiling softly, warm indoor lighting, cozy, tranquil, relaxed",
+          "text_query": "An image showing a person smiling gently while sitting on a comfortable sofa by a window, gently petting a sleeping cat with a steaming mug nearby"
+        },
+        {
+          "archetype_id": 3,
+          "name": "Intimate Celebration (Low-Light, Focal Glow, Small Group)",
+          "core_difference": "Centered around a single, warm focal light source in a dark room, capturing a tight-knit group sharing a moment of focused delight",
+          "visual_elements": "Frosted cake, lit candles, party hats, clapping hands, leaning in, warm amber glow, dark background, festive, intimate",
+          "text_query": "A photo of a family gathered in a dimly lit room, their smiling faces warmly illuminated by the glowing candles of a birthday cake as they clap"
+        },
+        {
+          "archetype_id": 4,
+          "name": "Triumphant Adventure (Vast Landscape, Solitary Exhilaration)",
+          "core_difference": "Emphasizes a vast, majestic background landscape combined with a figure expressing expansive, victorious joy through body language",
+          "visual_elements": "Rocky mountain peak, dramatic sunrise, hiking gear, arms raised high, looking outward, expansive valley, majestic, triumphant, awe-inspiring",
+          "text_query": "An image showing a hiker with a backpack standing on a rocky mountain summit at sunrise, arms raised high in the air with a massive, triumphant smile"
+        },
+        {
+          "archetype_id": 5,
+          "name": "Shared Digital Amusement (Modern, Bright, Reactionary)",
+          "core_difference": "Tight, bright, modern indoor setting focusing on a shared object and a sudden, explosive reaction of amusement",
+          "visual_elements": "Smartphone, iced coffee cups, wooden cafe table, throwing head back, pointing, squinting eyes, bright daylight, modern, vibrant, casual",
+          "text_query": "A photo of two friends sitting at a bright cafe table, throwing their heads back in genuine, open-mouthed laughter while looking together at a smartphone screen"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "emotion_name": "Pain",
+      "definition": "Physical suffering",
+      "archetypes": [
+        {
+          "archetype_id": 1,
+          "name": "Sudden Athletic Trauma",
+          "core_difference": "Acute, sudden-impact injury in a dynamic, brightly lit, outdoor, or highly public setting",
+          "visual_elements": "Sports uniform, grass field or court, grasping a joint (knee/ankle), contorted facial expression, dirt or sweat, bright daylight, intense, dynamic tension",
+          "text_query": "A photo of an athlete sitting on a grassy field tightly gripping their knee, their face contorted in a severe grimace of agony, wearing a dirt-stained uniform under bright sunlight"
+        },
+        {
+          "archetype_id": 2,
+          "name": "Internal Illness or Severe Migraine",
+          "core_difference": "Chronic, internal, or illness-induced pain within a dim, quiet, and solitary indoor environment",
+          "visual_elements": "Dark bedroom, messy bedsheets, shadows, curled in fetal position, pressing hands against temples, eyes tightly squeezed shut, isolation, oppressive quiet vibe",
+          "text_query": "An image showing a solitary person curled up in a dimly lit bedroom, heavily pressing both hands against their temples with eyes squeezed shut, conveying deep internal physical discomfort"
+        },
+        {
+          "archetype_id": 3,
+          "name": "Clinical Post-Surgical Pain",
+          "core_difference": "Passive suffering and medical intervention, characterized by sterile environments and medical equipment",
+          "visual_elements": "Hospital bed, pale skin, IV drips, medical monitors, fluorescent lighting, clenching white bedsheets, sterile, clinical, vulnerable vibe",
+          "text_query": "A photo of a pale patient lying in a sterile hospital bed under fluorescent lights, tightly clenching the white bedsheets with a pained expression while hooked up to medical monitors and IV drips"
+        },
+        {
+          "archetype_id": 4,
+          "name": "Acute Household or Occupational Accident",
+          "core_difference": "Highlights an unexpected, sharp, localized injury occurring during everyday manual tasks in a familiar, cluttered environment",
+          "visual_elements": "Workbench or kitchen counter, dropped tool or knife, gripping a wounded hand, sudden shock, spilled items, DIY equipment, chaotic, immediate distress",
+          "text_query": "An image showing a person in a cluttered workshop immediately after an accident, tightly clutching their injured hand with a pained and shocked facial expression near a dropped tool on the workbench"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "emotion_name": "Peace",
+      "definition": "Well being and relaxed; no worry; having positive thoughts or sensations; satisfied",
+      "archetypes": [
+        {
+          "archetype_id": 1,
+          "name": "Zen Nature Retreat",
+          "core_difference": "Outdoor vastness, the stillness of nature, and solitary reflection away from civilization",
+          "visual_elements": "Calm lake, warm golden hour lighting, silhouette, sitting cross-legged, still water, soft mist, solitary figure, relaxed posture, vast landscape",
+          "text_query": "A photo of a person sitting alone on a wooden dock overlooking a perfectly still lake at dawn, enveloped in soft mist and warm golden light, conveying absolute stillness and calm"
+        },
+        {
+          "archetype_id": 2,
+          "name": "Cozy Domestic Comfort",
+          "core_difference": "Peace through indoor security, soft comforting textures, and passive relaxation in a private space",
+          "visual_elements": "Soft armchair, warm lamplight, sleeping cat, thick knit blanket, steaming mug, relaxed posture, closed eyes, warm color palette, indoor setting",
+          "text_query": "An image showing a person curled up in a plush armchair wrapped in a thick knitted blanket, eyes closed in contentment, with a gently sleeping cat in their lap"
+        },
+        {
+          "archetype_id": 3,
+          "name": "Gentle Nurturing Bond",
+          "core_difference": "Peace stemming from interpersonal security, unconditional love, and shared, worry-free rest",
+          "visual_elements": "Sleeping infant, gentle embrace, soft pastel colors, morning light, peaceful facial expressions, closed eyes, soft textiles, close-up portrait framing",
+          "text_query": "A photo of a parent gently holding a peacefully sleeping newborn baby on their chest in a softly lit room, both faces showing completely relaxed, worry-free expressions"
+        },
+        {
+          "archetype_id": 4,
+          "name": "Mindful Flow in Gardening",
+          "core_difference": "Peace through active, satisfied engagement in a grounding, slow-paced task, unlike the passive rest in other scenarios",
+          "visual_elements": "Lush green plants, gardening tools, gentle smile, dirt on hands, bright dappled sunlight, blooming flowers, focused but unhurried body language",
+          "text_query": "An image showing a person with a gentle, satisfied smile kneeling in a lush, sun-dappled garden, mindfully tending to blooming flowers without any sense of rush, stress, or tension"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "emotion_name": "Pleasure",
+      "definition": "Feeling of delight in the senses",
+      "archetypes": [
+        {
+          "archetype_id": 1,
+          "name": "Decadent Culinary Indulgence",
+          "core_difference": "Macro/close-up details of indoor, taste-based satisfaction, characterized by warm lighting and rich food textures",
+          "visual_elements": "Decadent dessert, fork, closed eyes, slight smile, warm ambient lighting, cozy restaurant or kitchen setting, blurred background",
+          "text_query": "A photo of a person taking a bite of a rich chocolate dessert, their eyes closed in deep satisfaction with a subtle smile, illuminated by warm indoor lighting"
+        },
+        {
+          "archetype_id": 2,
+          "name": "Thermal Water Relaxation",
+          "core_difference": "Physical, full-body relaxation in a watery environment, relying heavily on steam, water textures, and cool/neutral tones",
+          "visual_elements": "Hot tub or natural hot spring, rising steam, bare shoulders, head tilted back, tranquil expression, water ripples, natural stone or spa background",
+          "text_query": "An image showing a person submerged neck-deep in a steaming hot spring, leaning back with relaxed shoulders and a serene, peaceful facial expression amidst rising mist"
+        },
+        {
+          "archetype_id": 3,
+          "name": "Immersive Auditory Experience",
+          "core_difference": "Tech-mediated auditory pleasure, typically featuring urban or domestic settings with artificial or dim lighting",
+          "visual_elements": "Over-ear headphones, relaxed posture, slight head tilt, dim or neon ambient lighting, eyes gently closed, cozy couch or urban background",
+          "text_query": "A photo of an individual wearing large over-ear headphones, leaning back on a comfortable couch with their eyes closed and a blissful smile, completely absorbed in the music"
+        },
+        {
+          "archetype_id": 4,
+          "name": "Sun-Soaked Nature Immersion",
+          "core_difference": "Wide-angle outdoor composition to capture the tactile and visual delight of environmental warmth, characterized by bright sunlight and vibrant natural greens",
+          "visual_elements": "Bright golden sunshine, blooming meadow or tall grass, face turned up toward the sky, open posture, breeze in hair, vibrant outdoor colors",
+          "text_query": "An image showing a person standing in a vibrant grassy field, their face tilted up to feel the warm golden sunlight, eyes closed with a gentle, relaxed smile"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "emotion_name": "Sadness",
+      "definition": "Feeling unhappy, sorrow, disappointed, or discouraged",
+      "archetypes": [
+        {
+          "archetype_id": 1,
+          "name": "Solitary Melancholy and Isolation",
+          "core_difference": "Quiet, internalized sadness through isolation and environmental moodiness (like weather and lighting) rather than overt crying",
+          "visual_elements": "Solitary figure, rain-streaked window, dimly lit room, loose clothing, staring blankly, slumped posture, cool blue or gray color palette, muted lighting",
+          "text_query": "A photo of a solitary person sitting in a dimly lit room, staring blankly out a rain-streaked window with a slumped posture, conveying a quiet and isolating sense of sorrow"
+        },
+        {
+          "archetype_id": 2,
+          "name": "Public Defeat and Disappointment",
+          "core_difference": "Active, public manifestation of discouragement in a high-energy, brightly lit environment, heavily contrasting with private mourning",
+          "visual_elements": "Sports stadium, brightly lit, athlete, team uniform, head in hands, kneeling on turf, blurred crowd in background, bright colors, slumped shoulders",
+          "text_query": "An image showing an athlete in a brightly lit stadium kneeling on the grass with their head buried in their hands, shoulders slumped in sudden defeat against a blurred background crowd"
+        },
+        {
+          "archetype_id": 3,
+          "name": "Deep Grief and Communal Mourning",
+          "core_difference": "Profound, shared sorrow associated with loss, characterized by formal attire, physical comforting, and somber outdoor environments",
+          "visual_elements": "Cemetery, formal black clothing, black umbrellas, group of people, hugging, wiping tears, tombstones, overcast sky, muted and dark tones",
+          "text_query": "A photo of a group of people in formal black clothing gathered in a cemetery under black umbrellas, embracing each other and wiping away tears beneath a heavy, overcast sky"
+        },
+        {
+          "archetype_id": 4,
+          "name": "Professional or Academic Burnout",
+          "core_difference": "Situational discouragement and overwhelming stress within a structured, modern indoor environment like an office or classroom",
+          "visual_elements": "Office desk, glowing computer monitor, scattered papers, fluorescent lighting, person holding head in hands, rubbing eyes, messy workspace, business-casual attire",
+          "text_query": "An image showing a discouraged person sitting at a cluttered office desk under fluorescent lights, resting their face heavily in their hands in front of a glowing computer screen"
+        },
+        {
+          "archetype_id": 5,
+          "name": "Interpersonal Disconnect and Heartbreak",
+          "core_difference": "Relational aspect of sadness involving two subjects, using physical distance and opposed body language to convey emotional pain",
+          "visual_elements": "Two people, living room or urban sidewalk, backs turned to each other, physical distance, looking at the ground, crossed arms, tense body language",
+          "text_query": "A photo of two people standing far apart on an urban sidewalk, one walking away while the other stands with crossed arms looking down at the ground in quiet disappointment"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "emotion_name": "Sensitivity",
+      "definition": "Feeling of being physically or emotionally wounded; feeling delicate or vulnerable",
+      "archetypes": [
+        {
+          "archetype_id": 1,
+          "name": "Solitary Emotional Woundedness",
+          "core_difference": "Quiet, private emotional pain, self-soothing, and a sense of fragile isolation in an intimate space",
+          "visual_elements": "Curled fetal position, clutching a blanket or pillow, tear-stained cheeks, downcast eyes, dim room, soft shadows, delicate posture",
+          "text_query": "An image showing a vulnerable individual curled up on a dimly lit bed, tightly clutching a thick blanket to their chest, with tear-stained cheeks and a fragile, deeply sorrowful expression looking down"
+        },
+        {
+          "archetype_id": 2,
+          "name": "Sensory Overload and Hypersensitivity",
+          "core_difference": "Physical reaction of being delicate or defenseless against harsh, overwhelming external stimuli",
+          "visual_elements": "Hands covering ears or shielding eyes, squinting, crowded environment, harsh neon lighting, tense shoulders, shrinking away from the camera",
+          "text_query": "A photo of a person standing on a busy, brightly lit city street at night, hands pressed tightly over their ears and eyes squeezed shut, physically shrinking away from the chaotic, overwhelming surroundings"
+        },
+        {
+          "archetype_id": 3,
+          "name": "Physical Exposure to the Elements",
+          "core_difference": "Physical vulnerability, delicacy, and frailty against vast, overpowering natural forces",
+          "visual_elements": "Shivering, thin clothing in a harsh environment, arms wrapped tightly around oneself, windblown hair, vast empty landscape, bleak overcast sky",
+          "text_query": "A photo of a person wearing an inadequate, thin jacket standing alone in a vast, snow-covered landscape, arms wrapped tightly around their shivering torso while facing a harsh, bleak wind"
+        },
+        {
+          "archetype_id": 4,
+          "name": "Defensive Posture in Social Conflict",
+          "core_difference": "Feeling of being emotionally targeted, wounded, or made to feel small in the presence of others",
+          "visual_elements": "Shoulders hunched, cowering slightly, raised hands in a placating or defensive gesture, a blurred imposing figure in the foreground, tense indoor setting",
+          "text_query": "An image showing a person backing away into the corner of a living room with their shoulders hunched and hands raised defensively, looking delicate and wounded while a blurred, dominating figure stands in the foreground"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "emotion_name": "Suffering",
+      "definition": "Psychological or emotional pain; distressed; anguished",
+      "archetypes": [
+        {
+          "archetype_id": 1,
+          "name": "Solo Isolation and Despair",
+          "core_difference": "Solitary, quiet psychological pain in a private, enclosed, and dimly lit domestic space",
+          "visual_elements": "Dimly lit bedroom, unmade bed, person in fetal position, face buried in knees, heavy shadows, messy environment, cool blue or gray color palette",
+          "text_query": "A photo of a person curled up in a fetal position on an unmade bed in a dimly lit, messy room, burying their face in their hands with heavy shadows emphasizing isolation and deep psychological distress"
+        },
+        {
+          "archetype_id": 2,
+          "name": "Acute Grief and Mourning",
+          "core_difference": "Raw, active anguish associated with loss, utilizing symbolic objects and a specific posture of longing",
+          "visual_elements": "Tear-streaked face, clutching a framed photograph or memento, dark or muted clothing, slumped shoulders, somber environment, soft natural lighting",
+          "text_query": "An image showing a tearful individual in dark clothing, slumped forward and tightly clutching a framed photograph to their chest, sitting alone in a somber, muted room conveying raw grief and emotional loss"
+        },
+        {
+          "archetype_id": 3,
+          "name": "Workplace Overwhelm and Burnout",
+          "core_difference": "Suffering placed in a modern, active environment where systemic stress and cognitive pressure cause a psychological breaking point",
+          "visual_elements": "Cluttered office desk, glowing computer monitor, harsh fluorescent lighting, person pulling their hair or pressing palms into their eyes, stacks of documents, tense body language",
+          "text_query": "A photo of an exhausted office worker sitting at a cluttered desk under harsh fluorescent lights, clutching their head with both hands while staring blankly at a glowing computer screen in a state of absolute panic and burnout"
+        },
+        {
+          "archetype_id": 4,
+          "name": "Relational Conflict and Heartbreak",
+          "core_difference": "Painful aftermath of a severed emotional connection, utilizing the physical distance between multiple subjects to illustrate internal pain",
+          "visual_elements": "Two individuals, physical distance between them, one person crying on a sofa, one person walking away or standing by a door, packed suitcase, blurred background, tense atmosphere",
+          "text_query": "An image showing two people in a living room, one crying quietly on the sofa with their face hidden, while the other stands near the doorway with a packed suitcase, illustrating the deep anguish of a breakup"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "emotion_name": "Surprise",
+      "definition": "Sudden discovery of something unexpected",
+      "archetypes": [
+        {
+          "archetype_id": 1,
+          "name": "The Celebratory Ambush",
+          "core_difference": "Indoor, high-energy group setting with festive props and a sudden burst of collective action",
+          "visual_elements": "Confetti, balloons, birthday cake, living room, group of friends jumping, hands covering open mouth, bright indoor lighting, party hats",
+          "text_query": "A photo of a person walking through a doorway, freezing with their hands over their mouth in shock as a group of friends jumps out holding a cake and throwing confetti in a brightly lit living room"
+        },
+        {
+          "archetype_id": 2,
+          "name": "The Serendipitous Street Encounter",
+          "core_difference": "Candid, outdoor daytime interaction between two individuals reacting to a sudden visual recognition in a public space",
+          "visual_elements": "City sidewalk, pedestrians, dropped coffee cup, wide eyes, outstretched arms, winter coats, bright sunlight, urban storefront background",
+          "text_query": "An image showing two pedestrians on a busy urban sidewalk stopping abruptly, one dropping a paper coffee cup while staring with wide eyes and outstretched arms at the other in sudden recognition"
+        },
+        {
+          "archetype_id": 3,
+          "name": "The Digital Revelation",
+          "core_difference": "Intimate, low-light, solo scenario centered around a subject's reaction to abstract information on a glowing display",
+          "visual_elements": "Dark room, glowing computer monitor, single individual, jaw dropped, leaning forward, glasses reflecting blue light, cluttered desk, late-night vibe",
+          "text_query": "A photo of a solo programmer sitting in a dark, messy office, illuminated only by the blue glow of a monitor, leaning close to the screen with a dropped jaw and wide, astonished eyes"
+        },
+        {
+          "archetype_id": 4,
+          "name": "The Bizarre Nature Discovery",
+          "core_difference": "Outdoor, exploratory setting focused on a person's physical interaction with a strange, unexpected element in the natural world",
+          "visual_elements": "Lush forest floor, kneeling hiker, muddy boots, pulling back leaves, glowing mushroom or bizarre artifact, tilted head, intense focus mixed with shock, daylight",
+          "text_query": "An image showing a hiker kneeling on a muddy forest floor, pulling back large green leaves to stare with intense, wide-eyed astonishment at a brightly glowing, bizarrely shaped mushroom"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "emotion_name": "Sympathy",
+      "definition": "State of sharing others emotions, goals or troubles; supportive; compassionate",
+      "archetypes": [
+        {
+          "archetype_id": 1,
+          "name": "Consoling a Grieving Loved One",
+          "core_difference": "Intimate, interpersonal physical touch and raw emotional distress in a domestic or private setting",
+          "visual_elements": "Two people, tears, hugging, resting head on shoulder, hands holding, tissue box, dim lighting, soft home furniture, somber, intimate, gentle demeanor",
+          "text_query": "A photo of a person gently hugging and comforting a crying friend sitting on a living room couch, showing a deeply compassionate expression in a quiet, intimate domestic setting"
+        },
+        {
+          "archetype_id": 2,
+          "name": "Assisting a Person in Need on the Street",
+          "core_difference": "Outdoor, urban environment, highlighting systemic hardship and an interaction bridging social divides rather than personal grief",
+          "visual_elements": "City sidewalk, concrete, warm clothes, kneeling or crouching, handing over food or a blanket, cardboard sign, backpack, charitable, supportive, public space",
+          "text_query": "An image showing a passerby kneeling on a city sidewalk to hand a warm cup of coffee and a blanket to a person experiencing homelessness, conveying a supportive and charitable atmosphere"
+        },
+        {
+          "archetype_id": 3,
+          "name": "Tending to an Injured or Scared Animal",
+          "core_difference": "Introduces a non-human subject, replacing human-to-human interaction with cross-species care, shifting the visual focus to animal physiology and rescue equipment",
+          "visual_elements": "Dog or cat, veterinary clinic, shelter, outdoors, holding gently, wrapping in a towel, examining, petting, soft gaze, protective, caring, rescue environment",
+          "text_query": "A photo of a rescue worker tenderly holding and comforting a frightened, injured stray dog wrapped in a thick towel, captured in the bright, practical environment of an animal shelter"
+        },
+        {
+          "archetype_id": 4,
+          "name": "Healthcare Worker Comforting a Patient",
+          "core_difference": "Set in a sterile, clinical environment, capturing professional yet tender support involving medical apparel and equipment",
+          "visual_elements": "Hospital bed, medical scrubs, stethoscope, IV drip, bright fluorescent lighting, holding a hand, leaning in, reassuring smile, elderly patient, clinical, professional compassion",
+          "text_query": "An image showing a nurse in medical scrubs sitting beside a hospital bed, holding the hand of an elderly patient while looking at them with a soft, reassuring, and compassionate smile"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "emotion_name": "Yearning",
+      "definition": "Strong desire to have something; jealous; envious; lust",
+      "archetypes": [
+        {
+          "archetype_id": 1,
+          "name": "Intimate Physical Lust",
+          "core_difference": "Interpersonal, physical desire and intense eye contact in a close, dimly lit setting, contrasting heavily with solitary or material forms of longing",
+          "visual_elements": "Intense gaze, parted lips, extremely close proximity, dim moody lighting, subtle touch, passionate body language, heavy physical tension",
+          "text_query": "A photo of two people standing very close in a dimly lit room, sharing an intense, lingering gaze with parted lips and visible physical tension, capturing a profound sense of romantic desire and lust"
+        },
+        {
+          "archetype_id": 2,
+          "name": "Materialistic Envy (The Glass Barrier)",
+          "core_difference": "Materialistic longing, utilizing a physical barrier (the window) to visually separate the subject from the unattainable object of desire",
+          "visual_elements": "Glass reflection, luxury jewelry/fashion display, reaching hand, widened eyes, nighttime street lighting, unattainable object, fixed longing expression",
+          "text_query": "An image showing a person standing on a dark street, staring intently through a brightly lit boutique window at a luxury item, their hand resting against the glass in a display of intense material envy"
+        },
+        {
+          "archetype_id": 3,
+          "name": "The Isolated Observer (Social Jealousy)",
+          "core_difference": "Social exclusion and jealousy by using depth of field to contrast a joyful, connected group with a somber, isolated individual",
+          "visual_elements": "Blurred background crowd, laughing couple or group, isolated foreground subject, clenched jaw, crossed arms, sharp side-eye glance, warm party lighting vs cool foreground lighting",
+          "text_query": "A photo of an isolated person in the foreground with crossed arms and a bitter, jealous expression, casting a sharp side-eye glance at a lively, laughing couple blurred in the brightly lit background"
+        },
+        {
+          "archetype_id": 4,
+          "name": "Distant Nostalgic Longing",
+          "core_difference": "Solitary, quiet, and expansive desire for something physically distant or lost to time, characterized by vast open space and soft, melancholy lighting",
+          "visual_elements": "Sweeping landscape or skyline, rainy windowpane, solitary silhouetted figure, looking at the horizon, soft natural overcast light, clutching a memento",
+          "text_query": "An image showing a solitary figure silhouetted against a rainy windowpane, gazing longingly out at a vast, grey ocean horizon while clutching an old, faded letter against their chest in quiet yearning"
+        }
+      ]
+    }
+  ],
+  "emotion_scale": {
+    "1": "Affection: fond feelings; love; tenderness",
+    "2": "Anger: intense displeasure or rage; furious; resentful",
+    "3": "Annoyance: bothered by something or someone; irritated; impatient; frustrated",
+    "4": "Anticipation: state of looking forward; hoping on or getting prepared for possible future events",
+    "5": "Aversion: feeling disgust, dislike, repulsion; feeling hate",
+    "6": "Confidence: feeling of being certain; conviction that an outcome will be favorable; encouraged; proud",
+    "7": "Disapproval: feeling that something is wrong or reprehensible; contempt; hostile",
+    "8": "Disconnection: feeling not interested in the main event of the surrounding; indifferent; bored; distracted",
+    "9": "Disquietment: nervous; worried; upset; anxious; tense; pressured; alarmed",
+    "10": "Doubt/Confusion: difficulty to understand or decide; thinking about different options",
+    "11": "Embarrassment: feeling ashamed or guilty",
+    "12": "Engagement: paying attention to something; absorbed into something; curious; interested",
+    "13": "Esteem: feelings of favourable opinion or judgement; respect; admiration; gratefulness",
+    "14": "Excitement: feeling enthusiasm; stimulated; energetic",
+    "15": "Fatigue: weariness; tiredness; sleepy",
+    "16": "Fear: feeling suspicious or afraid of danger, threat, evil or pain; horror",
+    "17": "Happiness: feeling delighted; feeling enjoyment or amusement",
+    "18": "Pain: physical suffering",
+    "19": "Peace: well being and relaxed; no worry; having positive thoughts or sensations; satisfied",
+    "20": "Pleasure: feeling of delight in the senses",
+    "21": "Sadness: feeling unhappy, sorrow, disappointed, or discouraged",
+    "22": "Sensitivity: feeling of being physically or emotionally wounded; feeling delicate or vulnerable",
+    "23": "Suffering: psychological or emotional pain; distressed; anguished",
+    "24": "Surprise: sudden discovery of something unexpected",
+    "25": "Sympathy: state of sharing others emotions, goals or troubles; supportive; compassionate",
+    "26": "Yearning: strong desire to have something; jealous; envious; lust"
+  }
+}

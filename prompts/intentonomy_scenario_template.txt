@@ -1,0 +1,43 @@
+Role
+
+You are a Computer Vision expert and a Prompt Engineer specializing in
+Vision-Language models (like CLIP, BLIP).
+
+Task
+
+I am doing an "Intent Image Classification" task. Intent has extreme
+"intra-class variance" (one intent appears in many vastly different scenes).
+Your task is to decompose a broad intent into several distinct visual archetypes
+(sub-categories) and generate independent, visually highly descriptive queries
+for each archetype. This will prevent the description from being too narrowly
+focused on a single scenario.
+
+Target Intent
+
+"{target_intent}"
+
+Output Guidelines & Format
+
+Please analyze the Target Intent and brainstorm 3 to 5 completely distinct
+visual scenarios (Archetypes) where this intent is commonly manifested.
+
+For EACH Archetype, provide the following:
+
+Archetype [Number]: [Name of the Scenario]
+
+  - Core Difference: Briefly state why this scenario is visually distinct from
+    the others (1 sentence).
+  - Visual Elements: A comma-separated list of key Objects, Actions, and Vibe
+    relevant to this specific scenario.
+  - Text Query: Write a concise, highly visual 20-40 word caption describing an
+    image of this specific scenario. Start with "A photo of..." or "An image
+    showing...". This query must be concrete and directly usable for CLIP-style
+    text encoders.
+
+Example Constraint
+
+If the intent is "Enjoying life", your archetypes should NOT all be about
+"vacations". You must diversify: Archetype 1 could be "Outdoor party with
+friends", Archetype 2 could be "Quiet solo reading with coffee", Archetype 3
+could be "Attending a vibrant music festival". Force maximum visual diversity
+within the bounds of the intent.

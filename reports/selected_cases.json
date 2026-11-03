@@ -1,0 +1,145 @@
+[
+  {
+    "group": "High agr., low sem.",
+    "selection": "largest improvement",
+    "image_id": "a75c6f8831983200a0d91b2990c80d16",
+    "fold": 2,
+    "agreement": 1.0,
+    "a_sem": -1.3235456943511963,
+    "true_labels": [
+      "InLove"
+    ],
+    "baseline_labels": [],
+    "fdil_labels": [
+      "InLove"
+    ],
+    "baseline_f1": 0.0,
+    "fdil_f1": 100.0
+  },
+  {
+    "group": "High agr., low sem.",
+    "selection": "largest degradation",
+    "image_id": "57f3b03639b89706dd3781218bb44f73",
+    "fold": 4,
+    "agreement": 1.0,
+    "a_sem": -1.1237664222717285,
+    "true_labels": [
+      "FineDesignLearnArt-Culture"
+    ],
+    "baseline_labels": [
+      "FineDesignLearnArt-Culture"
+    ],
+    "fdil_labels": [
+      "Attractive",
+      "CreativeUnique",
+      "FineDesignLearnArt-Culture",
+      "TchOthrs"
+    ],
+    "baseline_f1": 100.0,
+    "fdil_f1": 40.0
+  },
+  {
+    "group": "High agr., high sem.",
+    "selection": "largest improvement",
+    "image_id": "212ffaa1e7c109dd7cdda736741150d4",
+    "fold": 3,
+    "agreement": 0.6666666865348816,
+    "a_sem": -0.028188467025756836,
+    "true_labels": [
+      "FineDesignLearnArt-Arch"
+    ],
+    "baseline_labels": [],
+    "fdil_labels": [
+      "FineDesignLearnArt-Arch"
+    ],
+    "baseline_f1": 0.0,
+    "fdil_f1": 100.0
+  },
+  {
+    "group": "High agr., high sem.",
+    "selection": "largest degradation",
+    "image_id": "a46793304208ae05b15626898a6dff82",
+    "fold": 3,
+    "agreement": 0.6666666865348816,
+    "a_sem": -0.5451248288154602,
+    "true_labels": [
+      "CreativeUnique"
+    ],
+    "baseline_labels": [
+      "CreativeUnique"
+    ],
+    "fdil_labels": [
+      "Attractive"
+    ],
+    "baseline_f1": 100.0,
+    "fdil_f1": 0.0
+  },
+  {
+    "group": "Low agr., low sem.",
+    "selection": "largest improvement",
+    "image_id": "7c896eae721bf9f9f6c060e82adca7a9",
+    "fold": 2,
+    "agreement": 0.3333333432674408,
+    "a_sem": -0.8670313358306885,
+    "true_labels": [
+      "Attractive"
+    ],
+    "baseline_labels": [],
+    "fdil_labels": [
+      "Attractive"
+    ],
+    "baseline_f1": 0.0,
+    "fdil_f1": 100.0
+  },
+  {
+    "group": "Low agr., low sem.",
+    "selection": "largest degradation",
+    "image_id": "22127cef1c843e8610de7fe409b7574e",
+    "fold": 0,
+    "agreement": 0.3333333432674408,
+    "a_sem": -0.7848539352416992,
+    "true_labels": [
+      "FineDesignLearnArt-Art"
+    ],
+    "baseline_labels": [
+      "FineDesignLearnArt-Art"
+    ],
+    "fdil_labels": [],
+    "baseline_f1": 100.0,
+    "fdil_f1": 0.0
+  },
+  {
+    "group": "Low agr., high sem.",
+    "selection": "largest improvement",
+    "image_id": "cef43258aa054ef8d0d8ecd92aeb0174",
+    "fold": 4,
+    "agreement": 0.3333333432674408,
+    "a_sem": -0.3043835163116455,
+    "true_labels": [
+      "FineDesignLearnArt-Culture"
+    ],
+    "baseline_labels": [],
+    "fdil_labels": [
+      "FineDesignLearnArt-Culture"
+    ],
+    "baseline_f1": 0.0,
+    "fdil_f1": 100.0
+  },
+  {
+    "group": "Low agr., high sem.",
+    "selection": "largest degradation",
+    "image_id": "2e0a1182fc9155e6fdc6e9360370aa98",
+    "fold": 0,
+    "agreement": 0.3333333432674408,
+    "a_sem": -0.08425121754407883,
+    "true_labels": [
+      "TchOthrs"
+    ],
+    "baseline_labels": [
+      "TchOthrs"
+    ],
+    "fdil_labels": [],
+    "baseline_f1": 100.0,
+    "fdil_f1": 0.0
+  }
+]
