@@ -1,11 +1,15 @@
 # Functionally Decoupled Visual Intent Learning under Supervisory and Semantic Ambiguity
 
-Supplementary data for revision 3. Approximately 29.2 MiB.
+Supplementary data for revision 3.
 
 - `manifest.json`: file provenance, seeds, generation settings and missing metadata.
-- `prompts/`, `semantic/`: prompt templates, cached priors and compressed rationale records.
+- `prompts/`, `semantic/`: Intentonomy/EMOTIC scenario templates and class-wise requests, LDL prompt templates, cached priors and compressed rationale records.
 - `inputs/`, `reports/`: saved numeric inputs and statistical/error-analysis results.
 - `sources/`: source snapshots for provenance; full training requires the original project and datasets. Machine-specific paths are replaced with placeholders.
+
+## EMOTIC scenario prompt
+
+The EMOTIC template follows the author-specified Intentonomy archetype-generation structure. Each request substitutes an emotion name and its exact definition from `semantic/emotic_prior.json`, preserving the order of all 26 classes. The template requests 3–5 distinct visual archetypes per class, each with a core difference, visual elements and a 20–40-word text query. The shared template and all 26 expanded requests are provided in `prompts/emotic_scenario_template.txt` and `prompts/emotic_scenario_requests.json`. Historical request/response session logs remain unavailable; the manifest distinguishes this author-specified documentation from recorded generation settings and source defaults.
 
 ## Reproduce reports
 
@@ -16,6 +20,6 @@ python build_reports.py
 
 The script recomputes `reports/` and generates LaTeX tables in `tables/` using only bundled inputs. No GPU or original images are needed.
 
-Paired-seed intervals are pointwise 95% Student-t intervals. Intentonomy tests use Holm correction across five comparators per metric; ambiguity-cell tests use a separate family of 12 contrasts. Transfer tests retain their paired-seed protocols. Bootstrap results are saved 5,000-replicate estimates, conditional on selected checkpoints. Error analysis uses one five-fold training-set partition; conditional contrasts are descriptive because cross-fitted models share training images.
+Paired-seed intervals are pointwise 95% Student-t intervals. Intentonomy tests use Holm correction across five comparators per metric; ambiguity-cell tests use a separate family of 12 contrasts. Transfer comparisons retain their original paired tests across runs. Bootstrap results are saved 5,000-replicate estimates, conditional on selected checkpoints. Error analysis uses one five-fold training-set partition; conditional contrasts are descriptive because cross-fitted models share training images.
 
 Raw images, model weights and large feature caches are excluded. This package supports reanalysis; unresolved generation metadata is recorded in the manifest.

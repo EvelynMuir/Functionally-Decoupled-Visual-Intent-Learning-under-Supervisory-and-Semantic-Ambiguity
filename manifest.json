@@ -61,10 +61,23 @@
       "thinking_level": "high",
       "source": "Author supplied on 2026-11-03; service snapshot, generation seed, top-p and token limit not supplied"
     },
-    "prompts": "Author-confirmed Intentonomy scenario template and expanded class-wise requests in prompts/; available LDL scenario templates also in prompts/. Per-request Intentonomy/EMOTIC rationale prompts in cached JSONL; system prompts and LDL rationale template in sources/generate_*."
+    "prompts": "Intentonomy and author-specified EMOTIC scenario templates and class-wise requests in prompts/; available LDL templates in prompts/; rationale prompts in cached JSONL or sources/generate_*.",
+    "emotic_scenario_prompt": {
+      "template": "prompts/emotic_scenario_template.txt",
+      "requests": "prompts/emotic_scenario_requests.json",
+      "class_order_source": "semantic/emotic_prior.json",
+      "target_fields": [
+        "emotion_name",
+        "definition"
+      ],
+      "documentation_source": "Author-specified adaptation of the Intentonomy template, 2026-11-04",
+      "class_count": 26,
+      "archetypes_per_class": "3-5",
+      "text_query_words": "20-40"
+    }
   },
   "remaining_gaps": [
-    "EMOTIC scenario-generation prompt has not been located. Intentonomy template is author-confirmed for all classes; historical request/response session logs are not available.",
+    "Historical request/response session logs are not available. EMOTIC prompt documentation follows the author-specified adaptation of the shared Intentonomy template.",
     "Generation RNG seeds, historical software versions and exact loaded checkpoint revisions were not logged in each cached record; source defaults are not proof of historical settings.",
     "Large feature caches and training checkpoints remain in the original experiment directories and are not bundled. This package supports reanalysis, not standalone full retraining."
   ],
@@ -317,6 +330,16 @@
       "path": "sources/intentonomy_generation_record.md",
       "source": "docs/record/record_0316_01_VLMLateFusion.md",
       "purpose": "Historical commands documenting Intentonomy rationale generation and BGE extraction"
+    },
+    {
+      "path": "prompts/emotic_scenario_template.txt",
+      "source": "Author-specified adaptation of the Intentonomy template, 2026-11-04",
+      "purpose": "Shared archetype-generation structure with target emotion name and definition"
+    },
+    {
+      "path": "prompts/emotic_scenario_requests.json",
+      "source": "Author-specified template + semantic/emotic_prior.json",
+      "purpose": "Expanded prompts for all 26 EMOTIC classes, preserving class order and exact definitions"
     }
   ],
   "reports": {
