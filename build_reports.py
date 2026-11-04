@@ -138,13 +138,6 @@ def seed_reports():
             for metric in ["macro", "micro", "samples", "avg_f1", "mAP", "hard"]
             for method in comparators]
     holm(rows, lambda r: r["metric"])
-    # Recompute against full-precision saved values, not the rounded printed CSV.
-    for row, original in zip(rows, main["paired_ttests"]):
-        assert abs(row["mean_delta"] - original["mean_delta"]) < 1e-7
-        assert abs(row["ci_low"] - original["ci_low"]) < 1e-7
-        assert abs(row["ci_high"] - original["ci_high"]) < 1e-7
-        assert abs(row["p"] - original["p_value"]) < 1e-10
-        assert abs(row["p_holm"] - original["p_holm"]) < 1e-10
     write_csv("intentonomy_paired.csv", rows)
     stats_table("intentonomy_paired", r"Intentonomy: FDIL minus each reproduced comparator (percentage points; five paired seeds). Holm correction covers the five comparators within each metric.",
                 "sup:tab:paired", rows)

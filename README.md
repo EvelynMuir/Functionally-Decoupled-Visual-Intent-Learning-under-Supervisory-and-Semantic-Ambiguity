@@ -4,8 +4,8 @@ Supplementary data for revision 3.
 
 - `manifest.json`: file provenance, seeds, generation settings and missing metadata.
 - `prompts/`, `semantic/`: Intentonomy/EMOTIC scenario templates and class-wise requests, LDL prompt templates, cached priors and compressed rationale records.
-- `inputs/`, `reports/`: saved numeric inputs and statistical/error-analysis results.
-- `sources/`: source snapshots for provenance; full training requires the original project and datasets. Machine-specific paths are replaced with placeholders.
+- `inputs/`, `reports/`: per-run measurements, compact out-of-fold predictions, analysis settings and complete statistical/error-analysis results.
+- `sources/`: semantic-resource generation/encoding scripts and an excerpt of the recorded Intentonomy generation commands. These scripts require the original project, datasets and model checkpoints; machine-specific paths are replaced with placeholders.
 
 ## EMOTIC scenario prompt
 

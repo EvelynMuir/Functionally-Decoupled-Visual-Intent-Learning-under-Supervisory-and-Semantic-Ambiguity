@@ -1,6 +1,6 @@
 {
   "title": "Functionally Decoupled Visual Intent Learning under Supervisory and Semantic Ambiguity — supplementary data",
-  "version": "revision-3-draft-2026-11-03",
+  "version": "revision-3-2026-11-04",
   "status": "Public revision-3 supplementary data; repository version, not a DOI archive",
   "permanent_reference": "https://github.com/EvelynMuir/Functionally-Decoupled-Visual-Intent-Learning-under-Supervisory-and-Semantic-Ambiguity",
   "recompute": "python build_reports.py (NumPy and SciPy)",
@@ -85,27 +85,27 @@
     {
       "path": "inputs/intentonomy_seed_results.json",
       "source": "logs/analysis/e16_seed_significance_5seed/summary.json",
-      "purpose": "Full-precision saved statistical inputs and recorded run configuration"
+      "purpose": "Full-precision per-run measurements and recorded analysis settings"
     },
     {
       "path": "inputs/intentonomy_subset_seed_results.json",
       "source": "logs/analysis/e16_subsets_5seed/summary.json",
-      "purpose": "Full-precision saved statistical inputs and recorded run configuration"
+      "purpose": "Full-precision per-run measurements and recorded analysis settings"
     },
     {
       "path": "inputs/emotic_seed_results.json",
       "source": "logs/analysis/emotic_fdil_pool_kfold_slrctuned_20260819/summary.json",
-      "purpose": "Full-precision saved statistical inputs and recorded run configuration"
+      "purpose": "Full-precision per-run measurements and recorded analysis settings"
     },
     {
       "path": "inputs/flickrldl_seed_results.json",
       "source": "logs/analysis/flickrldl_fdil_5seed_20260821/summary.json",
-      "purpose": "Full-precision saved statistical inputs and recorded run configuration"
+      "purpose": "Full-precision per-run measurements and recorded analysis settings"
     },
     {
       "path": "inputs/emotion6_seed_results.json",
       "source": "logs/analysis/emotion6_fdil_5seed_20260821/summary.json",
-      "purpose": "Full-precision saved statistical inputs and recorded run configuration"
+      "purpose": "Full-precision per-run measurements and recorded analysis settings"
     },
     {
       "path": "inputs/bootstrap.csv",
@@ -115,7 +115,7 @@
     {
       "path": "inputs/bootstrap_protocol.json",
       "source": "logs/analysis/e13_threshold_free_significance_topk10_20260623/summary.json",
-      "purpose": "Bootstrap resampling configuration and original report"
+      "purpose": "Recorded bootstrap resampling settings; saved contrasts are in inputs/bootstrap.csv"
     },
     {
       "path": "inputs/intentonomy_oof_predictions.npz",
@@ -156,7 +156,7 @@
     {
       "path": "inputs/oof_protocol.json",
       "source": "logs/analysis/e17_ambiguity_quadrants_5fold_v2/summary.json",
-      "purpose": "Recorded cross-fitting protocol, ambiguity definitions and seed"
+      "purpose": "Recorded cross-fitting settings and ambiguity definitions; predictions and fold thresholds are in the NPZ input"
     },
     {
       "path": "semantic/intentonomy_prior.json",
@@ -234,77 +234,27 @@
     {
       "path": "sources/generate_vlm_rationales.py",
       "source": "scripts/generate_vlm_rationales.py",
-      "purpose": "Source snapshot; full training/generation requires the project repository and original datasets"
+      "purpose": "Semantic-resource generation or encoding source snapshot; requires original project, datasets and model checkpoints"
     },
     {
       "path": "sources/generate_emotic_vlm_rationales.py",
       "source": "scripts/generate_emotic_vlm_rationales.py",
-      "purpose": "Source snapshot; full training/generation requires the project repository and original datasets"
+      "purpose": "Semantic-resource generation or encoding source snapshot; requires original project, datasets and model checkpoints"
     },
     {
       "path": "sources/generate_ldl_vlm_rationales.py",
       "source": "scripts/generate_ldl_vlm_rationales.py",
-      "purpose": "Source snapshot; full training/generation requires the project repository and original datasets"
+      "purpose": "Semantic-resource generation or encoding source snapshot; requires original project, datasets and model checkpoints"
     },
     {
       "path": "sources/extract_vlm_rationale_features.py",
       "source": "scripts/extract_vlm_rationale_features.py",
-      "purpose": "Source snapshot; full training/generation requires the project repository and original datasets"
+      "purpose": "Semantic-resource generation or encoding source snapshot; requires original project, datasets and model checkpoints"
     },
     {
       "path": "sources/extract_ldl_rationale_features.py",
       "source": "scripts/extract_ldl_rationale_features.py",
-      "purpose": "Source snapshot; full training/generation requires the project repository and original datasets"
-    },
-    {
-      "path": "sources/analyze_text_prior_boundary.py",
-      "source": "scripts/analyze_text_prior_boundary.py",
-      "purpose": "Source snapshot; full training/generation requires the project repository and original datasets"
-    },
-    {
-      "path": "sources/build_e16_seed_significance.py",
-      "source": "scripts/build_e16_seed_significance.py",
-      "purpose": "Source snapshot; full training/generation requires the project repository and original datasets"
-    },
-    {
-      "path": "sources/build_e17_ambiguity_quadrants.py",
-      "source": "scripts/build_e17_ambiguity_quadrants.py",
-      "purpose": "Source snapshot; full training/generation requires the project repository and original datasets"
-    },
-    {
-      "path": "sources/build_e13_threshold_free_significance.py",
-      "source": "scripts/build_e13_threshold_free_significance.py",
-      "purpose": "Source snapshot; full training/generation requires the project repository and original datasets"
-    },
-    {
-      "path": "sources/analyze_privileged_distillation.py",
-      "source": "scripts/analyze_privileged_distillation.py",
-      "purpose": "Source snapshot; full training/generation requires the project repository and original datasets"
-    },
-    {
-      "path": "sources/analyze_distillation_slrc.py",
-      "source": "scripts/analyze_distillation_slrc.py",
-      "purpose": "Source snapshot; full training/generation requires the project repository and original datasets"
-    },
-    {
-      "path": "sources/run_ldl_fdil.py",
-      "source": "scripts/run_ldl_fdil.py",
-      "purpose": "Source snapshot; full training/generation requires the project repository and original datasets"
-    },
-    {
-      "path": "sources/slrc_prior_norm.py",
-      "source": "scripts/slrc_prior_norm.py",
-      "purpose": "Source snapshot; full training/generation requires the project repository and original datasets"
-    },
-    {
-      "path": "sources/environment.yaml",
-      "source": "environment.yaml",
-      "purpose": "Existing project dependency specification; not a historical generation environment lock"
-    },
-    {
-      "path": "sources/requirements.txt",
-      "source": "requirements.txt",
-      "purpose": "Existing project dependency specification; not a historical generation environment lock"
+      "purpose": "Semantic-resource generation or encoding source snapshot; requires original project, datasets and model checkpoints"
     },
     {
       "path": "prompts/ldl_slrc_gemini_prompt.md",
@@ -329,7 +279,7 @@
     {
       "path": "sources/intentonomy_generation_record.md",
       "source": "docs/record/record_0316_01_VLMLateFusion.md",
-      "purpose": "Historical commands documenting Intentonomy rationale generation and BGE extraction"
+      "purpose": "Excerpt of historical rationale-generation and BGE encoding commands"
     },
     {
       "path": "prompts/emotic_scenario_template.txt",
@@ -348,6 +298,9 @@
     "systematic_errors": "reports/stratified_errors.csv; reports/confusion_pairs.csv; reports/selected_cases.json",
     "bootstrap": "reports/bootstrap.csv"
   },
-  "holm_scope": "Existing Intentonomy FDIL-versus-five-comparator family within each metric, and existing twelve ambiguity-cell comparisons. Transfer and sample-bootstrap reports keep their respective original paired-test protocols.",
-  "packaging_notes": "Machine-specific paths in source snapshots are replaced with placeholders. build_reports.py runs independently of the original project and omits image-dependent figure generation; numeric analysis is unchanged."
+  "holm_scope": "Existing Intentonomy FDIL-versus-five-comparator family within each metric, and existing twelve ambiguity-cell comparisons. Transfer and sample-bootstrap reports keep their respective original paired tests.",
+  "packaging_notes": "Machine-specific paths in source snapshots are replaced with placeholders. build_reports.py runs independently of the original project and omits image-dependent figure generation; numeric analysis is unchanged.",
+  "analysis_seeds": {
+    "threshold_free_bootstrap": 20260617
+  }
 }
