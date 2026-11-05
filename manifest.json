@@ -1,10 +1,52 @@
 {
-  "title": "Functionally Decoupled Visual Intent Learning under Supervisory and Semantic Ambiguity — supplementary data",
+  "title": "FDIL supplementary data",
   "version": "revision-3-2026-11-05",
-  "status": "Public revision-3 supplementary data; repository version, not a DOI archive",
-  "permanent_reference": "https://github.com/EvelynMuir/Functionally-Decoupled-Visual-Intent-Learning-under-Supervisory-and-Semantic-Ambiguity",
-  "recompute": "python build_reports.py (NumPy and SciPy)",
-  "scope": "Cached generated text and compact numeric inputs for inferential reports and systematic error analysis; no raw images, model weights or large feature caches",
+  "recompute": "python build_reports.py",
+  "generation": {
+    "scenario_priors": {
+      "model": "Gemini 3.1 Pro Preview",
+      "datasets": [
+        "Intentonomy",
+        "EMOTIC",
+        "Flickr-LDL",
+        "Emotion6"
+      ],
+      "temperature": 1,
+      "thinking_level": "high"
+    },
+    "rationales": {
+      "model": "Qwen/Qwen2.5-VL-7B-Instruct",
+      "intentonomy_recorded_parameters": {
+        "temperature": 0,
+        "max_tokens": 768,
+        "max_image_size": 336,
+        "request_batch_size": 256
+      },
+      "source_defaults": {
+        "checkpoint_revision": "cc594898137f460bfe9f0759e9844b3ce807cfb5",
+        "intentonomy": {
+          "top_p": 0.9,
+          "max_image_size": 448
+        },
+        "ldl": {
+          "temperature": 0,
+          "max_tokens": 320,
+          "max_image_size": 384,
+          "retries": 3
+        }
+      }
+    },
+    "encoders": {
+      "prior": "OpenAI CLIP ViT-L/14",
+      "rationale": "BAAI/bge-large-en-v1.5"
+    },
+    "unrecorded_metadata": [
+      "generation_random_seeds",
+      "generation_service_snapshot",
+      "historical_model_checkpoint_revisions",
+      "historical_software_versions"
+    ]
+  },
   "training_seeds": {
     "intentonomy": [
       20260317,
@@ -31,282 +73,68 @@
       2030
     ]
   },
-  "generation": {
-    "rationale_model": "Qwen/Qwen2.5-VL-7B-Instruct (manuscript and generator source)",
-    "generator_default_checkpoint": "cc594898137f460bfe9f0759e9844b3ce807cfb5 (source default; historical loaded revision not logged per request)",
-    "text_encoder": "BAAI/bge-large-en-v1.5; exact historical revision not recorded in generation outputs",
-    "visual_encoder": "OpenAI CLIP ViT-L/14",
-    "intentonomy_train_recorded_command": {
-      "temperature": 0.0,
-      "max_tokens": 768,
-      "max_image_size": 336,
-      "request_batch_size": 256
-    },
-    "source_defaults_not_historical_confirmation": {
-      "intentonomy": {
-        "top_p": 0.9,
-        "max_image_size": 448
-      },
-      "ldl": {
-        "temperature": 0.0,
-        "max_tokens": 320,
-        "max_image_size": 384,
-        "retries": 3
-      }
-    },
-    "generation_random_seed": "Not explicitly supplied/recorded by these generation scripts; training seeds above do not identify generation randomness",
-    "scenario_model": "Gemini 3.1 Pro Preview (author-confirmed model label)",
-    "scenario_generation_parameters": {
-      "temperature": 1,
-      "thinking_level": "high",
-      "source": "Author supplied model and parameters on 2026-11-03 and confirmed their scope across Intentonomy, EMOTIC and LDL on 2026-11-05; service snapshot, generation seed, top-p and token limit not supplied",
-      "applies_to": [
-        "Intentonomy",
-        "EMOTIC",
-        "Flickr-LDL",
-        "Emotion6"
-      ]
-    },
-    "prompts": "Intentonomy and author-specified EMOTIC scenario templates and class-wise requests in prompts/; available LDL templates in prompts/; rationale prompts in cached JSONL or sources/generate_*.",
-    "emotic_scenario_prompt": {
-      "template": "prompts/emotic_scenario_template.txt",
-      "requests": "prompts/emotic_scenario_requests.json",
-      "class_order_source": "semantic/emotic_prior.json",
-      "target_fields": [
-        "emotion_name",
-        "definition"
-      ],
-      "documentation_source": "Author-specified adaptation of the Intentonomy template, 2026-11-04",
-      "class_count": 26,
-      "archetypes_per_class": "3-5",
-      "text_query_words": "20-40"
-    }
-  },
-  "remaining_gaps": [
-    "Historical request/response session logs are not available. EMOTIC prompt documentation follows the author-specified adaptation of the shared Intentonomy template.",
-    "Generation RNG seeds, historical software versions and exact loaded checkpoint revisions were not logged in each cached record; source defaults are not proof of historical settings.",
-    "Large feature caches and training checkpoints remain in the original experiment directories and are not bundled. This package supports reanalysis, not standalone full retraining."
-  ],
-  "files": [
-    {
-      "path": "inputs/intentonomy_seed_results.json",
-      "source": "logs/analysis/e16_seed_significance_5seed/summary.json",
-      "purpose": "Full-precision per-run measurements and recorded analysis settings"
-    },
-    {
-      "path": "inputs/intentonomy_subset_seed_results.json",
-      "source": "logs/analysis/e16_subsets_5seed/summary.json",
-      "purpose": "Full-precision per-run measurements and recorded analysis settings"
-    },
-    {
-      "path": "inputs/emotic_seed_results.json",
-      "source": "logs/analysis/emotic_fdil_pool_kfold_slrctuned_20260819/summary.json",
-      "purpose": "Full-precision per-run measurements and recorded analysis settings"
-    },
-    {
-      "path": "inputs/flickrldl_seed_results.json",
-      "source": "logs/analysis/flickrldl_fdil_5seed_20260821/summary.json",
-      "purpose": "Full-precision per-run measurements and recorded analysis settings"
-    },
-    {
-      "path": "inputs/emotion6_seed_results.json",
-      "source": "logs/analysis/emotion6_fdil_5seed_20260821/summary.json",
-      "purpose": "Full-precision per-run measurements and recorded analysis settings"
-    },
-    {
-      "path": "inputs/bootstrap.csv",
-      "source": "logs/analysis/e13_threshold_free_significance_topk10_20260623/e13_paired_significance.csv",
-      "purpose": "Saved finite-resolution sample-bootstrap contrasts"
-    },
-    {
-      "path": "inputs/bootstrap_protocol.json",
-      "source": "logs/analysis/e13_threshold_free_significance_topk10_20260623/summary.json",
-      "purpose": "Recorded bootstrap resampling settings; saved contrasts are in inputs/bootstrap.csv"
-    },
-    {
-      "path": "inputs/intentonomy_oof_predictions.npz",
-      "source": "logs/analysis/e17_ambiguity_quadrants_5fold_v2/e17_oof_scores.npz + fold thresholds; aligned train_base.npz IDs",
-      "purpose": "Compact predictions sufficient to reproduce all new errors and conditional contrasts",
-      "rows": 12739,
-      "class_order": [
-        "Attractive",
-        "BeatCompete",
-        "Communicate",
-        "CreativeUnique",
-        "CuriousAdventurousExcitingLife",
-        "EasyLife",
-        "EnjoyLife",
-        "FineDesignLearnArt-Arch",
-        "FineDesignLearnArt-Art",
-        "FineDesignLearnArt-Culture",
-        "GoodParentEmoCloseChild",
-        "Happy",
-        "HardWorking",
-        "Harmony",
-        "Health",
-        "InLove",
-        "InLoveAnimal",
-        "InspirOthrs",
-        "ManagableMakePlan",
-        "NatBeauty",
-        "PassionAbSmthing",
-        "Playful",
-        "ShareFeelings",
-        "SocialLifeFriendship",
-        "SuccInOccupHavGdJob",
-        "TchOthrs",
-        "ThngsInOrdr",
-        "WorkILike"
-      ]
-    },
-    {
-      "path": "inputs/oof_protocol.json",
-      "source": "logs/analysis/e17_ambiguity_quadrants_5fold_v2/summary.json",
-      "purpose": "Recorded cross-fitting settings and ambiguity definitions; predictions and fold thresholds are in the NPZ input"
-    },
-    {
-      "path": "semantic/intentonomy_prior.json",
-      "source": "../Intentonomy/data/intent_description_gemini.json",
-      "purpose": "Exact cached semantic prior text; generation history is recorded separately"
-    },
-    {
-      "path": "semantic/emotic_prior.json",
-      "source": "../Emotic/emotion_description_gemini.json",
-      "purpose": "Exact cached semantic prior text; generation history is recorded separately"
-    },
-    {
-      "path": "semantic/flickrldl_prior.json",
-      "source": "../LDL/processed/semantic_priors/ldl_gemini_slrc_prior.json",
-      "purpose": "Exact cached semantic prior text; generation history is recorded separately"
-    },
-    {
-      "path": "semantic/emotion6_prior.json",
-      "source": "../LDL/processed/semantic_priors/emotion6_gemini_slrc_prior.json",
-      "purpose": "Exact cached semantic prior text; generation history is recorded separately"
-    },
-    {
-      "path": "semantic/intentonomy_label_texts.json",
-      "source": "scripts/analyze_text_prior_boundary.py; src/models/intentonomy_clip_vit_slot_module.py",
-      "purpose": "Exact lexical and canonical text banks in Intentonomy class order"
-    },
-    {
-      "path": "semantic/intentonomy_train_rationales.jsonl.gz",
-      "source": "logs/analysis/vlm_full_20260316/rationale_full.jsonl",
-      "purpose": "Cached rationale records, preserving prompts when originally recorded; no raw images",
-      "records": 12739
-    },
-    {
-      "path": "semantic/intentonomy_val_rationales.jsonl.gz",
-      "source": "logs/analysis/vlm_full_20260316/val_rationale_baseline_pred.jsonl",
-      "purpose": "Cached rationale records, preserving prompts when originally recorded; no raw images",
-      "records": 498
-    },
-    {
-      "path": "semantic/intentonomy_test_rationales.jsonl.gz",
-      "source": "logs/analysis/vlm_full_20260316/test_rationale_baseline_pred.jsonl",
-      "purpose": "Cached rationale records, preserving prompts when originally recorded; no raw images",
-      "records": 1216
-    },
-    {
-      "path": "semantic/emotic_train_rationales.jsonl.gz",
-      "source": "logs/analysis/emotic_vlm_20260323/rationale_full.jsonl",
-      "purpose": "Cached rationale records, preserving prompts when originally recorded; no raw images",
-      "records": 23706
-    },
-    {
-      "path": "semantic/emotic_val_rationales.jsonl.gz",
-      "source": "logs/analysis/emotic_vlm_20260323/val_rationale_baseline_pred.jsonl",
-      "purpose": "Cached rationale records, preserving prompts when originally recorded; no raw images",
-      "records": 3334
-    },
-    {
-      "path": "semantic/emotic_test_rationales.jsonl.gz",
-      "source": "logs/analysis/emotic_vlm_20260323/test_rationale_baseline_pred.jsonl",
-      "purpose": "Cached rationale records, preserving prompts when originally recorded; no raw images",
-      "records": 7279
-    },
-    {
-      "path": "semantic/flickrldl_train_rationales.jsonl.gz",
-      "source": "logs/analysis/flickrldl_rationales/train_rationales.jsonl",
-      "purpose": "Cached rationale records, preserving prompts when originally recorded; no raw images",
-      "records": 6690
-    },
-    {
-      "path": "semantic/emotion6_train_rationales.jsonl.gz",
-      "source": "logs/analysis/emotion6_rationales/train_rationales.jsonl",
-      "purpose": "Cached rationale records, preserving prompts when originally recorded; no raw images",
-      "records": 1108
-    },
-    {
-      "path": "sources/generate_vlm_rationales.py",
-      "source": "scripts/generate_vlm_rationales.py",
-      "purpose": "Semantic-resource generation or encoding source snapshot; requires original project, datasets and model checkpoints"
-    },
-    {
-      "path": "sources/generate_emotic_vlm_rationales.py",
-      "source": "scripts/generate_emotic_vlm_rationales.py",
-      "purpose": "Semantic-resource generation or encoding source snapshot; requires original project, datasets and model checkpoints"
-    },
-    {
-      "path": "sources/generate_ldl_vlm_rationales.py",
-      "source": "scripts/generate_ldl_vlm_rationales.py",
-      "purpose": "Semantic-resource generation or encoding source snapshot; requires original project, datasets and model checkpoints"
-    },
-    {
-      "path": "sources/extract_vlm_rationale_features.py",
-      "source": "scripts/extract_vlm_rationale_features.py",
-      "purpose": "Semantic-resource generation or encoding source snapshot; requires original project, datasets and model checkpoints"
-    },
-    {
-      "path": "sources/extract_ldl_rationale_features.py",
-      "source": "scripts/extract_ldl_rationale_features.py",
-      "purpose": "Semantic-resource generation or encoding source snapshot; requires original project, datasets and model checkpoints"
-    },
-    {
-      "path": "prompts/ldl_slrc_gemini_prompt.md",
-      "source": "docs/prompts/ldl_slrc_gemini_prompt.md",
-      "purpose": "Available exact semantic-prior prompt template"
-    },
-    {
-      "path": "prompts/emotion6_slrc_gemini_prompt.md",
-      "source": "docs/prompts/emotion6_slrc_gemini_prompt.md",
-      "purpose": "Available exact semantic-prior prompt template"
-    },
-    {
-      "path": "prompts/intentonomy_scenario_template.txt",
-      "source": "Author-provided template, confirmed on 2026-11-03",
-      "purpose": "Applied to all 28 Intentonomy classes by replacing only target_intent"
-    },
-    {
-      "path": "prompts/intentonomy_scenario_requests.json",
-      "source": "Author-confirmed template + canonical intent descriptions",
-      "purpose": "Expanded prompts in class order; target_intent is the only substituted field"
-    },
-    {
-      "path": "sources/intentonomy_generation_record.md",
-      "source": "docs/record/record_0316_01_VLMLateFusion.md",
-      "purpose": "Excerpt of historical rationale-generation and BGE encoding commands"
-    },
-    {
-      "path": "prompts/emotic_scenario_template.txt",
-      "source": "Author-specified adaptation of the Intentonomy template, 2026-11-04",
-      "purpose": "Shared archetype-generation structure with target emotion name and definition"
-    },
-    {
-      "path": "prompts/emotic_scenario_requests.json",
-      "source": "Author-specified template + semantic/emotic_prior.json",
-      "purpose": "Expanded prompts for all 26 EMOTIC classes, preserving class order and exact definitions"
-    }
-  ],
-  "reports": {
-    "paired_statistics": "reports/*_paired.csv",
-    "hypothesis_diagnostics": "reports/hypothesis_contrasts.csv",
-    "systematic_errors": "reports/stratified_errors.csv; reports/confusion_pairs.csv; reports/selected_cases.json",
-    "bootstrap": "reports/bootstrap.csv"
-  },
-  "holm_scope": "Existing Intentonomy FDIL-versus-five-comparator family within each metric, and existing twelve ambiguity-cell comparisons. Transfer and sample-bootstrap reports keep their respective original paired tests.",
-  "packaging_notes": "Machine-specific paths in source snapshots are replaced with placeholders. build_reports.py runs independently of the original project and omits image-dependent figure generation; numeric analysis is unchanged.",
   "analysis_seeds": {
     "threshold_free_bootstrap": 20260617
+  },
+  "holm_families": {
+    "intentonomy": "Five FDIL-versus-comparator contrasts within each metric",
+    "ambiguity_cells": "Twelve variant-versus-baseline contrasts across four cells"
+  },
+  "files": {
+    "prompts": [
+      "prompts/emotic_scenario_requests.json",
+      "prompts/emotic_scenario_template.txt",
+      "prompts/emotion6_slrc_gemini_prompt.md",
+      "prompts/intentonomy_scenario_requests.json",
+      "prompts/intentonomy_scenario_template.txt",
+      "prompts/ldl_slrc_gemini_prompt.md"
+    ],
+    "semantic": [
+      "semantic/emotic_prior.json",
+      "semantic/emotic_test_rationales.jsonl.gz",
+      "semantic/emotic_train_rationales.jsonl.gz",
+      "semantic/emotic_val_rationales.jsonl.gz",
+      "semantic/emotion6_prior.json",
+      "semantic/emotion6_train_rationales.jsonl.gz",
+      "semantic/flickrldl_prior.json",
+      "semantic/flickrldl_train_rationales.jsonl.gz",
+      "semantic/intentonomy_label_texts.json",
+      "semantic/intentonomy_prior.json",
+      "semantic/intentonomy_test_rationales.jsonl.gz",
+      "semantic/intentonomy_train_rationales.jsonl.gz",
+      "semantic/intentonomy_val_rationales.jsonl.gz"
+    ],
+    "inputs": [
+      "inputs/bootstrap.csv",
+      "inputs/bootstrap_protocol.json",
+      "inputs/emotic_seed_results.json",
+      "inputs/emotion6_seed_results.json",
+      "inputs/flickrldl_seed_results.json",
+      "inputs/intentonomy_oof_predictions.npz",
+      "inputs/intentonomy_seed_results.json",
+      "inputs/intentonomy_subset_seed_results.json",
+      "inputs/oof_protocol.json"
+    ],
+    "sources": [
+      "sources/extract_ldl_rationale_features.py",
+      "sources/extract_vlm_rationale_features.py",
+      "sources/generate_emotic_vlm_rationales.py",
+      "sources/generate_ldl_vlm_rationales.py",
+      "sources/generate_vlm_rationales.py",
+      "sources/intentonomy_generation_record.md"
+    ],
+    "reports": [
+      "reports/bootstrap.csv",
+      "reports/confusion_pairs.csv",
+      "reports/emotic_paired.csv",
+      "reports/emotion6_paired.csv",
+      "reports/flickrldl_paired.csv",
+      "reports/hypothesis_contrasts.csv",
+      "reports/intentonomy_paired.csv",
+      "reports/intentonomy_subsets_paired.csv",
+      "reports/quadrant_paired.csv",
+      "reports/selected_cases.json",
+      "reports/stratified_errors.csv"
+    ]
   }
 }
