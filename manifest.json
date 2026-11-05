@@ -1,6 +1,6 @@
 {
   "title": "Functionally Decoupled Visual Intent Learning under Supervisory and Semantic Ambiguity — supplementary data",
-  "version": "revision-3-2026-11-04",
+  "version": "revision-3-2026-11-05",
   "status": "Public revision-3 supplementary data; repository version, not a DOI archive",
   "permanent_reference": "https://github.com/EvelynMuir/Functionally-Decoupled-Visual-Intent-Learning-under-Supervisory-and-Semantic-Ambiguity",
   "recompute": "python build_reports.py (NumPy and SciPy)",
@@ -59,7 +59,13 @@
     "scenario_generation_parameters": {
       "temperature": 1,
       "thinking_level": "high",
-      "source": "Author supplied on 2026-11-03; service snapshot, generation seed, top-p and token limit not supplied"
+      "source": "Author supplied model and parameters on 2026-11-03 and confirmed their scope across Intentonomy, EMOTIC and LDL on 2026-11-05; service snapshot, generation seed, top-p and token limit not supplied",
+      "applies_to": [
+        "Intentonomy",
+        "EMOTIC",
+        "Flickr-LDL",
+        "Emotion6"
+      ]
     },
     "prompts": "Intentonomy and author-specified EMOTIC scenario templates and class-wise requests in prompts/; available LDL templates in prompts/; rationale prompts in cached JSONL or sources/generate_*.",
     "emotic_scenario_prompt": {

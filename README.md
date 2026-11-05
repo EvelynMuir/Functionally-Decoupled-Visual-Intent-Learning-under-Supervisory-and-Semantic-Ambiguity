@@ -7,7 +7,9 @@ Supplementary data for revision 3.
 - `inputs/`, `reports/`: per-run measurements, compact out-of-fold predictions, analysis settings and complete statistical/error-analysis results.
 - `sources/`: semantic-resource generation/encoding scripts and an excerpt of the recorded Intentonomy generation commands. These scripts require the original project, datasets and model checkpoints; machine-specific paths are replaced with placeholders.
 
-## EMOTIC scenario prompt
+## Scenario priors and prompts
+
+Intentonomy, EMOTIC and LDL priors (Flickr-LDL and Emotion6) use Gemini 3.1 Pro Preview with temperature 1 and thinking level high. These author-confirmed settings apply to scenario-prior generation across all four datasets.
 
 The EMOTIC template follows the author-specified Intentonomy archetype-generation structure. Each request substitutes an emotion name and its exact definition from `semantic/emotic_prior.json`, preserving the order of all 26 classes. The template requests 3–5 distinct visual archetypes per class, each with a core difference, visual elements and a 20–40-word text query. The shared template and all 26 expanded requests are provided in `prompts/emotic_scenario_template.txt` and `prompts/emotic_scenario_requests.json`. Historical request/response session logs remain unavailable; the manifest distinguishes this author-specified documentation from recorded generation settings and source defaults.
 
