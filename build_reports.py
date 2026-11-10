@@ -105,7 +105,10 @@ def stats_table(name, caption, label, rows, precision=2, adjusted=True):
         fmt = lambda x: f"{x:+.{precision}f}"
         metric = METRICS[row["metric"]] if row["metric"] != previous_metric else ""
         previous_metric = row["metric"]
-        method = row["method"].removeprefix("FDIL - ").removesuffix(" - Baseline")
+        if name.startswith("intentonomy"):
+            method = row["method"].removeprefix("FDIL - ")
+        else:
+            method = row["method"].removesuffix(" - Baseline")
         values = [metric, esc(method),
                   fmt(row["mean_delta"]),
                   f'[{row["ci_low"]:.{precision}f}, {row["ci_high"]:.{precision}f}]',
