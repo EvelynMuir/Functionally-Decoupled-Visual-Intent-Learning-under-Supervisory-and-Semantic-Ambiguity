@@ -1,6 +1,6 @@
 {
   "title": "FDIL supplementary data",
-  "version": "revision-3-2026-11-05",
+  "version": "revision-4-2026-11-24",
   "recompute": "python build_reports.py",
   "generation": {
     "scenario_priors": {
@@ -40,11 +40,9 @@
       "prior": "OpenAI CLIP ViT-L/14",
       "rationale": "BAAI/bge-large-en-v1.5"
     },
-    "unrecorded_metadata": [
-      "generation_random_seeds",
-      "generation_service_snapshot",
-      "historical_model_checkpoint_revisions",
-      "historical_software_versions"
+    "regeneration_boundaries": [
+      "closed_source_model_versioning",
+      "non_zero_sampling_temperature"
     ]
   },
   "training_seeds": {
@@ -78,7 +76,8 @@
   },
   "holm_families": {
     "intentonomy": "Five FDIL-versus-comparator contrasts within each metric",
-    "ambiguity_cells": "Twelve variant-versus-baseline contrasts across four cells"
+    "unified_vs_decoupled": "Three FDIL-versus-comparator contrasts within each metric",
+    "ambiguity_cells": "Twelve within-cell variant-versus-baseline contrasts across four subgroups, evaluated at the fold level (K=5) under standard and Nadeau-Bengio overlap-corrected paired t-tests"
   },
   "files": {
     "prompts": [
@@ -113,7 +112,9 @@
       "inputs/intentonomy_oof_predictions.npz",
       "inputs/intentonomy_seed_results.json",
       "inputs/intentonomy_subset_seed_results.json",
-      "inputs/oof_protocol.json"
+      "inputs/margin_proxy_overlap.json",
+      "inputs/oof_protocol.json",
+      "inputs/unified_seed_results.json"
     ],
     "sources": [
       "sources/extract_ldl_rationale_features.py",
@@ -129,12 +130,14 @@
       "reports/emotic_paired.csv",
       "reports/emotion6_paired.csv",
       "reports/flickrldl_paired.csv",
-      "reports/hypothesis_contrasts.csv",
+      "reports/gate_profile.csv",
       "reports/intentonomy_paired.csv",
       "reports/intentonomy_subsets_paired.csv",
+      "reports/quadrant_did.csv",
       "reports/quadrant_paired.csv",
       "reports/selected_cases.json",
-      "reports/stratified_errors.csv"
+      "reports/stratified_errors.csv",
+      "reports/unified_paired.csv"
     ]
   }
 }
