@@ -1,6 +1,6 @@
 {
   "title": "FDIL supplementary data",
-  "version": "revision-4-2026-11-24",
+  "version": "2026-11-26",
   "recompute": "python build_reports.py",
   "generation": {
     "scenario_priors": {
@@ -112,7 +112,6 @@
       "inputs/intentonomy_oof_predictions.npz",
       "inputs/intentonomy_seed_results.json",
       "inputs/intentonomy_subset_seed_results.json",
-      "inputs/margin_proxy_overlap.json",
       "inputs/oof_protocol.json",
       "inputs/unified_seed_results.json"
     ],

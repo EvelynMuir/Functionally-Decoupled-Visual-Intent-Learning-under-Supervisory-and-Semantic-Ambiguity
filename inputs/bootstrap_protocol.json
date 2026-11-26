@@ -1,6 +1,5 @@
 {
   "config": {
-    "cache_dir": "logs/analysis/min_agent_evidence_verification_v2_comparative_add_20260312/_cache",
     "topk": 10,
     "slr_alpha": 0.3,
     "bootstrap": 5000,

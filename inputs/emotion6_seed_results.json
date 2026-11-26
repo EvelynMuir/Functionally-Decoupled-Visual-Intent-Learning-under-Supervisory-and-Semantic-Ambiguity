@@ -12,7 +12,6 @@
     ],
     "slr_topk": 5,
     "slr_alpha": 0.3,
-    "slrc_description_file": "${DATA_ROOT}/LDL/processed/semantic_priors/emotion6_gemini_slrc_prior.json",
     "utd_gate": "1-max(y), where max(y) is sample-level annotator agreement; training only",
     "teacher": "3-fold OOF VLM-rationale text teacher, training only",
     "reported_metrics": {

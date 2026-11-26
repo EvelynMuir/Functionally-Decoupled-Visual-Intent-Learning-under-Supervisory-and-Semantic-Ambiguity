@@ -1,6 +1,5 @@
 {
   "protocol": {
-    "cache_dir": "${PROJECT_ROOT}/logs/analysis/min_agent_evidence_verification_v2_comparative_add_20260312/_cache",
     "seeds_with_fdil": [
       20260317,
       20260615,

@@ -12,13 +12,6 @@
     "n_high_sem": 6369
   },
   "config": {
-    "reuse_cache_dir": "${PROJECT_ROOT}/logs/analysis/min_agent_evidence_verification_v2_comparative_add_20260312/_cache",
-    "teacher_run_dir": "${PROJECT_ROOT}/logs/analysis/privileged_distillation_text_teacher_seedfix_20260316",
-    "train_text_npz": "${PROJECT_ROOT}/logs/analysis/vlm_full_20260316/rationale_full_bge_features.npz",
-    "val_text_npz": "${PROJECT_ROOT}/logs/analysis/vlm_full_20260316/val_rationale_baseline_pred_bge_features.npz",
-    "annotation_file": "${DATA_ROOT}/Intentonomy/data/annotation/intentonomy_train2020.json",
-    "gemini_file": "${DATA_ROOT}/Intentonomy/data/intent_description_gemini.json",
-    "output_dir": "logs/analysis/e17_ambiguity_quadrants_5fold_v2",
     "device": "auto",
     "seed": 20260819,
     "folds": 5,

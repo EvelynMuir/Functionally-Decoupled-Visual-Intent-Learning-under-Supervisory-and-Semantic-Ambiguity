@@ -3,10 +3,7 @@
   "pool_persons": 10613,
   "folds": 5,
   "config": {
-    "cache_dir": "logs/analysis/emotic_clip_dual_cache_full_20260323/_cache",
-    "vlm_dir": "logs/analysis/emotic_vlm_20260323",
     "text_suffix": "_rationale_baseline_pred_bge_features.npz",
-    "output_dir": "logs/analysis/emotic_fdil_pool_kfold_slrctuned_20260819",
     "folds": 5,
     "device": "cuda",
     "seed": 20260625,
